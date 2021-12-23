@@ -1,0 +1,22 @@
+/*==============================
+=          RESPONSIVO          =
+==============================*/
+
+/* Tablets en horizonal y escritorios normales */
+@media (min-width: 768px) and (max-width: 1199px) { 
+    :root {
+        font-size: 14px;
+    }
+}
+
+/* Móviles en horizontal o tablets en vertical */
+@media (max-width: 767px) { 
+    :root {
+        font-size: 12px;
+    }
+}
+
+/* Móviles en vertical */
+@media (max-width: 480px) { 
+    
+}
