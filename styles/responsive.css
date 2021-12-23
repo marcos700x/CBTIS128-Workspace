@@ -20,3 +20,18 @@
 @media (max-width: 480px) { 
     
 }
+@media screen and (max-width: 550px) {
+    .header__content{
+        box-shadow: none;
+        border-top: 10px solid var(--white);
+        border-bottom: 10px solid var(--white);
+        text-align: center;
+    }
+    .header__frase{
+        font-size: 1.5rem;
+        font-style: normal;
+    }
+    .video{
+        width: 100%;
+    }
+}

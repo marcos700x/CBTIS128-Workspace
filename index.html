@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__content">
+            <h1 class="header__titulo">CBTIS 128</h1>
+            <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
+            <div class="header__rrss">
+                <a target="_blank" href="https://www.facebook.com/Casa-de-los-Jaguares-CBTIS-128-101239285643821"><i class='bx bxl-facebook-circle header__rrss__facebook'></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCBuXio9_FP2pdABkHykR67Q"><i class='bx bxl-youtube header__rrss__youtube'></i></a>
+            </div>
+        </div>
+        <button class="header__show__video__button"><i class='bx bxs-movie-play' style='color: #fff'></i></button>
+    </header>
+    <div class="video__contenedor">
+        <video  class="video" controls="">
+            <source src="https://www.cbtis128.edu.mx/video/CBTis 128 2021.mp4" type="video/mp4" codecs="avc1,mp4a">
+            <source src="https://www.cbtis128.edu.mx/video/CBTis 128 2021.ogv" type="video/ogg" codecs="theora,vorbis">
+            <source src="https://www.cbtis128.edu.mx/video/CBTis 128 2021.webm" type="video/webm" codecs="vp8,vorbis">
+            Tu navegador no soporta los vídeos de HTML5
+          </video>
+          <button class="hide__video__button"><i class='bx bx-x' style="color: #000"></i></button>
+    </div> 
 </body>
+<script src="scripts/script.js"></script>
 </html>
