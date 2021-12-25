@@ -54,11 +54,11 @@
 }
 .header__titulo {
   font-size: 3rem;
-  font-family: var(--fuente-titulos);
+  font-family: var(--font-titulo);
 }
 .header__frase {
   font-size: 2rem;
-  font-family: var(--fuente-parrafos);
+  font-family: var(--font-parrafo);
 }
 .header__rrss__facebook,
 .header__rrss__youtube {
