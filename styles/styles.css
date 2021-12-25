@@ -4,7 +4,11 @@
 
 :root {
   font-size: 16px;
+<<<<<<< HEAD
   --font-titulo: "Poppins", sans-serif;
+=======
+  --font-titulo: 'Poppins', sans-serif;;
+>>>>>>> Marcos
   --font-parrafo: "Raleway", sans-serif;
   --rosa: #a22245;
   --blanco: #fff;
