@@ -23,8 +23,8 @@
 @media screen and (max-width: 550px) {
     .header__content{
         box-shadow: none;
-        border-top: 10px solid var(--white);
-        border-bottom: 10px solid var(--white);
+        border-top: 10px solid var(--blanco);
+        border-bottom: 10px solid var(--blanco);
         text-align: center;
     }
     .header__frase{
