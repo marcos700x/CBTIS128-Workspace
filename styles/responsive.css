@@ -59,15 +59,15 @@
     .slider{
         height: auto;
     }
-    .destacado-objeto-slider{
+    .destacado__slider{
         width: 300px!important;
 }
 }
 @media (max-width: 480px) {
-    .destacados{
+    .destacado {
         padding: 0;
     }
-    .destacados h1{
+    .destacado__titulo {
         margin: 40px 0 ;
     }
 }

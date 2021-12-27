@@ -169,25 +169,32 @@ button.splide__arrow{
   align-items: center;
  
 }
-.destacados{
+.destacado{
   display: flex;
   width: 100%;
   flex-direction: column;
 }
-.destacados h1{
-     font-size: 2rem;
+.destacado__titulo{
+  font-size: 1.7rem;
   margin: 40px 0 20px 0;
   color: var(--rosa);
   text-align: center;
+  font-family: var(--font-titulo);
 }
-.caja-destacados{
+.destacado__elementos{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   /* padding: 0 80px; */
 
 }
-.destacado-objeto{
+
+.destacado__doble{
+  display: flex;
+  flex-direction: column;
+}
+
+.destacado__seccion{
   width: 300px;
   height: 300px;
   display: flex;
@@ -198,27 +205,37 @@ button.splide__arrow{
   margin: 10px;
   border-radius: 10px;
 }
-.destacado-objeto.double{
+.destacado__anuncio {
+  width: 300px;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  /* width: 350px; */
-}
-.destacado-objeto.double .half{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+  background-color: var(--rosa);
   align-items: center;
-  /* padding: 50px; */
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
 }
-.half p {
+.destacado__division{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion__texto {
+  text-align: center;
+  color: var(--blanco);
+  font-family: var(--font-parrafo);
+}
+
+.seccion__texto  {
   margin: 0 10px!important;
   font-size: 1.2rem!important;
 }
-.half .shortcut-icon{
+.destacado__icon{
   font-size: 1rem;
-}
-.shortcut-icon{
   color: var(--rosa);
   background-color: var(--blanco);
   font-size: 2rem;
@@ -226,14 +243,7 @@ button.splide__arrow{
   border-radius: 10px;
   box-shadow: -20px -20px 0px rgba(255, 255, 255, 0.274);
 }
-.destacado-objeto p {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--blanco);
-  /* margin: 20px 0; */
-}
-.destacado-objeto-deslizar{
+.destacado__slider{
   width: 180px!important;
   height: 300px!important;
   margin: 10px;
@@ -241,15 +251,18 @@ button.splide__arrow{
   border: 5px solid var(--rosa);
 
 }
-
-.vertical-splide > .splide__pagination{
+.splide__pagination{
+  height: 100%!important;
+  width: unset!important;
   display: none!important;
 }
 .vertical-splide{
   height: 100%!important;
   width: unset!important;
 }
-.vertical-splide > .splide__slide{
+.splide__slide{
+  height: 100%!important;
+  width: unset!important;
   height: 100%!important;
   width: 100%!important;
 }
@@ -257,7 +270,9 @@ button.splide__arrow{
 border-radius: 0!important;
 
 }
-.vertical-splide > .splide__track{
+.splide__track{
+  height: 100%!important;
+  width: unset!important;
   height: 100%!important;
   width: 100%!important;
 }
