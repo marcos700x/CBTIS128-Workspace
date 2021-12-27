@@ -35,3 +35,39 @@
         width: 100%;
     }
 }
+
+/* Responsive parte destacados*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .splide{
+        padding: 0!important;
+        width: 100%;
+    }
+    .slider{
+        padding: 0;
+    }
+    
+    .splide__slide{
+        width: 100%;
+        height: auto;
+    }
+    .splide__slide img{
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider{
+        height: auto;
+    }
+    .destacado-objeto-slider{
+        width: 300px!important;
+}
+}
+@media (max-width: 480px) {
+    .destacados{
+        padding: 0;
+    }
+    .destacados h1{
+        margin: 40px 0 ;
+    }
+}
