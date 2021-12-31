@@ -76,13 +76,6 @@
     margin: 10px;
     border-radius: 10px;
 }
-.destacado__division{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .seccion__texto {
     text-align: center;
     color: var(--blanco);
@@ -93,7 +86,6 @@
     font-size: 1.2rem;
 }
 .destacado__icon{
-    font-size: 1rem;
     color: var(--rosa);
     background-color: var(--blanco);
     font-size: 2rem;

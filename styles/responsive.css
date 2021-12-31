@@ -57,6 +57,30 @@
         height: 45vw;
         margin: 10px auto;
     }
+    .destacado__contenedor {
+        width: 45%;
+        height: 45vw;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .destacado__icon{
+        box-shadow: -15px -15px 0px rgba(255, 255, 255, 0.274);
+    } 
+    .destacado__division {
+        height: 20vw;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .destacadoIcono__movil {
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 10px;
+    }
     .texto__movil {
         margin: 0;
     }
