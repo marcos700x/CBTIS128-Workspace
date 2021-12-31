@@ -1,220 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap');
+/*==============================
+=            GLOBAL            =
+==============================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /*DECLARACIÓN DE LAS VARIABLES Y ESTILOS PRINCIPALES*/
 
 :root {
-  font-size: 16px;
-  --font-titulo: 'Poppins', sans-serif;;
-  --font-parrafo: "Raleway", sans-serif;
-  --rosa: #a22245;
-  --blanco: #fff;
-  --negro: #000;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-*::selection {
-  background: rgba(255, 255, 255, 0.5);
-  color: black;
-  text-shadow: 1px 1px #fff;
+    font-size: 16px;
+    --font-titulo: "Poppins", sans-serif;
+    --font-parrafo: "Raleway", sans-serif;
+    --rosa: #a22245;
+    --blanco: #fff;
+    --negro: #000;
 }
 
-/* Firefox */
-*::-moz-selection {
-  background: rgba(255, 255, 255, 0.5);
-  color: black;
-  text-shadow: 1px 1px #fff;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-parrafo);
 }
-/* HEADER */
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  background-image: url(../images/header.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  position: relative;
+
+*::selection {
+    background: var(--blanco);
+    color: var(--rosa);
 }
-.header__content {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--rosa);
-  color: var(--blanco);
-  padding: 20px;
-  box-shadow: 20px 20px 0 0 #fff;
-}
-.header__content * {
-  margin: 5px 0;
-}
-.header__titulo {
-  font-size: 3rem;
-  font-family: var(--font-titulo);
-}
-.header__frase {
-  font-size: 2rem;
-  font-family: var(--font-parrafo);
-}
-.header__rrss__facebook,
-.header__rrss__youtube {
-  text-decoration: none;
-  color: var(--blanco);
-  font-size: 2rem;
-}
-.header__show__video__button {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  font-size: 1.5rem;
-  border: none;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header__show__video__button:hover {
-  background: #000;
-}
-/* VIDEO CBTIS */
-.video__contenedor {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-}
-.video {
-  width: 70%;
-  height: auto;
-  transform: scale(0);
-}
-.hide__video__button {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 1.5rem;
-  border: none;
-  background: rgb(255, 255, 255);
-  padding: 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hide__video__button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
+
+/*=====  End of GLOBAL  ======*/
 
 /** Css Notas */
-.nota__espacio, .button__cont a {
-  text-decoration: none;
+.ver__menos, .ver__mas {
+    text-decoration: none;
 }
 
 .notas__titulo {
-  font-family: var(--font-titulo);
-  text-align: center;
-  color: var(--rosa);
-  margin: 20px;
+    font-family: var(--font-titulo);
+    text-align: center;
+    color: var(--rosa);
+    margin: 20px;
 }
 
 .notas__linea {
-  width: 50%;
-  height: 4px;
-  background-color: var(--rosa);
-  border: none;
-  margin-left: 25%;
-}
+    width: 50%;
+    height: 4px;
+    background-color: var(--rosa);
+    border: none;
+    margin-left: 25%;
+}   
 
 .notas__cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nota__espacio {
-  width: 350px;
-  height: 300px;
-  margin: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
 }
 
-.nota__espacio img {
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-color: var(--rosa);
-  border-width: 7px;
-  transition: transform 1s ease;
+.nota__espacio-horizontal {
+    width: 750px;
 }
 
-.nota__espacio img:hover {
-  transform: scale(.9);
-  border-style: none;
-  /* object-fit: cover; */
+.notas__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 1s ease;
 }
 
-.imagen__horizontal {
-  width: 70%;
-  height: auto;
-  margin: 20px;
-  border-radius: 10px;
-  overflow: hidden;
+.nota__espacio-cover img{
+    object-fit: cover;
 }
 
-.imagen__horizontal img {
-  width: 100%;
-  height: auto;
-  border-style: solid;
-  border-color: var(--rosa);
-  border-width: 7px;
-  transition: transform 1s ease;
-  object-fit: cover;
-}
-
-.imagen__horizontal img:hover {
-  transform: scale(.9);
-  border-style: none;
-  object-fit: cover;
+.notas__img:hover {
+    transform: scale(.9);
+    border: 5px solid var(--rosa);
 }
 
 .button__cont {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-bottom: 10px;
-
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .ver__mas, .ver__menos {
-  background-color: var(--rosa);
-  color: var(--blanco);
-  font-family: var(--font-parrafo);
-  padding: 12px 24px;
-  border-radius: 20px;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: opacity .5s ease;
+    background-color: var(--rosa);
+    color: var(--blanco);
+    font-family: var(--font-parrafo);
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: opacity .5s ease;
 }
 
 .ver__mas:hover, .ver__menos:hover {
-  opacity: .7;
+    opacity: .7;
 }
