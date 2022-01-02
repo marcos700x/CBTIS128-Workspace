@@ -16,20 +16,35 @@
         </h1>-->
     	<div class="notas__cont">
     		<div class="nota__espacio">
-    		  	<a href="images/img1.jpg" target="_blank"><img class="notas__img" src="images/img1.jpg" alt=""></a>
+    		  	<img class="notas__img" src="images/img1.jpg" alt="">
+                  <div class="sobre__imagen">
+                    <a class="enlace__imagen" href="images/img1.jpg" target="_blank">Ver m&aacute;s</a>
+                  </div>
     		</div>
     		<div class="nota__espacio">
-    		  	<a href="pdf__notas/Conferencia_sept21.pdf" target="_blank"><img class="notas__img" src="images/img2.jpg" alt=""></a>
+    		  <img class="notas__img" src="images/img2.jpg" alt="">
+                  <div class="sobre__imagen">
+                    <a class="enlace__imagen" href="pdf__notas/Conferencia_sept21.pdf" target="_blank">Ver m&aacute;s</a>
+                  </div>
     		</div>
     		<div class="nota__espacio">
-    		  	<a href="pdf__notas/Convocatoria Opticart 11 mayo 2021.pdf" target="_blank"><img class="notas__img" src="images/img3.jpg" alt=""></a>
+    		  <img class="notas__img" src="images/img3.jpg" alt="">
+                  <div class="sobre__imagen">
+                    <a class="enlace__imagen" href="pdf__notas/Convocatoria Opticart 11 mayo 2021.pdf" target="_blank">Ver m&aacute;s</a>
+                  </div>
     		</div>
     		<div class="button__cont">
-    		  	<a class="ver__mas" href="Notas.html" target="_blank">Ver m&aacutes</a>
+    		  	<a class="ver__mas">Ver m&aacutes</a>
     		</div>
     	</div>
     </div>
 
 </body>
-<script src="scripts/script.js"></script>
+<script>
+    function abrirNotas()
+{
+  window.open('Notas.html');
+}
+document.querySelector(".button__cont").addEventListener("click",abrirNotas);
+</script>
 </html>
