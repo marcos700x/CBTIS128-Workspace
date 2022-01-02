@@ -805,6 +805,7 @@
 =            FOOTER            =
 =====================================*/
 .footer__contenedor {
+    margin-top: 150px;
     color: var(--blanco);
     display        : grid;
     grid-template: "seccion__nosotros seccion__enlaces seccion__contacto"/
