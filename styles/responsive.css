@@ -52,10 +52,8 @@
         height: 45vw;
         margin: 10px auto;
     }
-    .destacado__seccion {
-        width: 45%;
-        height: 45vw;
-        margin: 10px auto;
+    .destacado__anuncio {
+        display: none;
     }
     .destacado__contenedor {
         width: 45%;
@@ -88,7 +86,6 @@
         margin: 0 5px;
         box-shadow: none;
     }
-    
 }
 
 /*=====  End of RESPONSIVO  ======*/
