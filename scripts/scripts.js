@@ -166,3 +166,11 @@ document.addEventListener( 'DOMContentLoaded', function () {
     } ).mount();
 } );
 /*=====  End of NOTICIAS  ======*/
+
+/*==============================
+=          NOTAS          =
+==============================*/
+function abrirNotas(){window.open('../pages/notas.html');}
+document.querySelector(".button__cont").addEventListener("click",abrirNotas);
+/*=====  End of NOTAS  ======*/
+

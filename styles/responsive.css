@@ -11,6 +11,11 @@
         display: inline;
     }
 }
+@media (min-width: 1200px) {
+    .educacion__titulo {
+        font-size     : 2.5em;
+    }
+}
 @media (min-width: 768px) and (max-width: 1199px) { 
     :root {
         font-size: 14px;
@@ -29,6 +34,12 @@
     }
     .destacado .splide__slide img{
         border-radius: 0;
+    }
+    .jovenes__parrafo {
+        margin: 0.5rem 0;
+    }
+    .jovenes__video {
+        box-shadow: 1rem -1rem 0px rgba(255, 255, 255, 0.274);
     }
 }
 @media screen and (min-width: 901px) {.destacado__elementos {flex-wrap: nowrap;}}
@@ -74,6 +85,7 @@
         display: none;
     }
     .destacado .slider{height: auto;}
+    .nota__espacio-horizontal {width: 350px;}
 }
 @media screen and (max-width: 680px) {
     .header__menu {
@@ -97,6 +109,37 @@
     }
     .video{
         width: 100%;
+    }
+    .educacion {
+        display: block;
+        height: auto;
+    }
+    .educacion__imagen, .educacion__img, .educacion__texto {width: 100%;}
+    .educacion__img {float: none;}
+	.educacion__texto {height: 100vw;}
+	.educacion__elemento::before{
+		height     : 4vw;
+		width      : 4vw;
+		line-height: 2vw;
+		margin-top   : -2.3vw;
+	}
+	.educacion__elemento  {padding: .4vw .4vw .4vw 6vw;}
+    .jovenesCasa {
+        display: block;
+        padding: 2%;
+    }
+    .jovenes__texto {
+        width: 100%;
+        padding: 0;
+    }
+    .jovenes__slider {
+        width: 100%;
+        height: 320px;
+    }
+    .jovenes__video {
+        width     : 90%;
+        height    : 75%;
+        box-shadow: 1rem -1rem 0px rgba(255, 255, 255, 0.274);
     }
 }
 /* Móviles en vertical */
@@ -163,6 +206,9 @@
     }
     .footer__enlaces {line-height: 1.5;}
     .seccion__copyright{line-height: 1.5;}
+    .main {
+        padding-top: 0;
+    }
 }
 @media screen and (max-width: 400px) {
     .splide__pagination{
@@ -178,9 +224,3 @@
 }
 /*=====  End of RESPONSIVO  ======*/
 
-/*==============================
-=          RESPONSIVO          =
-==============================*/
-
-
-/*=====  End of RESPONSIVO  ======*/

@@ -402,6 +402,7 @@
 .divisiones__apartados {
     width: 100%;
     height: 3.5rem;
+    margin: 50px 0;
 }
 .apartados__titulo {
     color: var(--rosa);
@@ -578,6 +579,227 @@
     opacity: 1!important;
 }
 /*=====  End of NOTICIAS  ======*/
+
+/*============================================
+=            SECCIÓN DE EDUCACIÓN            =
+============================================*/
+.educacion {
+	display: flex;
+	height: calc(50vw * 80 / 100);
+}
+.educacion__imagen {
+	width: 50%;
+}
+.educacion__img {
+	width: 80%;
+	object-fit: cover;
+	float: right;
+}
+.educacion__texto {
+	width: 40%;
+	padding: 2%;
+	overflow: auto;
+}
+.educacion__texto::-webkit-scrollbar {
+	width: 10px;
+}
+.educacion__texto::-webkit-scrollbar-thumb{
+	width: 10px;
+	background   : var(--rosa);
+	border-radius: 10px;
+}
+.educacion__titulo, .jovenes__titulo {
+	font-size     : 2rem;
+	font-weight   : 800;
+	color: var(--rosa);
+}
+.educacion__parrafo, .educacion__lista, .jovenes__parrafo {margin: 1.25rem 0;}
+.educacion__subtitulo {
+	font-size     : 1.5rem;
+	font-weight   : 600;
+	color: var(--rosa);
+}
+.educacion__elemento {
+	position       : relative;
+	display        : block;
+	padding        : .4vw .4vw .4vw 2vw;
+	margin         : .5vw 0;
+	background     : #ddd;
+	color          : #444;
+	text-decoration: none;
+	border-radius  : .3vw;
+	transition     : all .3s ease-out; 
+}
+.educacion__elemento:hover {background: #eee;}
+.educacion__elemento::before {
+	content      : url();
+	position     : absolute; 
+	left         : -1.3vw;
+	top          : 50%;
+	margin-top   : -1.3vw;
+	background   : var(--rosa);
+	height       : 2vw;
+	width        : 2vw;
+	line-height  : 2vw;
+	border       : .3vw solid #fff;
+	text-align   : center;
+	font-weight  : bold;
+	border-radius: 2vw;
+	transition   : all .3s ease-out;
+}
+/*=====  End of SECCIÓN DE EDUCACIÓN  ======*/
+
+/*============================================
+=        SECCIÓN DE NOTAS       =
+============================================*/
+.ver__menos, .ver__mas {text-decoration: none;}
+.notas__titulo {
+    font-family: var(--font-titulo);
+    text-align: center;
+    color: var(--rosa);
+    margin: 20px;
+}
+.notas__linea {
+    width: 50%;
+    height: 4px;
+    background-color: var(--rosa);
+    border: none;
+    margin-left: 25%;
+}   
+.notas__cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nota__espacio {
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 12px 10px rgb(100, 100, 100);
+    border-radius: 10px;
+}
+.sobre__imagen{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a22244c9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease; 
+    opacity: 0;
+    backdrop-filter: blur(6px);
+}
+.notas__img:hover ~ .sobre__imagen{opacity: 1;}
+.sobre__imagen:hover{opacity: 1;}
+.enlace__imagen{
+    text-decoration: none;
+    color: var(--blanco);
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: all .5s ease;
+    border: 4px solid #ffffff;
+    border-radius: 50px;
+}
+.enlace__imagen:hover{
+    background-color: var(--blanco);
+    color: var(--rosa);
+}
+.nota__espacio-horizontal {width: 750px;}
+.notas__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.nota__espacio-cover img{object-fit: cover;}
+.button__cont {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.cerrar__ventana{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.ver__mas, .ver__menos {
+    background-color: var(--rosa);
+    color: var(--blanco);
+    font-family: var(--font-parrafo);
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: opacity .5s ease;
+}
+.ver__mas:hover, .ver__menos:hover {opacity: .7;}
+/*=====  End of SECCIÓN DE NOTAS ======*/
+
+/*============================================
+=        SECCIÓN DE JOVENES EN CASA        =
+============================================*/
+.jovenesCasa {
+	display: flex;
+	padding: 2rem;
+}
+.jovenes__texto {
+	width: 50%;
+	padding: 0 5%;
+}
+.jovenes__slider {
+	align-self: center;
+	background-color: var(--rosa);
+    border-radius: 10px;
+	width          : 50%;
+	height: 31rem;
+	position: relative;
+	list-style     : none;
+	display        : flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+.jovenes__video {
+	position: absolute;
+	top       : 10%;
+	left: 5%;
+	width     : 90%;
+	height    : 80%;
+	opacity   : 0;
+	border-radius: 10px;
+	box-shadow: 30px -30px 0px rgba(255, 255, 255, 0.274);
+	transition: all 0.7s;
+}
+.jovenes__input[type="radio"] {display: none;}
+.jovenes__input[type="radio"]:checked ~ .jovenes__video {
+	opacity: 1;
+	z-index: 10;
+}
+.jovenes__input[type="radio"] + .jovenes__label {
+	position     : relative;
+	z-index      : 50;
+	margin       : 1rem;
+	cursor       : pointer;
+	display      : block;
+	width        : 20px;
+	height       : 20px;
+	background   : var(--blanco);
+	border-radius: 50%;
+	border       : 2px solid var(--rosa);
+}
+.jovenes__input[type="radio"]:checked + .jovenes__label {
+	background: var(--rosa);
+	border    : 2px solid var(--blanco);
+}
+/*=====  End of SECCIÓN DE JOVENES EN CASA  ======*/
 
 /*=====================================
 =            FOOTER            =
