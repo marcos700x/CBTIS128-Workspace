@@ -1,0 +1,76 @@
+/*==============================
+=          RESPONSIVO          =
+==============================*/
+
+/* Tablets en horizonal y escritorios normales */
+@media screen and (max-width: 1400px) {
+    .pagina__oculta{
+        display: none;
+    }
+    .menu__oculto{
+        display: inline;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) { 
+    :root {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .menu__enlace{
+        display: none;
+    }
+    .menu__semestres{
+        display: block;
+    }
+    .menu__icono{
+        display: block!important;
+    }
+    .menu__boton {
+        display: block;
+    }
+    }
+/* Móviles en horizontal o tablets en vertical */
+@media (max-width: 767px) { 
+    :root {
+        font-size: 12px;
+    }
+    .menu__enlace{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 680px) {
+    .header__menu {
+        top: 0;
+    }
+    .header__contenedor{
+        box-shadow: none;
+        border-top: 10px solid var(--blanco);
+        border-bottom: 10px solid var(--blanco);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .header__frase{
+        font-size: 1.5rem;
+        font-style: normal;
+    }
+    .menu__enlaces {
+        display: none;
+    }
+    .video{
+        width: 100%;
+    }
+}
+/* Móviles en vertical */
+@media (max-width: 480px) { 
+    .menu__texto{
+        display: none;
+    } 
+    .menu__img{
+    width: 60px;
+    }
+}
+/*=====  End of RESPONSIVO  ======*/
