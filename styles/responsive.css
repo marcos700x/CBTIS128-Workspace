@@ -15,7 +15,23 @@
     :root {
         font-size: 14px;
     }
+    .destacado .splide{
+        padding: 0!important;
+        width: 100%;
+    }
+    .destacado .slider{
+        padding: 0;
+    }
+    
+    .destacado .splide__slide{
+        width: 100%;
+        height: auto;
+    }
+    .destacado .splide__slide img{
+        border-radius: 0;
+    }
 }
+@media screen and (min-width: 901px) {.destacado__elementos {flex-wrap: nowrap;}}
 @media screen and (max-width: 900px) {
     .menu__enlace{
         display: none;
@@ -29,7 +45,26 @@
     .menu__boton {
         display: block;
     }
+    .destacado .destacado__slider{
+        width: 45%!important;
     }
+    .destacado .destacado__slider{
+        width: 45%!important;
+        height: 45vw;
+        margin: 10px auto;
+    }
+    .destacado .destacado__seccion {
+        width: 45%;
+        height: 45vw;
+        margin: 10px auto;
+    }
+    .footer__contenedor {
+        grid-template: "seccion__nosotros seccion__nosotros"
+                        "seccion__enlaces seccion__contacto"/
+                        1fr               1fr              ;
+        gap: 1%;
+    }
+}
 /* Móviles en horizontal o tablets en vertical */
 @media (max-width: 767px) { 
     :root {
@@ -38,7 +73,7 @@
     .menu__enlace{
         display: none;
     }
-    
+    .destacado .slider{height: auto;}
 }
 @media screen and (max-width: 680px) {
     .header__menu {
@@ -70,7 +105,82 @@
         display: none;
     } 
     .menu__img{
-    width: 60px;
+        width: 60px;
+    }
+    .destacado .destacado {
+        padding: 0;
+    }
+    .destacado .destacado__titulo {
+        margin: 40px 0 ;
+    }
+    .destacado .destacado__slider{
+        width: 45%!important;
+        height: 45vw;
+        margin: 10px auto;
+    }
+    .destacado .destacado__seccion {
+        width: 45%;
+        height: 45vw;
+        margin: 10px auto;
+    }
+    .destacado .destacado__anuncio {display: none;}
+    .destacado .destacado__contenedor {
+        width: 45%;
+        height: 45vw;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .destacado .destacado__icon{
+        box-shadow: -15px -15px 0px rgba(255, 255, 255, 0.274);
+    } 
+    .destacado .destacado__division {
+        height: 20vw;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .destacado .destacadoIcono__movil {
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .destacado .texto__movil {
+        margin: 0;
+    }
+    .destacado .bx__movil {
+        margin: 0 5px;
+        box-shadow: none;
+    }
+    .seccion__nosotros {display: none;}
+    .footer__contenedor {
+        grid-template: "seccion__enlaces "
+                        "seccion__contacto";
+        gap: 3%;
+    }
+    .footer__enlaces {line-height: 1.5;}
+    .seccion__copyright{line-height: 1.5;}
+}
+@media screen and (max-width: 400px) {
+    .splide__pagination{
+        display: none!important;
+    }
+    .splide{
+        padding: 0!important;
+    }
+    .splide__arrow{
+        bottom: 0;
+        top: unset!important;
     }
 }
+/*=====  End of RESPONSIVO  ======*/
+
+/*==============================
+=          RESPONSIVO          =
+==============================*/
+
+
 /*=====  End of RESPONSIVO  ======*/

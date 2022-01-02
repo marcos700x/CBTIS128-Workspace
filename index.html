@@ -10,6 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
 </head>
 <body class="body">
     <!-- PRELOADER -->
@@ -129,9 +132,245 @@
     </div>
     <main id="contenido2" class="main">
         <section class="divisiones__apartados">
+            <h2 class="apartados__titulo">DESTACADOS</h2>
+        </section>
+        <!-- DESTACADOS -->
+        <div class="destacado">
+            <div class="destacado__elementos">
+                <div class="destacado__slider">
+                    <div class="vertical-splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <a target="_blank" href="http://registro.desarrolloprofesionaldocente.sems.gob.mx/">
+                                    <img src="assets/images/novedades1.jpg" href=""/>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a target="_blank" href="https://formacionycapacitaciondigitales.televisioneducativa.gob.mx/" >
+                                        <img src="assets/images/novedades2.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a target="_blank" href="https://www.decidetusestudios.sep.gob.mx/" >
+                                        <img src="assets/images/novedades3.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a target="_blank" href="https://bnj92cbtfulffq7-academydb1.adb.us-ashburn-1.oraclecloudapps.com/ords/f?p=1000:">
+                                        <img src="assets/images/novedades4.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a target="_blank" href="https://www.webex.com/es/index.html">
+                                        <img src="assets/images/novedades5.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a target="_blank" href="https://prepaenlinea.sep.gob.mx/">
+                                        <img src="assets/images/novedades6.jpg"/>
+                                    </a>
+                                </li>
+                                <li class="splide__slide">
+                                    <a target="_blank" href="https://www.tuprepaenvideos.sep.gob.mx/">
+                                        <img src="assets/images/novedades7.jpg"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="destacado__seccion">
+                    <a target="_blank" href="https://cbtis128.edu.mx/plataforma/moodle/">
+                        <i class="bx bxs-graduation destacado__icon"></i>
+                    </a>
+                    <p class="seccion__texto">Moodle</p>
+                </div>
+                <div class="destacado__seccion">
+                    <a target="_blank" href="http://construyet.sep.gob.mx/">
+                        <i class="bx bxs-brain destacado__icon"></i>
+                    </a>
+                    <p class="seccion__texto">ConstruyeT</p>
+                </div>
+                <div class="destacado__seccion destacado__anuncio">
+                    <div class="destacado__division">
+                        <a target="_blank" href="http://jovenesencasa.sep.gob.mx/">
+                            <i class="bx bxs-book-reader destacado__icon bx__movil"></i>
+                        </a>
+                        <p class="seccion__texto">Jovenes en casa</p>
+                    </div>
+                    <div class="destacado__division">
+                        <a target="_blank" href="https://www.cbtis128.edu.mx/descargas/Boletin%20SEP%20no.82.pdf">
+                            <i class="bx bx-clipboard destacado__icon bx__movil"></i>
+                        </a>
+                        <p class="seccion__texto">Maestros en casa</p>
+                    </div>
+                </div>
+                <div class="destacado__contenedor">
+                    <div class="destacado__seccion destacado__division">
+                        <a target="_blank" href="http://jovenesencasa.sep.gob.mx/">
+                            <i class="bx bxs-book-reader destacado__icon destacadoIcono__movil bx__movil"></i>
+                        </a>
+                        <p class="seccion__texto texto__movil">Jovenes en casa</p>
+                    </div>
+                    <div class="destacado__seccion destacado__division">
+                        <a target="_blank" href="https://www.cbtis128.edu.mx/descargas/Boletin%20SEP%20no.82.pdf">
+                            <i class="bx bx-clipboard destacado__icon destacadoIcono__movil bx__movil"></i>
+                        </a>
+                        <p class="seccion__texto texto__movil">Maestros en casa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="divisiones__apartados">
             <h2 class="apartados__titulo">NOTICIAS</h2>
         </section>
+        <div class="noticias">
+            <div id="image-slider" class="splide" style="padding-top: 0;">
+            <div class="splide__track">
+                <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_1.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
+                        <p class="slider__texto__parrafo">Comunicado a toda nuestra comunidad escolar</p>
+                        <a class="enlace__slider" href="Noticias/COMUNICADO.pdf">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_2.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Evitemos contagios de Covid-19</h2>
+                        <p class="slider__texto__parrafo">Si algun joven presenta sintomas, debe quedarse en casa</p>
+                        <a class="enlace__slider" href="Noticias/infografia_padres.pdf">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_3.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
+                        <p class="slider__texto__parrafo">Filtro en casa antes de acudir a la escuela</p>
+                        <a class="enlace__slider" target="_blank" href="assets/images/noticia_3.png">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_4.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Inscripciones</h2>
+                        <p class="slider__texto__parrafo">Revisa la convocatoria dando click en el enlace</p>
+                        <a class="enlace__slider" target="_blank"href="http://mediasuperior.chihuahuaedu.gob.mx/">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_5.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
+                        <p class="slider__texto__parrafo">Te invitamos a conocer el Programa MWM-2021.</p>
+                        <a class="enlace__slider" href="http://mwm.cimav.edu.mx/mwm-2021/">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_6.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
+                        <p class="slider__texto__parrafo">Informe de actividades y rendicion de cuentas</p>
+                        <a class="enlace__slider" href="Noticias/convocatoria_Rendicion_2019-2020.pdf">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_7.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
+                        <p class="slider__texto__parrafo">¿Por qu&eacute; es importante acudir al psic&oacute;logo?</p>
+                        <a class="enlace__slider" href="Noticias/chidamente.pdf">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_8.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
+                        <p class="slider__texto__parrafo">Covid 19 desde un enfoque de inclusion</p>
+                        <a class="enlace__slider" href="Noticias/2do_boletin_covid_19_inclusion.pdf">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_9.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
+                        <p class="slider__texto__parrafo">Se detecto informacion falsa, con fines malignos.</p>
+                        <a class="enlace__slider" href="Noticias/boletinbecas.pdf">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_10.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
+                        <p class="slider__texto__parrafo">Suspension de clases para preescolar hasta superior</p>
+                        <a class="enlace__slider" href="Noticias/2020_04_01_VES_sep.pdf">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_11.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">La DGETI hoy</h2>
+                        <p class="slider__texto__parrafo">Conoce y enterate de todas las novedades</p>
+                        <a class="enlace__slider" href="http://uemstis.sep.gob.mx/">Ver más</a>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="assets/images/noticia_12.png">
+                    <div class="slider__texto">
+                        <h2 class="slider__texto__titulo">Convocatoria</h2>
+                        <p class="slider__texto__parrafo">Se invita a la comunidad escolar a participar.</p>
+                        <a class="enlace__slider" href="#">Ver más</a>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="footer__contenedor">
+            <div class="seccion__nosotros">
+                    <h2 class="footer__titulo">Sobre nosotros</h2>
+                    <p class="footer__texto">
+                        Nuestro compromiso es seguir trabajando con el apoyo de toda la comunidad que integra el CBTIS 128 para lograr formar técnicos profesionales capaces de destacar en el 	ambito laboral. Desde hace más de 50 años hemos brindado las herramientras para que nuestros estudiantes logren sobresalir en la industria y sus vidas profesionales. Estamos comprometidos con la sociedad juarense y creemos firmemente en las educación y los valores que hemos impartido en cada uno de nuestros ingresados.
+                    </p>
+                    <div class="footer__redes">
+                        <a class="footer__iconos" href=""><i class='bx bxl-facebook footer__icon'></i></i></a>
+                        <a class="footer__iconos" href=""><i class='bx bxl-youtube footer__icon'></i></a>
+                    </div>
+            </div>
+            <div class="seccion__enlaces">
+                    <h2 class="footer__titulo">Avisos de Privacidad</h2>
+                    <a class="footer__enlaces" href="">Aviso de Privacidad Integral Planteles</a>
+                    <a class="footer__enlaces" href="">Aviso de Privacidad Simplificado Planteles</a>
+                    <a class="footer__enlaces" href="">Política pública para la educación media superior</a>
+            </div>
+            <div class="seccion__contacto">
+                    <h2 class="footer__titulo">Información de Contacto</h2>
+                    <ul>
+                        <li class="footer__contacto">
+                            <span><i class='bx bxs-map footer__icon' ></i></span>
+                            <a class="enlaces__contacto" href="https://goo.gl/maps/ATBLjX1t7thyiGRs5">CBTIS 128, Nueva Zelanda, Oasis</a>
+                        </li>
+                        <li class="footer__contacto">
+                            <span><i class='bx bxs-phone footer__icon' ></i></span>
+                            <p><a class="enlaces__contacto" href="tel: 656-619-1934">656-619-1934</a> <br>
+                            <a class="enlaces__contacto" href="tel: 656-619-1570">656-619-1570</a></p>
+                        </li>
+                        <li class="footer__contacto">
+                            <span><i class='bx bxl-gmail footer__icon' ></i></span>
+                            <p><a class="enlaces__contacto" href="mailto: comite-escolar.128@gmail.com">comite-escolar.128@gmail.com</a></p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="seccion__copyright">
+            <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
+        </div>
+    </footer>
 </body>
 <script src="scripts/scripts.js"></script>
 </html>
