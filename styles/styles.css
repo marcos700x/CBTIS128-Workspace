@@ -78,7 +78,6 @@
   align-items: center;
   background-image: url(../assets/images/header.png);
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -661,6 +660,7 @@
   font-size: 2rem;
   font-weight: 800;
   color: var(--rosa);
+
 }
 .educacion__parrafo {
   font-weight: 600;
