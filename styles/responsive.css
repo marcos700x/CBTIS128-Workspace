@@ -35,12 +35,8 @@
     .destacado .splide__slide img{
         border-radius: 0;
     }
-    .jovenes__parrafo {
-        margin: 0.5rem 0;
-    }
-    .jovenes__video {
-        box-shadow: 1rem -1rem 0px rgba(255, 255, 255, 0.274);
-    }
+    
+    
 }
 @media screen and (min-width: 901px) {.destacado__elementos {flex-wrap: nowrap;}}
 @media screen and (max-width: 900px) {
@@ -79,7 +75,7 @@
 /* Móviles en horizontal o tablets en vertical */
 @media (max-width: 767px) { 
     :root {
-        font-size: 12px;
+        font-size: 14px;
     }
     .menu__enlace{
         display: none;
@@ -110,7 +106,7 @@
     .video{
         width: 100%;
     }
-    .educacion {
+    .educacion__cont {
         display: block;
         height: auto;
     }
@@ -124,22 +120,33 @@
 		margin-top   : -2.3vw;
 	}
 	.educacion__elemento  {padding: .4vw .4vw .4vw 6vw;}
-    .jovenesCasa {
+    .jovenes__casa__cont {
         display: block;
-        padding: 2%;
+        padding: 0;
+    }
+    .jovenes__casa__cont .splide__arrow{
+        top: 50%!important;
+    }
+    .jovenes__casa__cont .splide__arrow--prev{
+        left: 5px;
+    }
+    .jovenes__casa__cont .splide__arrow--next{
+        right: 5px;
     }
     .jovenes__texto {
         width: 100%;
-        padding: 0;
+        height: auto;
+        aspect-ratio: 0;
+    }
+    .jovenes__parrafo{
+        text-align: center;
     }
     .jovenes__slider {
         width: 100%;
-        height: 320px;
     }
     .jovenes__video {
         width     : 90%;
         height    : 75%;
-        box-shadow: 1rem -1rem 0px rgba(255, 255, 255, 0.274);
     }
 }
 /* Móviles en vertical */
@@ -202,10 +209,13 @@
     .footer__contenedor {
         grid-template: "seccion__enlaces "
                         "seccion__contacto";
-        gap: 3%;
+        gap: 10%;
+    }
+    .seccion__contacto{
+        padding-bottom: 20px;
     }
     .footer__enlaces {line-height: 1.5;}
-    .seccion__copyright{line-height: 1.5;}
+    .seccion__copyright{line-height: 1.5; }
     .main {
         padding-top: 0;
     }

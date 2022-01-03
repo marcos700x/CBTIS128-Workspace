@@ -32,6 +32,7 @@ function show__video() {
           video__contenedor.style.opacity = "1";
       }, 0);
     video.play();
+    document.querySelector("body").style.overflow = "hidden";
   }
 }
 function hide__video() {
@@ -46,6 +47,8 @@ function hide__video() {
           video__contenedor.style.display = "none";
       }, 500);
     video.pause();
+    document.querySelector("body").style.overflow = "scroll";
+
   }
 }
 btn__mostrar.addEventListener("click", show__video);
@@ -61,7 +64,7 @@ function enableScroll() {
         var contenido2 = $("#contenido2").offset();
         contenido2 = contenido2.top;
         if(windowHeight >= contenido2  ){
-            $('#aviso').fadeIn(500);
+            $('#aviso').fadeIn(100);
         }else{
             $('#aviso').fadeOut(500);
         }
@@ -166,6 +169,20 @@ document.addEventListener( 'DOMContentLoaded', function () {
     } ).mount();
 } );
 /*=====  End of NOTICIAS  ======*/
+
+/*==================================
+=          JOVENES EN CASA        =
+==================================*/
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#splide__video', {
+        rewind: true,
+        perPage: 1,
+    } ).mount();
+} );
+
+
+/*=====  End of JOVENES EN CASA  ======*/
 
 /*==============================
 =          NOTAS          =

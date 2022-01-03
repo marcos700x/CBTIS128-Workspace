@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="styles/responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.3/dist/css/splide-extension-video.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.3/dist/js/splide-extension-video.min.js"></script>
 </head>
 <body class="body">
     <!-- PRELOADER -->
@@ -24,7 +24,7 @@
     </div>
     <!-- HEADER -->
     <header class="header">
-        <div id="header__contenedor" class="header__contenedor animate__animated animate__fadeInLeft animate__delay-3s">
+        <div id="header__contenedor" class="header__contenedor">
             <h1 class="header__titulo">CBTIS 128</h1>
             <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
             <nav>
@@ -123,10 +123,8 @@
     </div>
     <main id="contenido2" class="main">
         <!-- DESTACADOS -->
-        <section class="divisiones__apartados">
-            <h2 class="apartados__titulo">DESTACADOS</h2>
-        </section>
-        <div class="destacado">
+            <div class="destacado">
+            <h1 class="apartados__titulo">DESTACADOS</h1>
             <div class="destacado__elementos">
                 <div class="destacado__slider">
                     <div class="vertical-splide">
@@ -214,10 +212,8 @@
             </div>
         </div>
         <!-- NOTICIAS -->
-        <section class="divisiones__apartados">
-            <h2 class="apartados__titulo">NOTICIAS</h2>
-        </section>
         <div class="noticias">
+            <h1 class="apartados__titulo">NOTICIAS</h1>
             <div id="image-slider" class="splide" style="padding-top: 0;">
             <div class="splide__track">
                 <ul class="splide__list">
@@ -322,10 +318,9 @@
             </div>
         </div>
         <!-- EDUCACION -->
-        <section class="divisiones__apartados">
-            <h2 class="apartados__titulo">EDUCACIÓN</h2>
-        </section>
-        <article class="educacion">
+        <div class="educacion">
+        <h1 class="apartados__titulo">EDUCACIÓN</h1>
+        <div class="educacion__cont">
             <section class="educacion__imagen">
                 <img class="educacion__img" src="assets/images/educacion.jpg" alt="Imagen de estudiantes del CBTIS 128">
             </section>
@@ -382,11 +377,11 @@
                     <p class="educacion__parrafo">Estamos compremetidos con la sociedad juarense. Creemos firmemente en la educación y los valores que hemos impartido en cada uno de nuestros egresado y que continuaremos forjando a las futuras generaciones. Por esto y mucho más, seguiremos alcanzando el mañana con nuestra propia tecnología. Somos Jaguares. Somos CBTIS 128.</p>
                 </section>
             </section>
-        </article>
+        </div>
+        </div>
         <!-- NOTAS -->
-        <section class="divisiones__apartados">
-            <h2 class="apartados__titulo">NOTAS</h2>
-        </section>
+        <div class="notas">
+        <h1 class="apartados__titulo">NOTAS</h1>
         <div class="notas__cont">
             <div class="nota__espacio">
                 <img class="notas__img" src="assets/images/img1.jpg" alt="">
@@ -410,37 +405,31 @@
                 <a class="ver__mas">Ver más</a>
             </div>
         </div>
+        </div>
         <!-- JOVENES EN CASA -->
-        <section class="divisiones__apartados">
-            <h2 class="apartados__titulo">JOVENES EN CASA</h2>
-        </section>
-        <article class="jovenesCasa">
+        <div class="jovenes__casa">
+            <h1 class="apartados__titulo">JOVENES EN CASA</h2>
+      
+        <article class="jovenes__casa__cont">
             <section class="jovenes__texto">
                 <p class="jovenes__parrafo">Juntas/os aprovecharemos esta temporada para construir nuevas experiencias: lectura, arte, deporte, cine, webinars, convocatorias y apoyo socioemocional que ayudarán a que cuidemos mejor de nosotros mismos, de quienes nos rodean y de la naturaleza. <br> Las actividades de la comunidad jóvenes en casa, fomentan tu creatividad, estimulan tu desarrollo cotinuamente y fortalecen todos tus aprendizajes. Son complementarias, pero no sustituyen las labores a distancia que te indican tus profesores/as y autoridades de tu plantel educativo. <br> Es muy probable que permanecer en casa durante tanto tiempo comience a generar un poco de estrés en tí y los integrantes de tu familia, por ello te recomendamos algunas actividades que puedes realizar en estos días , trata de seguir los pasos al pie de la letra, recuerda que puedes compartir estas actividades con tu familia, amigos, redes socioales, o bien puedes hacerlo tú solo/a, y puedes llevarla a cabo cuantas veces consideres necesario durante este periodo en casa, recuerda seguirte cuidando y llevar a cabo las medidas de seguridad ante la contingencia.</p>
             </section>
-            <ul class="jovenes__slider">
-                <li class="jovenes__lista">
-                    <input class="jovenes__input" type="radio" id="sbutton1" name="sradio" checked="">
-                    <label class="jovenes__label" for="sbutton1"></label>
-                    <iframe class="jovenes__video" src="https://www.youtube-nocookie.com/embed/zweYcO0hdgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <li class="jovenes__lista">
-                    <input class="jovenes__input" type="radio" id="sbutton2" name="sradio">
-                    <label class="jovenes__label" for="sbutton2"></label>
-                    <iframe class="jovenes__video" src="https://www.youtube-nocookie.com/embed/I852_FPv8uA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <li class="jovenes__lista">
-                    <input class="jovenes__input" type="radio" id="sbutton3" name="sradio">
-                    <label class="jovenes__label" for="sbutton3"></label>
-                    <iframe class="jovenes__video" src="https://www.youtube-nocookie.com/embed/blglp0YHc6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-                <li class="jovenes__lista">
-                    <input class="jovenes__input" type="radio" id="sbutton4" name="sradio">
-                    <label class="jovenes__label" for="sbutton4"></label>
-                    <iframe class="jovenes__video" src="https://www.youtube.com/embed/UjrGDu81FR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </li>
-            </ul>
+            
+            <div class="jovenes__slider">
+                <div id="splide__video" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><iframe  src="https://www.youtube.com/embed/zweYcO0hdgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                            <li class="splide__slide"><iframe  src="https://www.youtube.com/embed/UjrGDu81FR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                            <li class="splide__slide"><iframe  src="https://www.youtube.com/embed/I852_FPv8uA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                            <li class="splide__slide"><iframe  src="https://www.youtube.com/embed/blglp0YHc6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
         </article>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__contenedor">
