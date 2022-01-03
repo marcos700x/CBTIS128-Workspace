@@ -32,7 +32,7 @@ function show__video() {
           video__contenedor.style.opacity = "1";
       }, 0);
     video.play();
-    document.querySelector("body").style.overflow = "hidden";
+    document.querySelector("body").style.overflowY = "hidden";
   }
 }
 function hide__video() {
@@ -47,7 +47,7 @@ function hide__video() {
           video__contenedor.style.display = "none";
       }, 500);
     video.pause();
-    document.querySelector("body").style.overflow = "scroll";
+    document.querySelector("body").style.overflowY = "scroll";
 
   }
 }
