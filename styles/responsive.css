@@ -17,9 +17,9 @@
     }
 }
 @media (min-width: 768px) and (max-width: 1199px) { 
-    :root {
+    /* :root {
         font-size: 14px;
-    }
+    } */
     .destacado .splide{
         padding: 0!important;
         width: 100%;
@@ -37,8 +37,15 @@
     }
     
     
+    
 }
-@media screen and (min-width: 901px) {.destacado__elementos {flex-wrap: nowrap;}}
+@media screen and (max-width: 768px) {
+    .menu__link{
+        display: none;
+    }
+}
+@media screen and (min-width: 901px)
+ {.destacado__elementos {flex-wrap: nowrap;}}
 @media screen and (max-width: 900px) {
     .menu__enlace{
         display: none;
@@ -74,9 +81,7 @@
 }
 /* Móviles en horizontal o tablets en vertical */
 @media (max-width: 767px) { 
-    :root {
-        font-size: 14px;
-    }
+    
     .menu__enlace{
         display: none;
     }
@@ -89,8 +94,7 @@
     }
     .header__contenedor{
         box-shadow: none;
-        border-top: 10px solid var(--blanco);
-        border-bottom: 10px solid var(--blanco);
+      
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -119,7 +123,7 @@
 		line-height: 2vw;
 		margin-top   : -2.3vw;
 	}
-	.educacion__elemento  {padding: .4vw .4vw .4vw 6vw;}
+	.educacion__elemento  {padding: 1vw 1vw 1vw 6vw;}
     .jovenes__casa__cont {
         display: block;
         padding: 0;
@@ -148,9 +152,13 @@
         width     : 90%;
         height    : 75%;
     }
+   
 }
 /* Móviles en vertical */
 @media (max-width: 480px) { 
+    .apartados__titulo{
+        font-size: 2.5rem;
+    }
     .menu__texto{
         display: none;
     } 
@@ -203,7 +211,6 @@
     }
     .destacado .bx__movil {
         margin: 0 5px;
-        box-shadow: none;
     }
     .seccion__nosotros {display: none;}
     .footer__contenedor {
