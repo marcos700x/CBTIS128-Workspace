@@ -37,6 +37,15 @@
   .menu__link {
     display: none;
   }
+ 
+}
+@media screen and (max-width: 916px) {
+  .nav__enlaces{
+    display: none;
+  }
+  .menu__boton{
+    display: block;
+  }
 }
 @media screen and (min-width: 901px) {
   .destacado__elementos {
@@ -44,18 +53,15 @@
   }
 }
 @media screen and (max-width: 900px) {
-  .menu__enlace {
-    display: none;
-  }
   .menu__semestres {
     display: block;
   }
   .menu__icono {
     display: block !important;
   }
-  .menu__boton {
+  /* .menu__boton {
     display: block;
-  }
+  } */
   .destacado .destacado__slider {
     width: 45% !important;
   }
@@ -127,13 +133,11 @@
     height: 100vw;
   }
   .educacion__elemento::before {
-    height: 4vw;
-    width: 4vw;
-    line-height: 2vw;
-    margin-top: -2.3vw;
+   display: none;
   }
   .educacion__elemento {
     padding: 10px 10px 10px 6vw;
+    border-left: 10px solid var(--rosa);
   }
   .jovenes__casa__cont {
     display: block;
@@ -176,6 +180,9 @@
 @media (max-width: 480px) {
   .apartados__titulo {
     font-size: 2.5rem;
+  }
+  .header__titulo{
+    font-size: 4rem;
   }
   .menu__texto {
     display: none;
