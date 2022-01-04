@@ -542,7 +542,7 @@
   width: 100% !important;
   text-align: center;
   background-color: var(--rosa);
-  border-radius: 0!;
+  border-radius: 0!important;
 }
 
 .destacado .vertical-splide .splide__slide img {
