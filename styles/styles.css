@@ -107,7 +107,8 @@
 .menu__enlaces {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .menu__link {
@@ -116,6 +117,7 @@
   font-size: 1.3rem;
   font-weight: 600;
   position: relative;
+  margin: 0 15px;
 }
 .menu__link::before {
   content: "";
@@ -252,10 +254,7 @@
   padding-left: 10px;
   font-family: var(--font-titulo);
 }
-.menu__enlaces {
-  display: flex;
-  align-items: center;
-}
+
 .menu__pagina {
   text-decoration: none;
   color: var(--rosa);
