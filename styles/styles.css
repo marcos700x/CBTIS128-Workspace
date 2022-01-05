@@ -474,7 +474,6 @@
   align-items: center;
   justify-content: center;
   margin: 10px;
-  border-radius: 10px;
   box-shadow: 10px 12px 10px rgb(100, 100, 100);
   transition: all 0.5s ease;
 }
@@ -497,7 +496,6 @@
   align-items: center;
   justify-content: center;
   margin: 10px;
-  border-radius: 10px;
 }
 .destacado .seccion__texto {
   text-align: center;
@@ -521,7 +519,6 @@
   height: 300px;
   margin: 10px;
   cursor: pointer;
-  border-radius: 10px;
   overflow: hidden;
   box-shadow: 10px 12px 10px rgb(100, 100, 100);
 }
@@ -738,36 +735,60 @@
   overflow: hidden;
   position: relative;
   box-shadow: 10px 12px 10px rgb(100, 100, 100);
-  border-radius: 10px;
 }
 .sobre__imagen {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: #a22244c9;
-  border-radius: 10px;
+  background-color: #0000008c;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
   opacity: 0;
+  transform: scale(.8);
   backdrop-filter: blur(6px);
+  /* position: relative; */
+}
+.sobre__imagen::before{
+position: absolute;
+content: '';
+width: 30px;
+height: 30px;
+left: 10px;
+bottom: 10px;
+border-bottom: 3px solid var(--blanco);
+border-left: 3px solid var(--blanco);
+
+}
+.sobre__imagen::after{
+position: absolute;
+content: '';
+width: 30px;
+height: 30px;
+right: 10px;
+top: 10px;
+border-top: 3px solid var(--blanco);
+border-right: 3px solid var(--blanco);
 }
 .notas__img:hover ~ .sobre__imagen {
   opacity: 1;
+  transform: scale(1);
+
 }
 .sobre__imagen:hover {
   opacity: 1;
+  transform: scale(1);
+
 }
 .enlace__imagen {
   text-decoration: none;
   color: var(--blanco);
-  background-color: transparent;
-  padding: 10px 20px;
-  transition: all 0.5s ease;
-  border: 4px solid #ffffff;
-}
+  background-color: var(--rosa);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+} 
 .enlace__imagen:hover {
   background-color: var(--blanco);
   color: var(--rosa);
@@ -778,7 +799,6 @@
 .notas__img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
 }
 .nota__espacio-cover img {
   object-fit: cover;
@@ -821,6 +841,7 @@
   display: flex;
   padding: 2rem;
   justify-content: center;
+  background-image: linear-gradient(180deg, var(--rosa), #a22244bb);
 }
 
 .jovenes__texto {
@@ -829,7 +850,6 @@
   justify-content: space-evenly;
   width: 600px;
   aspect-ratio: 1;
-  background-color: var(--rosa);
   padding: 20px;
 }
 .jovenes__texto__titulo{
@@ -845,7 +865,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--rosa);
 }
 .jovenes__slider .splide {
   height: 100%;
