@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CBTIS 128 | Alumnos</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css"> 
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-parrafo);
+}
+      :root {
+        font-size: 16px;
+        --font-titulo: "Poppins", sans-serif;
+        --font-parrafo: "Raleway", sans-serif;
+        --rosa: #a22245;
+        --blanco: #fff;
+        --negro: #000;
+        scroll-behavior: smooth;
+      }
+      *::selection {
+        color: var(--blanco);
+        background-color: var(--rosa);
+      }
+      ::-webkit-scrollbar{
+        width: 1px;
+        height: 1px;
+      }
+      ::-webkit-scrollbar-thumb{
+        background-color: var(--rosa);
+        border-radius: 8px;
+      }
+      .titulo__oferta{
+          font-family: var(--font-titulo);
+          color: var(--rosa);
+          font-size: 3rem;
+          text-align: center;
+          text-transform: uppercase;
+          margin: 50px 0 ;
+          text-shadow: 10px 10px 15px rgb(163, 163, 163);
+
+      }
+      .subtitulo__oferta{
+        font-family: var(--font-titulo);
+        color: #fff;
+
+          font-size: 1.5rem;
+          text-align: left;
+          text-transform: uppercase;
+          margin: 0 0 25px 0 ;
+
+      }
+      .contenedor__parrafo__bachillerato{
+        display: flex;
+        height: auto;
+        justify-content: space-around;
+        width: 100%;
+        color: #fff;
+        background-image: linear-gradient(120deg, var(--rosa) 0%, #a2224475 100%);
+        padding: 50px 0;
+        position: relative;
+       flex-wrap: wrap;
+      }
+      .contenedor__parrafo__bachillerato::before{
+        content: '';
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: transparent;
+        border-left: 5px solid var(--blanco);
+        border-bottom: 5px solid var(--blanco);
+        bottom: 20px;
+        left: 20px;
+      }
+      .contenedor__parrafo__bachillerato::after{
+        content: '';
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: transparent;
+        border-top: 5px solid var(--blanco);
+        border-right: 5px solid var(--blanco);
+        right: 20px;
+        top: 20px;
+
+      }
+      .contenedor__texto__bachillerato{
+          text-align: justify;
+          font-size: 1.2rem;
+          line-height: 1.3;
+          width: 50%;
+          height: 400px;
+        overflow-y: scroll;
+        padding: 20px;
+
+
+      }
+      .parrafo__bachillerato{
+        margin-right: 10px;
+      }
+  
+      .ver__mas__bachillerato, .ver__menos__bachillerato{
+          background: transparent;
+          color: var(--negro);
+          border: none;
+          font-size: 1.2rem;
+          text-decoration: underline;
+          cursor: pointer;
+      }
+      .bachillerato__texto__oculto{
+          display: none;
+      }
+      .img__bachillerato{
+        aspect-ratio: 1;
+        height: 400px;
+        box-shadow: 20px 20px 0px rgb(255, 255, 255)  ;
+        margin:  30px;
+        border: 5px solid #fff;
+
+      }
+      .card{
+        height: 500px;
+        width: 300px;
+        display: inline-flex;
+        flex-direction: column;
+        overflow: hidden;
+        flex-shrink: 0;
+        position: relative;
+      }
+      .card__img{
+        width: 100%;
+        height: 40%;
+        background-color: blue;
+        
+      }
+      .img__card__oferta{
+        width: 100%;
+        height: 100%;
+      }
+      .card__texto{
+        width: 100%;
+        height: 60%;
+        background-color: var(--blanco);
+        padding: 20px;
+      }
+      .especialidades .splide__slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #card-slider{
+        background-color: #00000077;
+        width: 100%;
+      }
+      #card-slider .splide__arrow svg{
+        fill: var(--blanco)!important;
+      }
+
+      #card-slider .splide__pagination__page.is-active{
+        background-color: var(--rosa);
+      }
+      #card-slider .splide__pagination__page:hover{
+        background-color: var(--rosa);
+        opacity: .2;
+      }
+      #card-slider .splide__pagination{
+            display: none;
+          }
+      .etiqueta__card{
+        color: #a22245;
+        font-weight: bold;
+      }
+      .titulo__card__oferta{
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+      }
+      .overlay__card{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.815);
+        position: absolute;
+        backdrop-filter: blur(2px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(.8);
+        opacity: 0;
+        transition: all .3s ease-in-out;
+      }
+      .overlay__card:hover{
+        opacity: 1;
+        transform: scale(1);
+
+      }
+      .overlay__card::before{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+        left: 10px;
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
+
+      }
+      .overlay__card::after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        top: 10px;
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+      }
+      .enlace__overlay{
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 20px;
+        background-color: var(--rosa);
+        color: var(--blanco);
+        transition: all .3s ease;
+      }
+      .enlace__overlay:hover{
+        transform: scaleY(1);
+        background-color: var(--blanco);
+        color: var(--rosa);
+      }
+      .subtitle__slider{
+        text-align: center;
+        padding-bottom: 50px;
+        color: var(--blanco);
+      }
+      .titulacion{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 150px;
+        overflow: hidden;
+      }
+      .contenedor__titulacion{
+        width: 100%;
+        min-height: 50px;
+      }
+      .despliegue__titulacion{
+        width: 100%;
+        min-height: 50px;
+      }
+      .contenedor__titulo__titulacion{
+        width: 100%;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .titulo__titulacion{
+        padding: 15px;
+        color: var(--blanco);
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+        background-image: linear-gradient(45deg, var(--rosa) 0%, #a222444f  50%, var(--rosa)  100%);
+        background-size: 200% auto;
+        transition: all 1s ease;
+        border-bottom: 5px solid #f1f1f1;
+      }
+      .titulo__titulacion:hover{
+        background-position: right ;
+
+      }
+      .contenedor__info__titulacion{
+        width: 100%;
+        height: 0px;
+        background-color: #f1f1f1;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+      }
+      .info__titulacion{
+        margin: 20px;
+        color: var(--negro);
+        width: 70%;
+        font-size: 1.2rem;
+      }
+      
+      .despliegue__titulacion:hover .contenedor__info__titulacion{
+        height: 300px;
+        
+      }
+      @media screen and (max-width: 1040px) {
+        .contenedor__texto__bachillerato{
+          width: 100%;
+          text-align: center;
+        }
+        .subtitulo__oferta{
+          text-align: center;
+        }
+        .img__bachillerato{
+          width: 50%;
+          aspect-ratio: 1;
+          height: unset;
+        }
+      }
+      @media screen and (max-width: 650px) {
+        .img__bachillerato{
+          width: 85%;
+          aspect-ratio: 1;
+          box-shadow: none;
+        }
+        .contenedor__parrafo__bachillerato::before{
+          bottom: 15px;
+          left: 7px;
+        }
+        .contenedor__parrafo__bachillerato::after{
+          right: 7px;
+          top: 15px;
+        }
+      }
+      @media screen and (max-width: 455px) {
+        .titulo__oferta{
+          font-size: 2rem;
+        }
+        .contenedor__info__titulacion{
+          align-items: flex-start;
+        }
+      }
+      @media screen and (max-width: 395px) {
+        .splide{
+          padding: 3rem 0!important;
+        }
+        .splide__arrow--next{
+          right: 5px;
+        }
+        .splide__arrow--prev{
+          left: 5px;
+        }
+        
+      }
+      @media screen and (max-width: 375px) {
+          .card{
+            width: 100%;
+          }
+          #card-slider .splide__arrows{
+            display: none;
+          }
+          #card-slider .splide__pagination{
+            display: flex;
+          }
+         
+        }
+      
+    </style>
+  </head>
+  <body class="body__alumnos">
+    <!-- OFERTA ACADEMICA -->
+    <div class="oferta__academica">
+      <h1 class="titulo__oferta">Oferta Academica</h1>
+      <div class="contenedor__parrafo__bachillerato">
+        <div class="contenedor__texto__bachillerato">
+      <h2 class="subtitulo__oferta">Bachillerato Tecnol&oacute;gico</h2>
+
+          <p class="parrafo__bachillerato">El Bachillerato Tecnológico tiene como objetivo fomentar una educación integral, contribuyendo a la articulación y flexibilidad del sistema educativo, acorde con los intereses de los estudiantes y las necesidades de desarrollo del país, la Secretaría de Educación Pública a través de la Subsecretaría de Educación e Investigación Tecnológicas, con pleno respeto al federalismo educativo. 
+            Esta modalidad es bivalente, ya que se puede estudiar el bachillerato al mismo tiempo que una carrera de técnico, las materias propedéuticas que se cursan son prácticamente las mismas que en el bachillerato general, por lo que se prepara para estudiar una carrera profesional del nivel superior, adicionalmente, el plan de estudios incluye materias tecnológicas que se cursan junto con las antes mencionadas y que preparan como técnico del nivel medio superior al estudiante en las diversas carreras que ofrece ésta modalidad de bachillerato.<br>
+            La nueva estructura curricular, que propone un modelo centrado en el aprendizaje sustentado en el constructivos, incluye tres componentes básicos: Formación Básica, Formación Profesional y Formación Propedéutica, y se imparte en la modalidad escolarizada. Su estructura curricular presenta las horas-semana mínimas requeridas y está organizada en seis semestres, integrados por módulos y asignaturas. <button class="ver__mas__bachillerato">Ver m&aacute;s</button><span class="bachillerato__texto__oculto">
+              El Componente de Formación Profesional se articula con la educación superior y asimismo permite la incorporación al sector productivo. Se organiza en carreras estructuradas en módulos para desarrollar las competencias profesiónales correspondientes.
+              Los módulos de la formación profesional son autocontenidos y están enfocados en el desarrollo de habilidades específicas para el trabajo, con una orientación predominantemente práctica. Al concluir cada módulo los estudiantes reciben un certificado. Estos certificados se plantean como "salidas laterales", que permiten que los estudiantes tengan reconocimiento por sus estudios incluso si no cursan tres años completos de EMS.
+              Cuando se concluyen los 3 años de estudio, se puede ingresar a la educación superior en instituciones universitarias, politeacute;cnicas o tecnológicas. Al concluir los estudios obtienes el certificado de bachillerato y una carta de pasante; Una vez cubiertos los requisitos correspondientes, el regresado obtiene el título y la cédula profesional de la carrera cursada, registrados ante la Dirección General de Profesiones de la Secretaría de Educación Pública. <button class="ver__menos__bachillerato">Ver menos</button></span>
+          </p>
+        </div>
+          <img class="img__bachillerato" src="../assets/images/educacion.jpg" alt="">
+      </div>
+      <!-- ESPECIALIDADES -->
+      <div class="especialidades">
+        <h1 class="titulo__oferta">Especialidades</h1>
+        <div id="card-slider" class="splide">
+          <h2 class="subtitle__slider">Desliza y toca las tarjetas para conocer m&aacute;s informaci&oacute;n</h2>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- Electronica -->
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img class="img__card__oferta" src="../assets/images/oferta-electronica.jpg" alt="">
+                  </div>
+                  <div class="card__texto">
+                    <p class="etiqueta__card">T&eacute;cnico en</p>
+                    <h1 class="titulo__card__oferta">Electronica</h1>
+                    <p class="parrafo__oferta">Ofrecemos las competencias profesionales que permiten al estudiante aplicar dispositivos y sistemas electrónicos compactos y eficientes, que están presentes en todos los ámbitos del ser humano.</p>
+                  </div>
+                  <div class="overlay__card"><a class="enlace__overlay" target="_blank" href="../assets/document/oferta-academica/electronica.pdf">Ver m&aacute;s</a></div>
+                </div>
+         
+              </li>
+              <!-- Programacion -->
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="../assets/images/oferta-programacion.jpg" alt="" class="img__card__oferta">
+                  </div>
+                  <div class="card__texto">
+                    <p class="etiqueta__card">T&eacute;cnico en</p>
+                    <h1 class="titulo__card__oferta">Programaci&oacute;n</h1>
+                    <p class="parrafo__oferta">Ofrecemos las competencias profesionales que permiten al estudiante realizar actividades cómo: analizar, diseñar, desarrollar, instalar y mantener software de aplicación tomando como base los requerimientos del usuario.</p>
+                  </div>
+                  <div class="overlay__card"><a class="enlace__overlay" target="_blank" href="../assets/document/oferta-academica/programacion.pdf">Ver m&aacute;s</a></div>
+
+                </div>
+         
+              </li>
+              <!-- Soporte de equipos de computo -->
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="../assets/images/oferta-soporte.jpg" alt="" class="img__card__oferta">
+                  </div>
+                  <div class="card__texto">
+                    <p class="etiqueta__card">T&eacute;cnico en</p>
+                    <h1 class="titulo__card__oferta">Soporte de equipos de c&oacute;mputo</h1>
+                    <p class="parrafo__oferta">Ofrecemos las competencias profesionales que permiten al estudiante realizar operaciones de soporte y mantenimiento a equipos de cómputo de manera presencial y a distancia, e instalar redes LAN de acuerdo a las necesidades.</p>
+                  </div>
+                  <div class="overlay__card"><a class="enlace__overlay" target="_blank" href="../assets/document/oferta-academica/soporte-computo.pdf">Ver m&aacute;s</a></div>
+                </div>
+         
+              </li>
+              <!-- Recursos Humanos -->
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="../assets/images/oferta-rrhh.jpg" alt="" class="img__card__oferta">
+                  </div>
+                  <div class="card__texto">
+                    <p class="etiqueta__card">T&eacute;cnico en</p>
+                    <h1 class="titulo__card__oferta">Recursos Humanos</h1>
+                    <p class="parrafo__oferta">Ofrecemos las competencias profesionales que permiten al estudiante elaborar y gestionar documentación administrativa, integrar al personal, asistir en actividades de capacitación, y evaluación del personal</p>
+                  </div>
+                  <div class="overlay__card"><a class="enlace__overlay" target="_blank" href="../assets/document/oferta-academica/admin-rrhh.pdf">Ver m&aacute;s</a></div>
+                </div>
+        
+              </li>
+              <!-- Laboratorista Quimico -->
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="../assets/images/oferta-laboratorista.jpg" alt="" class="img__card__oferta">
+                  </div>
+                  <div class="card__texto">
+                    <p class="etiqueta__card">T&eacute;cnico en</p>
+                    <h1 class="titulo__card__oferta">Laboratorista Qu&iacute;mico</h1>
+                    <p class="parrafo__oferta">Ofrecemos las competencias profesionales que permiten al estudiante asistir en las operaciones básicas de laboratorio ejecutando métodos de análisis cualitativos, cuantitativos, físico-químicos, y microbiológicos.</p>
+                  </div>
+                  <div class="overlay__card"><a class="enlace__overlay" target="_blank" href="../assets/document/oferta-academica/laboratorista-quimico.pdf">Ver m&aacute;s</a></div>
+                </div>
+         
+              </li>
+              <!-- Gericultura -->
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="../assets/images/oferta-gericultura.jpg" alt="" class="img__card__oferta">
+                  </div>
+                  <div class="card__texto">
+                    <p class="etiqueta__card">T&eacute;cnico en</p>
+                    <h1 class="titulo__card__oferta">Gericultura</h1>
+                    <p class="parrafo__oferta">Proporcionamos las herramientas para que el alumno adquiera conocimientos, habilidades y destrezas; asuma un actitud responsable para ejercer profesionalmente en el ámbito de la Geriatria</p>
+                  </div>
+                  <div class="overlay__card"><a class="enlace__overlay" target="_blank" href="../assets/document/oferta-academica/gericultura.pdf">Ver m&aacute;s</a></div>
+
+                </div>
+         
+              </li>
+              <!-- Refrigeración y Climatización -->
+              <li class="splide__slide">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="../assets/images/oferta-refrigeracion.jpg" alt="" class="img__card__oferta">
+                  </div>
+                  <div class="card__texto">
+                    <p class="etiqueta__card">T&eacute;cnico en</p>
+                    <h1 class="titulo__card__oferta">Refrigeración y Climatización</h1>
+                    <p class="parrafo__oferta">Ofrecemos las competencias profesionales que permiten al estudiante realizar tareas de instalación, reconversión, actualización y de mantenimiento a sistemas de refrigeración y aire acondicionado, sistemas de enfriamiento de aire y agua, etc.</p>
+                  </div>
+                  <div class="overlay__card"><a class="enlace__overlay" target="_blank" href="../assets/document/oferta-academica/refrigeracion.pdf">Ver m&aacute;s</a></div>
+
+                </div>
+         
+              </li>
+        
+            </ul>
+          </div>
+        </div>
+           
+          
+      </div>
+
+    </div>
+    <!-- TITULACION -->
+    <div class="titulacion">
+      <h1 class="titulo__oferta">Titulaci&oacute;n</h1>
+
+      <div class="contenedor__titulacion">
+        <div class="despliegue__titulacion">
+          <div class="contenedor__titulo__titulacion">
+            <h1 class="titulo__titulacion">
+              Titulacion Automatica 
+            </h1>
+          </div>
+          <div class="contenedor__info__titulacion">
+            <p class="info__titulacion">Cuando el alumno acredite todas las asignaturas con calificaciones de 6 ó superiores y tenga en los cinco módulos de la carrera con dictamen de competente (éste se logra obteniendo un promedio de 8 en cada módulo)</p>
+          </div>
+        </div>
+        <div class="despliegue__titulacion">
+          <div class="contenedor__titulo__titulacion">
+            <h1 class="titulo__titulacion">
+              Titulación por Experiencia Laboral  
+            </h1>
+          </div>
+          <div class="contenedor__info__titulacion">
+            <p class="info__titulacion">Cuando demuestre como mínimo en un año de Experiencia laboral a través de la memoria correspondiente y la constancia de la empresa donde se desempeñó profesionalmente, siempre y cuando la memoria refiera a las aplicaciones en el trabajo con los conocimientos y competencias adquiridas en la carrera.</p>
+          </div>
+        </div>
+        <div class="despliegue__titulacion">
+          <div class="contenedor__titulo__titulacion">
+            <h1 class="titulo__titulacion">
+              Diseño de Prototipos y Proyectos innovadores de Desarrollo Tecnológico
+            </h1>
+          </div>
+          <div class="contenedor__info__titulacion">
+            <p class="info__titulacion">El alumno desarrollará un proyecto innovador y a través de la memoria correspondiente siempre y cuando ésta se refiera a las aplicaciones en el trabajo de los conocimientos y competencias adquiridas en la carrera. Para iniciar el prodecimiento de Titulación, el alumno deberá cumplir los siguientes requisitos:
+            <br><br>
+               •Aprobar todas las asignaturas y módulos.<br>
+               •Prestar su Servicio social de acuerdo al reglamento vigente.<br>
+               •No adeudar al plantel libros. material y/o equipo<br>
+               
+               
+               </p>
+              
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+<script>
+  var btn_verBachillerato = document.querySelector(".ver__mas__bachillerato");
+  var textoBachilleratoOculto = document.querySelector(".bachillerato__texto__oculto");
+  var contenedorBachilleratoTexto = document.querySelector(".contenedor__texto__bachillerato");
+
+  function showTextBachiller(){
+    textoBachilleratoOculto.style.display = "block";
+    btn_verBachillerato.style.display = "none";
+    contenedorBachilleratoTexto.style.overflowY = "scroll"
+  }
+  btn_verBachillerato.addEventListener("click",showTextBachiller);
+
+  var btn_ocultarBachillerato = document.querySelector(".ver__menos__bachillerato");
+
+  function hideTextBachiller() {
+    textoBachilleratoOculto.style.display = "none";
+    btn_verBachillerato.style.display = "unset";
+    contenedorBachilleratoTexto.style.overflowY = "scroll"
+  }
+  btn_ocultarBachillerato.addEventListener("click",hideTextBachiller);
+
+
+  
+  document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '#card-slider', {
+		perPage    : 5,
+    rewind: true,
+    autoplay: true,
+
+		breakpoints: {
+      1690:{
+        perPage: 4,
+
+      },
+      1360:{
+        perPage: 3,
+
+      },
+      1040:{
+        perPage: 2,
+      },
+    
+			735: {
+				perPage: 1,
+
+			},
+      375:{
+        perPage: 1,
+      },
+		},
+  } ).mount();
+} );
+</script>
+</html>
