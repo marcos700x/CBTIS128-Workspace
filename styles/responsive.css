@@ -2,122 +2,41 @@
 =          RESPONSIVO          =
 ==============================*/
 
-/* Tablets en horizonal y escritorios normales */
-@media screen and (max-width: 1400px) {
-  .pagina__oculta {
-    display: none;
-  }
-  .menu__oculto {
-    display: inline;
-  }
+/* Tablets en horizonal y escritorios normales
+------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1300px) {
+  :root {font-size: 15px;}
+  .pagina__oculta {display: none;}
+  .menu__oculto{display: inline-block;}
+  .destacados__contenedor{width: 70%;}
+  .oferta__contenedor{flex-wrap: wrap; }
+  .oferta__titulo{text-align: center;}
+  .oferta__texto{width: 100%; height: 300px;}
+  .oferta__imagen{margin-top: 2rem;}
 }
-@media (min-width: 1200px) {
-  .educacion__titulo {
-    font-size: 2.5em;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .destacado .splide {
-    padding: 0 !important;
-    width: 100%;
-  }
-  .destacado .slider {
-    padding: 0;
-  }
 
-  .destacado .splide__slide {
-    width: 100%;
-    height: auto;
-  }
-  .destacado .splide__slide img {
-    border-radius: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu__link {
-    display: none;
-  }
- 
-}
-@media screen and (max-width: 916px) {
-  .nav__enlaces{
-    display: none;
-  }
-  .menu__boton{
-    display: block;
-  }
-}
-@media screen and (min-width: 901px) {
-  .destacado__elementos {
-    flex-wrap: nowrap;
-  }
-}
-@media screen and (max-width: 900px) {
-  .menu__semestres {
-    display: block;
-  }
-  .menu__icono {
-    display: block !important;
-  }
-  /* .menu__boton {
-    display: block;
-  } */
-  .destacado .destacado__slider {
-    width: 45% !important;
-  }
-  .destacado .destacado__slider {
-    width: 45% !important;
-    height: 45vw;
-    margin: 10px auto;
-  }
-  .destacado .destacado__seccion {
+@media screen and (max-width: 980px) {
+  .nav__enlaces{display: none;}
+  .menu__boton{display: block;}
+  .header__lista{display: none;}
+  .destacados__contenedor{width: 90%;}
+  .educacion__contenedor{height: calc(50vw * 90 / 100);}
+  .educacion__imagen {width: 50%;}
+  .educacion__img {width: 90%;}
+  .educacion__texto {
     width: 45%;
-    height: 45vw;
-    margin: 10px auto;
+    padding: 0 2% 2% 2%;
   }
-  .footer__contenedor {
-    grid-template:
-      "seccion__nosotros seccion__nosotros"
-      "seccion__enlaces seccion__contacto"/
-      1fr 1fr;
-    gap: 1%;
-  }
+  .notas{width: 300px;}
+  .footer__contenedor{grid-template-columns: 1fr 1fr; padding: 2rem;}
+  .footer__seccion-Ocultar{grid-column: 1 / 3;}
 }
-/* Móviles en horizontal o tablets en vertical */
-@media (max-width: 767px) {
-  .menu__enlace {
-    display: none;
-  }
-  .destacado .slider {
-    height: auto;
-  }
-  .nota__espacio-horizontal {
-    width: 350px;
-  }
-}
-@media screen and (max-width: 680px) {
-  .header__menu {
-    top: 0;
-  }
-  .header__contenedor {
-    box-shadow: none;
 
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .header__frase {
-    font-size: 1.5rem;
-    font-style: normal;
-  }
-  .menu__enlaces {
-    display: none;
-  }
-  .video {
-    width: 100%;
-  }
-  .educacion__cont {
+/* Móviles en horizontal o tablets en vertical
+------------------------------------------------------------------------- */
+@media screen and (max-width: 620px) {
+  :root {font-size: 14px;}
+  .educacion__contenedor {
     display: block;
     height: auto;
   }
@@ -133,157 +52,73 @@
     height: 100vw;
   }
   .educacion__elemento::before {
-   display: none;
+    left: -0.25rem; margin-top: -0.75rem;
+    height: 1.75rem;
+    width: 1.75rem;
   }
-  .educacion__elemento {
-    padding: 10px 10px 10px 6vw;
-    border-left: 10px solid var(--rosa);
+  .jovenes__contenedor{flex-wrap: wrap; padding: 0;}
+  .jovenes__texto{
+    width: 100%; padding-bottom: 0;
+    border-radius: 10px 10px 0 0;
   }
-  .jovenes__casa__cont {
-    display: block;
-    padding: 0;
-  }
-  .jovenes__casa__cont .splide__arrow {
-    top: 50% !important;
-  }
-  .jovenes__casa__cont .splide__arrow--prev {
-    left: 5px;
-  }
-  .jovenes__casa__cont .splide__arrow--next {
-    right: 5px;
-  }
- 
-  .jovenes__texto {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 0;
-    justify-content: center;
-    align-items: center;
-  }
-  .jovenes__texto__titulo{
-    padding: 20px 0;
-    text-align: center;
+  .jovenes__slider{border-radius: 0 0 10px 10px; height: 300px;}
+  .jovenes__parrafo-Oculto{display: none;}
+}
 
-}
-  .jovenes__parrafo {
-    text-align: center;
-  }
-  .jovenes__slider {
-    width: 100%;
-  }
-  .jovenes__video {
-    width: 90%;
-    height: 75%;
-  }
-}
-/* Móviles en vertical */
+/* Móviles en vertical
+------------------------------------------------------------------------- */
 @media (max-width: 480px) {
-  .apartados__titulo {
-    font-size: 2.5rem;
+  .destacados__contenedor{width: 100%;}
+  .destacados__seccion-Desaparace{display: none;}
+  .destacados__seccion {
+    width: 42vw;
+    height: 42vw;
   }
-  .header__titulo{
-    font-size: 4rem;
-  }
-  .menu__texto {
-    display: none;
-  }
-  .menu__img {
-    width: 60px;
-  }
-  .destacado .destacado {
-    padding: 0;
-  }
-  .destacado .destacado__titulo {
-    margin: 40px 0;
-  }
-  .destacado .destacado__slider {
-    width: 45% !important;
-    height: 45vw;
-    margin: 10px auto;
-  }
-  .destacado .destacado__seccion {
-    width: 45%;
-    height: 45vw;
-    margin: 5px;
-  }
-  .destacado .destacado__anuncio {
-    display: none;
-  }
-  .destacado .destacado__contenedor {
-    width: 45%;
-    height: 45vw;
-    margin: 10px auto;
+  .destacados__track {height: 42vw !important;}
+  .destacados__seccion-Movil {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 5px;
+    width: 42vw; height: 42vw; margin: 10px;
   }
-  .destacado .destacado__icon {
-    box-shadow: none;
-    padding: 15px;
-    font-size: 1.2rem;
-  }
-  .destacado .destacado__seccion {
-    box-shadow: none;
-  }
-  .destacado .destacado__slider {
-    box-shadow: none;
-    margin: 5px;
-  }
-  .destacado .destacado__division {
-    height: 47%;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
+  .destacado__division-Movil {
     flex-direction: row;
+    height: 20vw;
+    margin: 0;
   }
-  .destacado .destacadoIcono__movil {
-    font-size: 1rem;
+  .destacados__titulo{font-size: 1rem;}
+  .destacado__icon-Movil{
     padding: 10px;
+    margin-left: 5%;
     border-radius: 10px;
   }
-  .destacado .texto__movil {
-    margin: 0;
+  .main {padding-top: 0;}
+  .notas{width: 150px;}
+  .notas__enlace{padding: 10px;}
+  .footer__contenedor{grid-template-columns: 1fr; padding: 2rem;}
+  .footer__seccion-Ocultar{display: none;}
+  
+  .oferta__contenedor{flex-wrap: wrap; }
+  .oferta__titulo{text-align: center;}
+  .oferta__texto{width: 100%; height: 300px;}
+  .oferta__imagen{
+    display: flex; justify-content: center;
+    height: min-content;
   }
-  .destacado .bx__movil {
-    margin: 0 5px;
+  .oferta__img{
+    margin: 20px 0;
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    text-align: center;
   }
-  .seccion__nosotros {
-    display: none;
+  .apartados__titulo {
+    font-size: 2rem;
   }
-  .footer__contenedor {
-    grid-template:
-      "seccion__enlaces "
-      "seccion__contacto";
-    gap: 10%;
-  }
-  .seccion__contacto {
-    padding-bottom: 20px;
-  }
-  .footer__enlaces {
-    line-height: 1.5;
-  }
-  .seccion__copyright {
-    line-height: 1.5;
-  }
-  .main {
-    padding-top: 0;
-  }
-  .destacado .seccion__texto {
-    font-size: 1rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .splide__pagination {
-    display: none !important;
-  }
-  .splide {
-    padding: 0 !important;
-  }
-  .splide__arrow {
-    bottom: 0;
-    top: unset !important;
-  }
+  .especialidades__splide .splide__arrow{display: none;}
+  .especialidades__splide{padding: 3rem 1% !important;}
+  .especialidades__splide .splide__pagination__page{display: inline-block; background-color: #ccc;}
+  .especialidades__splide .splide__pagination__page:hover{background-color: var(--rosa);}
+  .especialidades__splide .splide__pagination__page.is-active{background-color: var(--rosa);}
 }
 /*=====  End of RESPONSIVO  ======*/

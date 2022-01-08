@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,6 @@
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.3/dist/css/splide-extension-video.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.6.3/dist/js/splide-extension-video.min.js"></script>
 </head>
 <body class="body">
     <!-- PRELOADER -->
@@ -22,87 +20,76 @@
             <div class="loader__halo"></div>
         </div>
     </div>
-    <!-- HEADER -->
     <header class="header">
-        <div id="header__contenedor" class="header__contenedor">
-            <h1 class="header__titulo">CBTIS 128</h1>
-            <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
-            <nav>
-                <ul class="menu__enlaces">
-                    <li class="menu__lista"><a href="" class="menu__link">Nosotros</a></li>
-                    <li class="menu__lista"><a href="" class="menu__link">Departamentos</a></li>
-                    <li class="menu__lista"><a href="" class="menu__link">Alumnos</a></li>
-                    <li class="menu__lista"><a href="" class="menu__link">Transparencia</a></li>
-                    <li class="menu__lista"><a href="" class="menu__link">Concursos</a></li>
-                    <li class="menu__lista"><a href="" class="menu__link">Directorio</a></li>
-                    <li class="menu__lista"><a href="" class="menu__link">Contacto</a></li>
-                </ul>
-            </nav>
-           
+        <h1 class="header__titulo">CBTIS 128</h1>
+        <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
+        <nav>
+            <ul class="header__lista">
+                <li class="header__elemento"><a class="header__enlace" href="./pages/nosotros.php">Nosotros</a></li>
+                <li class="header__elemento"><a class="header__enlace" href="">Departamentos</a></li>
+                <li class="header__elemento"><a class="header__enlace" href="">Alumnos</a></li>
+                <li class="header__elemento"><a class="header__enlace" href="">Transparencia</a></li>
+                <li class="header__elemento"><a class="header__enlace" href="">Concursos</a></li>
+                <li class="header__elemento"><a class="header__enlace" href="">Directorio</a></li>
+                <li class="header__elemento"><a class="header__enlace" href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="boton video__mostrar">¡CONOCENOS!</button>
+        <!-- VIDEO -->
+        <div class="video__contenedor">
+            <video class="video" controls="">
+                <source
+                    src="assets/video/CBTis 128 2021.mp4"
+                    type="video/mp4"
+                    codecs="avc1,mp4a"/>
+            </video>
+            <button class="video__ocultar">
+                <i class="bx bx-x video__cerrar"></i>
+            </button>
         </div>
-        <a href="#Conocenos" class="cta__header">¡CONOCENOS!</a>
-        <button class="video__mostrar">
-            <i class="bx bxs-movie-play"></i>
-        </button>
-       
-    </header>
-    <!-- VIDEO -->
-    <div class="video__contenedor">
-        <video class="video" controls="">
-            <source
-                src="assets/video/CBTis 128 2021.mp4"
-                type="video/mp4"
-                codecs="avc1,mp4a"/>
-        </video>
-        <button class="video__ocultar">
-            <i class="bx bx-x video__cerrar"></i>
-        </button>
-    </div>
-    <!-- NAV -->
-    <nav id="aviso" class="header__menu">
-        <div class="menu__contenedor">
+        <!-- NAV -->
+        <nav id="header__menu" class="header__menu">
             <div class="menu__logo">
-                <a href="index.html"><img class="menu__img" src="assets/images/logo.svg" alt="Logo CBTIS128"></a>
-                <p class="menu__texto">CBTIS 128</p>
-            </div>
+                <a href="index.html">   <img class="menu__img" src="assets/images/logo.svg" alt="Logo CBTIS128"></a>
+                <h1 class="menu__titulo">CBTIS 128</h1>
+            </div>  
             <div class="nav__enlaces">
-               
-                <a href="" class="menu__pagina">Nosotros</a>
+                <a href="./pages/nosotros.php" class="menu__pagina">Nosotros</a>
                 <a href="" class="menu__pagina">Departamentos</a>
-                <a href="" class="menu__pagina">Alumnos</a>
+                <a href="" class="menu__pagina ">Alumnos</a>
                 <a href="" class="menu__pagina pagina__oculta">Transparencia</a>
                 <a href="" class="menu__pagina pagina__oculta">Concursos</a>
                 <a href="" class="menu__pagina pagina__oculta">Directorio</a>
                 <a href="" class="menu__pagina pagina__oculta">Contacto</a>
                 <!-- start menu desplegable -->
                 <div class="dropdown">
-                    <button class="menu__semestres menu__oculto">Ver más</button>
+                    <button class="boton menu__semestres menu__oculto">Ver más</button>
                     <div class="dropmenu">
-                        <a class="menu__pagina " href="#">transparencia</a>
-                        <a class="menu__pagina " href="#">concursos</a>
-                        <a class="menu__pagina " href="#">departamentos</a>
-                        <a class="menu__pagina " href="#">directorio</a>
+                        <a class="menu__pagina " href="#">Transparencia</a>
+                        <a class="menu__pagina " href="#">Concursos</a>
+                        <a class="menu__pagina " href="#">Departamentos</a>
+                        <a class="menu__pagina " href="#">Directorio</a>
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="menu__semestres">Semestres</button>
+                    <button class="boton menu__semestres">Semestres</button>
                     <div class="dropmenu">
-                        <a href="#" class="menu__pagina">2do Semestre</a>
-                        <a href="#" class="menu__pagina">4to Semestre</a>
-                        <a href="#" class="menu__pagina">6to Semestre</a>
+                        <a href="#" class="menu__pagina menu__pagina-dropdown">2do Semestre</a>
+                        <a href="#" class="menu__pagina menu__pagina-dropdown">4to Semestre</a>
+                        <a href="#" class="menu__pagina menu__pagina-dropdown">6to Semestre</a>
                     </div>
                 </div>
                 <!-- end menu desplegable -->
             </div>
-                <button class="menu__boton">
-                    <i class="bx bx-menu bx-lg menu__icono"></i>
-                </button>
-        </div>
-    </nav>
+            <button class="menu__boton">
+                <i class="bx bx-menu bx-lg menu__icono"></i>
+            </button>
+        </nav>
+    </header>
     <!-- MENU MOVIL -->
     <div class="contenedor__menu__movil">
         <nav class="menu__movil">   
-            <button id="toggle__semestres" class="movil__enlace" href="#">Semestres<i class='bx bxs-chevron-right chevron__icon' style='color:#a22245'></i></button>
+            <button id="toggle__semestres" class="movil__enlace" href="#">Semestres<i class='bx bxs-chevron-right chevron__icon'></i></button>
             <a class="movil__enlace" href="#">Inicio</a>
             <a class="movil__enlace" href="#">Alumnos</a>
             <a class="movil__enlace" href="#">Concursos</a>
@@ -121,362 +108,452 @@
             <a href="#" class="movil__enlace enlace__semestres">6to Semestre</a>
         </div>
     </div>
-    <main id="contenido2" class="main">
-          <!-- NOTICIAS -->
-          <div class="noticias">
+    <!-- MAIN -->
+    <main id="main" class="main">
+        <!-- NOTICIAS -->
+        <article>
             <h1 class="apartados__titulo">NOTICIAS</h1>
-            <div id="image-slider" class="splide" style="padding-top: 0;">
-            <div class="splide__track">
-                <ul class="splide__list">
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_1.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
-                        <p class="slider__texto__parrafo">Comunicado a toda nuestra comunidad escolar</p>
-                        <a class="enlace__slider" target="_blank" href="assets/document/noticias/COMUNICADO.pdf">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_2.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Evitemos contagios de Covid-19</h2>
-                        <p class="slider__texto__parrafo">Si algun joven presenta sintomas, debe quedarse en casa</p>
-                        <a class="enlace__slider" target="_blank" href="assets/document/noticias/infografia_padres.pdf">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_3.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
-                        <p class="slider__texto__parrafo">Filtro en casa antes de acudir a la escuela</p>
-                        <a class="enlace__slider" target="_blank" href="assets/images/noticia_3.png">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_4.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Inscripciones</h2>
-                        <p class="slider__texto__parrafo">Revisa la convocatoria dando click en el enlace</p>
-                        <a class="enlace__slider" target="_blank" href="http://mediasuperior.chihuahuaedu.gob.mx/">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_5.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
-                        <p class="slider__texto__parrafo">Te invitamos a conocer el Programa MWM-2021.</p>
-                        <a class="enlace__slider" target="_blank" href="http://mwm.cimav.edu.mx/mwm-2021/">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_6.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
-                        <p class="slider__texto__parrafo">Informe de actividades y rendicion de cuentas</p>
-                        <a class="enlace__slider" target="_blank" href="assets/document/noticias/convocatoria_Rendicion_2019-2020.pdf">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_7.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
-                        <p class="slider__texto__parrafo">¿Por qu&eacute; es importante acudir al psic&oacute;logo?</p>
-                        <a class="enlace__slider" target="_blank" href="assets/document/noticias/chidamente.pdf">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_8.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
-                        <p class="slider__texto__parrafo">Covid 19 desde un enfoque de inclusion</p>
-                        <a class="enlace__slider" target="_blank" href="assets/document/noticias/2do_boletin_covid_19_inclusion.pdf">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_9.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
-                        <p class="slider__texto__parrafo">Se detecto informacion falsa, con fines malignos.</p>
-                        <a class="enlace__slider" target="_blank" href="assets/document/noticias/boletinbecas.pdf">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_10.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Comunicado del plantel</h2>
-                        <p class="slider__texto__parrafo">Suspension de clases para preescolar hasta superior</p>
-                        <a class="enlace__slider" target="_blank" href="assets/document/noticias/2020_04_01_VES_sep.pdf">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_11.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">La DGETI hoy</h2>
-                        <p class="slider__texto__parrafo">Conoce y enterate de todas las novedades</p>
-                        <a class="enlace__slider" target="_blank" href="http://uemstis.sep.gob.mx/">Ver más</a>
-                    </div>
-                </li>
-                <li class="splide__slide">
-                    <img src="assets/images/noticia_12.png">
-                    <div class="slider__texto">
-                        <h2 class="slider__texto__titulo">Convocatoria</h2>
-                        <p class="slider__texto__parrafo">Se invita a la comunidad escolar a participar.</p>
-                        <a class="enlace__slider" target="_blank" href="assets/document/noticias/Convocatoria-Opticart-2021.pdf">Ver más</a>
-                    </div>
-                </li>
-            </ul>
-            </div>
-            </div>
-        </div>
-        <!-- DESTACADOS -->
-            <div class="destacado">
+            <section id="noticias__splide" class="splide noticias__splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_1.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Comunicado del plantel</h2>
+                                <p class="noticias__parrafo">Comunicado a toda nuestra comunidad escolar</p>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/COMUNICADO.pdf">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_2.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Evitemos contagios de Covid-19</h2>
+                                <p class="noticias__parrafo">Si algun joven presenta sintomas, debe quedarse en casa</p>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/infografia_padres.pdf">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_3.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Comunicado del plantel</h2>
+                                <p class="noticias__parrafo">Filtro en casa antes de acudir a la escuela</p>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/images/noticia_3.png">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_4.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Inscripciones</h2>
+                                <p class="noticias__parrafo">Revisa la convocatoria dando click en el enlace</p>
+                                <a class="boton noticias__enlace" target="_blank" href="http://mediasuperior.chihuahuaedu.gob.mx/">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_5.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Comunicado del plantel</h2>
+                                <p class="noticias__parrafo">Te invitamos a conocer el Programa MWM-2021.</p>
+                                <a class="boton noticias__enlace" target="_blank" href="http://mwm.cimav.edu.mx/mwm-2021/">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_6.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Comunicado del plantel</h2>
+                                <p class="noticias__parrafo">Informe de actividades y rendicion de cuentas</p>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/convocatoria_Rendicion_2019-2020.pdf">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_7.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Comunicado del plantel</h2>
+                                <p class="noticias__parrafo">¿Por qu&eacute; es importante acudir al psic&oacute;logo?</p>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/chidamente.pdf">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_8.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Comunicado del plantel</h2>
+                                <p class="noticias__parrafo">Covid 19 desde un enfoque de inclusion</p>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/2do_boletin_covid_19_inclusion.pdf">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_9.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Comunicado del plantel</h2>
+                                <p class="noticias__parrafo">Se detecto informacion falsa, con fines malignos.</p>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/boletinbecas.pdf">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_10.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Comunicado del plantel</h2>
+                                <p class="noticias__parrafo">Suspension de clases para preescolar hasta superior</p>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/2020_04_01_VES_sep.pdf">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_11.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">La DGETI hoy</h2>
+                                <p class="noticias__parrafo">Conoce y enterate de todas las novedades</p>
+                                <a class="boton noticias__enlace" target="_blank" href="http://uemstis.sep.gob.mx/">Ver más</a>
+                            </section>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide__conteiner">
+                                <img class="noticias__img" src="assets/images/noticia_12.png">
+                            </div>
+                                <section class="noticias__contenido">
+                                <h2 class="noticias__titulo">Convocatoria</h2>
+                                <p class="noticias__parrafo">Se invita a la comunidad escolar a participar.</p>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/Convocatoria-Opticart-2021.pdf">Ver más</a>
+                            </section>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <!--DESTACADOS-->
+        <article>
             <h1 class="apartados__titulo">DESTACADOS</h1>
-            <div class="destacado__elementos">
-                <div class="destacado__slider">
-                    <div class="vertical-splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
+            <div class="destacados__contenedor">
+                <div class="destacados__seccion">
+                    <div class="destacados__splide">
+                        <div class="destacados__track splide__track">
+                            <ul class="splide__list destacados__pagination">
                                 <li class="splide__slide">
                                     <a target="_blank" href="http://registro.desarrolloprofesionaldocente.sems.gob.mx/">
-                                    <img src="assets/images/novedades1.jpg" href=""/>
+                                        <img class="destacados__img" src="assets/images/novedades1.jpg" href=""/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank" href="https://formacionycapacitaciondigitales.televisioneducativa.gob.mx/" >
-                                        <img src="assets/images/novedades2.jpg"/>
+                                        <img class="destacados__img" src="assets/images/novedades2.jpg"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank" href="https://www.decidetusestudios.sep.gob.mx/" >
-                                        <img src="assets/images/novedades3.jpg"/>
+                                        <img class="destacados__img" src="assets/images/novedades3.jpg"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank" href="https://bnj92cbtfulffq7-academydb1.adb.us-ashburn-1.oraclecloudapps.com/ords/f?p=1000:">
-                                        <img src="assets/images/novedades4.jpg"/>
+                                        <img class="destacados__img" src="assets/images/novedades4.jpg"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank" href="https://www.webex.com/es/index.html">
-                                        <img src="assets/images/novedades5.jpg"/>
+                                        <img class="destacados__img" src="assets/images/novedades5.jpg"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank" href="https://prepaenlinea.sep.gob.mx/">
-                                        <img src="assets/images/novedades6.jpg"/>
+                                        <img class="destacados__img" src="assets/images/novedades6.jpg"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank" href="https://www.tuprepaenvideos.sep.gob.mx/">
-                                        <img src="assets/images/novedades7.jpg"/>
+                                        <img class="destacados__img" src="assets/images/novedades7.jpg"/>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="destacado__seccion">
-                    <a target="_blank" href="https://cbtis128.edu.mx/plataforma/moodle/">
-                        <i class="bx bxs-graduation destacado__icon"></i>
+                <a class="destacados__seccion" target="_blank" href="https://cbtis128.edu.mx/plataforma/moodle/">
+                    <i class="bx bxs-graduation destacado__icon"></i>
+                    <h2 class="destacados__titulo">Moodle</h2>
+                </a>
+                <a class="destacados__seccion" target="_blank" href="http://construyet.sep.gob.mx/">
+                    <i class="bx bxs-brain destacado__icon"></i>
+                    <h2 class="destacados__titulo">ConstruyeT</h2>
+                </a>
+                <div class="destacados__seccion destacados__seccion-Desaparace">
+                    <a class="destacado__division" target="_blank" href="http://jovenesencasa.sep.gob.mx/">
+                        <i class="bx bxs-book-reader destacado__icon"></i>
+                        <h2 class="destacados__titulo">Jovenes en casa</h2>
                     </a>
-                    <p class="seccion__texto">Moodle</p>
-                </div>
-                <div class="destacado__seccion">
-                    <a target="_blank" href="http://construyet.sep.gob.mx/">
-                        <i class="bx bxs-brain destacado__icon"></i>
+                    <a class="destacado__division" target="_blank" href="assets/document/noticias/Boletin-SEP-no.82.pdf">
+                        <i class="bx bx-clipboard destacado__icon"></i>
+                        <h2 class="destacados__titulo">Maestros en casa</h2>
                     </a>
-                    <p class="seccion__texto">ConstruyeT</p>
                 </div>
-                <div class="destacado__seccion destacado__anuncio">
-                    <div class="destacado__division">
-                        <a target="_blank" href="http://jovenesencasa.sep.gob.mx/">
-                            <i class="bx bxs-book-reader destacado__icon bx__movil"></i>
-                        </a>
-                        <p class="seccion__texto">Jovenes en casa</p>
-                    </div>
-                    <div class="destacado__division">
-                        <a target="_blank" href="assets/document/noticias/Boletin-SEP-no.82.pdf">
-                            <i class="bx bx-clipboard destacado__icon bx__movil"></i>
-                        </a>
-                        <p class="seccion__texto">Maestros en casa</p>
-                    </div>
-                </div>
-                <div class="destacado__contenedor">
-                    <div class="destacado__seccion destacado__division">
-                        <a target="_blank" href="http://jovenesencasa.sep.gob.mx/">
-                            <i class="bx bxs-book-reader destacado__icon destacadoIcono__movil bx__movil"></i>
-                        </a>
-                        <p class="seccion__texto texto__movil">Jovenes en casa</p>
-                    </div>
-                    <div class="destacado__seccion destacado__division">
-                        <a target="_blank" href="assets/document/noticias/Boletin-SEP-no.82.pdf">
-                            <i class="bx bx-clipboard destacado__icon destacadoIcono__movil bx__movil"></i>
-                        </a>
-                        <p class="seccion__texto texto__movil">Maestros en casa</p>
-                    </div>
+                <div class="destacados__seccion-Movil">
+                    <a class="destacados__seccion destacado__division-Movil">
+                        <i class="bx bxs-book-reader destacado__icon destacado__icon-Movil"></i>
+                        <h2 class="destacados__titulo destacados__titulo-Movil">Jovenes en casa</h2>
+                    </a>
+                    <a class="destacados__seccion destacado__division-Movil">
+                        <i class="bx bx-clipboard destacado__icon destacado__icon-Movil"></i>
+                        <h2 class="destacados__titulo destacados__titulo-Movil">Maestros en casa</h2>
+                    </a>
                 </div>
             </div>
-        </div>
-      
-        <!-- EDUCACION -->
-        <div id="Conocenos" class="educacion">
-        <h1 class="apartados__titulo">EDUCACIÓN</h1>
-        <div class="educacion__cont">
-            <section class="educacion__imagen">
-                <img class="educacion__img" src="assets/images/educacion.jpg" alt="Estudiantes del CBTIS 128">
-            </section>
-            <section class="educacion__texto">
-                <h2 class="educacion__titulo">Conoce el CBTIS 128 y todo lo que te puede ofrecer</h2>
-                <p class="educacion__parrafo">En CBTIS 128 tenemos como principal objetivo formar técnicos profesionales capaces de integrarse a laborar en la industria maquiladora. Contamamos con una vasta oferta académica.</p>
-                <section>
-                    <h3 class="educacion__subtitulo">Oferta académica</h3>
-                    <ul class="educacion__lista">
-                        <li class="educacion__elemento">Administración de Recursos Humanos</li>
-                        <li class="educacion__elemento">Gericultura</li>
-                        <li class="educacion__elemento">Electrónica</li>
-                        <li class="educacion__elemento">Programación</li>
-                        <li class="educacion__elemento">Soporte y mantenimiento de equipo de computo</li>
-                        <li class="educacion__elemento">Refrigeración y climatización</li>
-                    </u>
-                    <p class="educacion__parrafo">También contamos con programas de educación integral, para abastecer de experiencia laboral a nuestros jóvenes.</p>
-                </section>
-                <section>
-                    <h3 class="educacion__subtitulo">Programas de educacion integral</h3>
-                    <ul class="educacion__lista">
-                        <li class="educacion__elemento">Educación Dual</li>
-                        <li class="educacion__elemento">Fomento a la salud</li>
-                        <li class="educacion__elemento">Servicio Social</li>
-                        <li class="educacion__elemento">Prácticas Profesionales</li>
-                        <li class="educacion__elemento">Bolsa de trabajo</li>
-                    </ul>
-                    <p class="educacion__parrafo">Desde hace más de 40 años hemos brindado las herramientas para que nuestros estudiantes logren sobresalir en la industria, pero también nuestros alumnos de las diferentes generaciones han obtenido importantes lugares en actividades deportivas, académicas, culturales y tecnológicas. Han logrado los más altos reconcimientos a nivel nacional en sus diferentes disciplinas, dejando muy en alto el nombre de Ciudad Juárez en CBTIS 128.</p>
-                </section>
-                <section>
-                    <h3 class="educacion__subtitulo">Grupos Culturales</h3>
-                    <ul class="educacion__lista">
-                        <li class="educacion__elemento">Banda de guerra</li>
-                        <li class="educacion__elemento">Escolta de bandera</li>
-                        <li class="educacion__elemento">Danza folclórica</li>
-                        <li class="educacion__elemento">Rondalla</li>
-                        <li class="educacion__elemento">Artes</li>
-                        <li class="educacion__elemento">Teatro</li>
-                        <li class="educacion__elemento">Música</li>
-                        <li class="educacion__elemento">Ajedrez</li>
-                        <li class="educacion__elemento">Declaración y oratoria</li>
-                        <li class="educacion__elemento">Literatura</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3 class="educacion__subtitulo">Grupos Deportivos</h3>
-                    <ul class="educacion__lista">
-                        <li class="educacion__elemento">Atletismo</li>
-                        <li class="educacion__elemento">Voleibol</li>
-                        <li class="educacion__elemento">Fútbol</li>
-                        <li class="educacion__elemento">Fútbol Americano</li>
-                        <li class="educacion__elemento">Béisbol</li>
-                    </ul>
-                    <p class="educacion__parrafo">Estamos compremetidos con la sociedad juarense. Creemos firmemente en la educación y los valores que hemos impartido en cada uno de nuestros egresados y que continuaremos forjando a las futuras generaciones. Por esto y mucho más, seguiremos alcanzando el mañana con nuestra propia tecnología. Somos Jaguares. Somos CBTIS 128.</p>
-                </section>
-            </section>
-        </div>
-        </div>
-        <!-- NOTAS -->
-        <div class="notas">
-        <h1 class="apartados__titulo">NOTAS</h1>
-        <div class="notas__cont">
-            <div class="nota__espacio">
-                <img class="notas__img" src="assets/images/img1.jpg" alt="">
-                    <div class="sobre__imagen">
-                        <a class="enlace__imagen" href="assets/images/img1.jpg" target="_blank">Ver m&aacute;s</a>
-                    </div>
-            </div>
-            <div class="nota__espacio">
-                <img class="notas__img" src="assets/images/img2.jpg" alt="">
-                <div class="sobre__imagen">
-                    <a class="enlace__imagen" href="assets/document/notas/Conferencia_sept21.pdf" target="_blank">Ver m&aacute;s</a>
-                </div>
-            </div>
-            <div class="nota__espacio">
-                <img class="notas__img" src="assets/images/img3.jpg" alt="">
-                <div class="sobre__imagen">
-                    <a class="enlace__imagen" href="assets/document/notas/Convocatoria Opticart 11 mayo 2021.pdf" target="_blank">Ver m&aacute;s</a>
-                </div>
-            </div>
-            <div class="button__cont">
-                <a class="ver__mas">Ver más</a>
-            </div>
-        </div>
-        </div>
-        <!-- JOVENES EN CASA -->
-        <div class="jovenes__casa">
-            <h1 class="apartados__titulo">JOVENES EN CASA</h2>
-      
-        <article class="jovenes__casa__cont">
-            <section class="jovenes__texto">
-                <h1 class="jovenes__texto__titulo">¡Bienvenidos Jovenes!</h1>
-                <p class="jovenes__parrafo">Juntas/os aprovecharemos esta temporada para construir nuevas experiencias: lectura, arte, deporte, cine, webinars, convocatorias y apoyo socioemocional que ayudarán a que cuidemos mejor de nosotros mismos, de quienes nos rodean y de la naturaleza. <br><br> Las actividades de la comunidad jóvenes en casa, fomentan tu creatividad, estimulan tu desarrollo cotinuamente y fortalecen todos tus aprendizajes. Son complementarias, pero no sustituyen las labores a distancia que te indican tus profesores/as y autoridades de tu plantel educativo. <br><br> Es muy probable que permanecer en casa durante tanto tiempo comience a generar un poco de estrés en tí y los integrantes de tu familia, por ello te recomendamos algunas actividades que puedes realizar en estos días, trata de seguir los pasos al pie de la letra, recuerda que puedes compartir estas actividades con tu familia, amigos, redes sociales, o bien puedes hacerlo tú solo/a, y puedes llevarla a cabo cuantas veces consideres necesario durante este periodo en casa, recuerda seguirte cuidando y llevar a cabo las medidas de seguridad ante la contingencia.</p>
-            </section>
-            
-            <div class="jovenes__slider">
-                <div id="splide__video" class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><iframe  src="https://www.youtube.com/embed/zweYcO0hdgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                            <li class="splide__slide"><iframe  src="https://www.youtube.com/embed/UjrGDu81FR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                            <li class="splide__slide"><iframe  src="https://www.youtube.com/embed/I852_FPv8uA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                            <li class="splide__slide"><iframe  src="https://www.youtube.com/embed/blglp0YHc6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        
         </article>
-        </div>
-    </main>
-         <!-- FOOTER -->
-        <footer class="footer">
-        <div class="footer__contenedor">
-            <div class="seccion__nosotros">
-                    <h2 class="footer__titulo">Sobre nosotros</h2>
-                    <p class="footer__texto">
-                        Nuestro compromiso es seguir trabajando con el apoyo de toda la comunidad que integra el CBTIS 128 para lograr formar técnicos profesionales capaces de destacar en el 	ambito laboral. Desde hace más de 50 años hemos brindado las herramientras para que nuestros estudiantes logren sobresalir en la industria y sus vidas profesionales. Estamos comprometidos con la sociedad juarense y creemos firmemente en las educación y los valores que hemos impartido en cada uno de nuestros ingresados.
-                    </p>
-                    <div class="footer__redes">
-                        <a class="footer__rrss" target="_blank" href="https://www.facebook.com/Casa-de-los-Jaguares-CBTIS-128-101239285643821/"><i class='bx bxl-facebook footer__icon__rrss'></i></i></a>
-                        <a class="footer__rrss" target="_blank" href="https://www.youtube.com/channel/UCBuXio9_FP2pdABkHykR67Q/videos"><i class='bx bxl-youtube footer__icon__rrss'></i></a>
+        <!-- EDUCACION -->
+        <article>
+            <h1 class="apartados__titulo">EDUCACIÓN</h1>
+            <div class="educacion__contenedor">
+                <section class="educacion__imagen">
+                    <img class="educacion__img" src="assets/images/educacion.jpg" alt="Estudiantes del CBTIS 128">
+                </section>
+                <section class="educacion__texto">
+                    <h2 class="educacion__titulo">Conoce el CBTIS 128 y todo lo que te puede ofrecer</h2>
+                    <p class="educacion__parrafo">En CBTIS 128 tenemos como principal objetivo formar técnicos profesionales capaces de integrarse a laborar en la industria maquiladora. Contamamos con una vasta oferta académica.</p>
+                    <section>
+                        <h3 class="educacion__subtitulo">Oferta académica</h3>
+                        <ul class="educacion__lista">
+                            <li class="educacion__elemento">Administración de Recursos Humanos</li>
+                            <li class="educacion__elemento">Gericultura</li>
+                            <li class="educacion__elemento">Electrónica</li>
+                            <li class="educacion__elemento">Programación</li>
+                            <li class="educacion__elemento">Soporte y mantenimiento de equipo de computo</li>
+                            <li class="educacion__elemento">Refrigeración y climatización</li>
+                        </u>
+                        <p class="educacion__parrafo">También contamos con programas de educación integral, para abastecer de experiencia laboral a nuestros jóvenes.</p>
+                    </section>
+                    <section>
+                        <h3 class="educacion__subtitulo">Programas de educacion integral</h3>
+                        <ul class="educacion__lista">
+                            <li class="educacion__elemento">Educación Dual</li>
+                            <li class="educacion__elemento">Fomento a la salud</li>
+                            <li class="educacion__elemento">Servicio Social</li>
+                            <li class="educacion__elemento">Prácticas Profesionales</li>
+                            <li class="educacion__elemento">Bolsa de trabajo</li>
+                        </ul>
+                        <p class="educacion__parrafo">Desde hace más de 40 años hemos brindado las herramientas para que nuestros estudiantes logren sobresalir en la industria, pero también nuestros alumnos de las diferentes generaciones han obtenido importantes lugares en actividades deportivas, académicas, culturales y tecnológicas. Han logrado los más altos reconcimientos a nivel nacional en sus diferentes disciplinas, dejando muy en alto el nombre de Ciudad Juárez en CBTIS 128.</p>
+                    </section>
+                    <section>
+                        <h3 class="educacion__subtitulo">Grupos Culturales</h3>
+                        <ul class="educacion__lista">
+                            <li class="educacion__elemento">Banda de guerra</li>
+                            <li class="educacion__elemento">Escolta de bandera</li>
+                            <li class="educacion__elemento">Danza folclórica</li>
+                            <li class="educacion__elemento">Rondalla</li>
+                            <li class="educacion__elemento">Artes</li>
+                            <li class="educacion__elemento">Teatro</li>
+                            <li class="educacion__elemento">Música</li>
+                            <li class="educacion__elemento">Ajedrez</li>
+                            <li class="educacion__elemento">Declaración y oratoria</li>
+                            <li class="educacion__elemento">Literatura</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3 class="educacion__subtitulo">Grupos Deportivos</h3>
+                        <ul class="educacion__lista">
+                            <li class="educacion__elemento">Atletismo</li>
+                            <li class="educacion__elemento">Voleibol</li>
+                            <li class="educacion__elemento">Fútbol</li>
+                            <li class="educacion__elemento">Fútbol Americano</li>
+                            <li class="educacion__elemento">Béisbol</li>
+                        </ul>
+                        <p class="educacion__parrafo">Estamos compremetidos con la sociedad juarense. Creemos firmemente en la educación y los valores que hemos impartido en cada uno de nuestros egresados y que continuaremos forjando a las futuras generaciones. Por esto y mucho más, seguiremos alcanzando el mañana con nuestra propia tecnología. Somos Jaguares. Somos CBTIS 128.</p>
+                    </section>
+                </section>
+            </div>
+        </article>
+        <!-- NOTAS -->
+        <article>
+            <h1 class="apartados__titulo">NOTAS</h1>
+            <div class="notas__contenedor">
+                <div class="notas">
+                    <img class="notas__img" src="assets/images/img1.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="assets/images/img1.jpg" target="_blank">Ver m&aacute;s</a>
                     </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="assets/images/img2.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="assets/document/notas/Conferencia_sept21.pdf" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="assets/images/img3.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="assets/document/notas/Convocatoria Opticart 11 mayo 2021.pdf" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img5.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="../assets/document/notas/Convocatoria_PUBLICA-T.pdf" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
             </div>
-            <div class="seccion__enlaces">
-                    <h2 class="footer__titulo">Avisos de Privacidad</h2>
-                    <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Integral_Planteles-1.pdf">Aviso de Privacidad Integral Planteles</a>
-                    <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Simplificado_Planteles.pdf">Aviso de Privacidad Simplificado Planteles</a>
-                    <a class="footer__enlaces" target="_blank" href="assets/document/avisos/LPP.pdf">Política pública para la educación media superior</a>
+            <button id="notas__mas" class="boton notas__boton">
+                <p>Ver más<i class='bx bx-chevron-down' ></i></p>
+            </button>
+            <div class="notas__contenedor notas__contenedor-Oculto">
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img6.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="../assets/document/notas/Convocatoria_OpticArt.pdf" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas notas-horizontal">
+                    <img class="notas__img" src="../assets/images/img7.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="../assets/images/img7.jpg" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img8.jpg" alt=""></a>
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="http://uemstis.sep.gob.mx/index.php/la-dgeti-hoy/800-uemstis-hace-un-llamado-a-no-relajar-las-medidas-preventivas-ante-el-coronavirus" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img9.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="http://uemstis.sep.gob.mx/index.php/la-dgeti-hoy/121-la-dgeti-hoy-planteles/798-uemstis-presenta-los-planes-mas-sobresalientes-de-reincorporacion-a-las-actividades-presenciales" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img10.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="../assets/images/img10.jpg" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img11.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="http://www.solucionesparaelfuturo.com.mx/" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img12.jpg" alt=""></a>
+                        <div class="notas__capa">
+                            <a class="boton notas__enlace" href="../assets/images/img12.jpg"" target="_blank">Ver m&aacute;s</a>
+                        </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img13.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="../assets/images/img13.jpg" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img14.png" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="../assets/document/notas/Boletin SEP no.82.pdf" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
+                <div class="notas">
+                    <img class="notas__img" src="../assets/images/img15.jpg" alt="">
+                    <div class="notas__capa">
+                        <a class="boton notas__enlace" href="../assets/images/img15.jpg" target="_blank">Ver m&aacute;s</a>
+                    </div>
+                </div>
             </div>
-            <div class="seccion__contacto">
-                    <h2 class="footer__titulo">Información de Contacto</h2>
-                    <ul>
-                        <li class="footer__contacto">
-                            <span><i class='bx bxs-map footer__icon' ></i></span>
-                            <a class="enlaces__contacto" target="_blank" href="https://goo.gl/maps/ATBLjX1t7thyiGRs5">CBTIS 128, Nueva Zelanda, Oasis</a>
+            <button id="notas__menos" class="boton notas__boton boton__oculto">
+                <p>Ver menos<i class='bx bxs-chevron-up'></i></p>
+            </button>
+        </article>
+        <!-- JOVENES EN CASA -->
+        <article>
+            <h1 class="apartados__titulo">JOVENES EN CASA</h1>
+            <div class="jovenes__contenedor">
+            <section class="jovenes__texto">
+                <h1 class="jovenes__titulo">¡Bienvenidos Jovenes!</h1>
+                <p class="jovenes__parrafo">Juntas/os aprovecharemos esta temporada para construir nuevas experiencias: lectura, arte, deporte, cine, webinars, convocatorias y apoyo socioemocional que ayudarán a que cuidemos mejor de nosotros mismos, de quienes nos rodean y de la naturaleza. </p>
+                <p class="jovenes__parrafo">Las actividades de la comunidad jóvenes en casa, fomentan tu creatividad, estimulan tu desarrollo cotinuamente y fortalecen todos tus aprendizajes. Son complementarias, pero no sustituyen las labores a distancia que te indican tus profesores/as y autoridades de tu plantel educativo. </p>
+                <p class="jovenes__parrafo jovenes__parrafo-Oculto">Es muy probable que permanecer en casa durante tanto tiempo comience a generar un poco de estrés en tí y los integrantes de tu familia, por ello te recomendamos algunas actividades que puedes realizar en estos días, trata de seguir los pasos al pie de la letra, recuerda que puedes compartir estas actividades con tu familia, amigos, redes sociales, o bien puedes hacerlo tú solo/a, y puedes llevarla a cabo cuantas veces consideres necesario durante este periodo en casa, recuerda seguirte cuidando y llevar a cabo las medidas de seguridad ante la contingencia.</p>
+                </p>
+            </section>
+            <div id="jovenes__splide" class="splide jovenes__slider">
+                <div class="splide__track jovenes__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <iframe class="jovenes__video" src="https://www.youtube.com/embed/zweYcO0hdgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </li>
-                        <li class="footer__contacto footer__contacto">
-                            <span><i class='bx bxs-phone footer__icon' ></i></span>
-                            <div class="footer__contacto__tel">
-                                <a class="enlaces__contacto" href="tel: 656-619-1934">656-619-1934</a> 
-                                <a class="enlaces__contacto" href="tel: 656-619-1570">656-619-1570</a>
-                            </div>
+                        <li class="splide__slide">
+                            <iframe class="jovenes__video" src="https://www.youtube.com/embed/UjrGDu81FR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </li>
-                        <li class="footer__contacto">
-                            <span><i class='bx bxl-gmail footer__icon' ></i></span>
-                            <a class="enlaces__contacto" href="mailto: comite-escolar.128@gmail.com">comite-escolar.128@gmail.com</a>
+                        <li class="splide__slide">
+                            <iframe class="jovenes__video" src="https://www.youtube.com/embed/I852_FPv8uA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li class="splide__slide">
+                            <iframe class="jovenes__video" src="https://www.youtube.com/embed/blglp0YHc6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </li>
                     </ul>
+                </div>
             </div>
-        </div>
+        </article>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer__contenedor">
+            <div class="footer__seccion footer__seccion-Ocultar">
+                <h1 class="footer__titulos">Sobre nosotros</h1>
+                <p class="footer__parrafo">
+                    Nuestro compromiso es seguir trabajando con el apoyo de toda la comunidad que integra el CBTIS 128 para lograr formar técnicos profesionales capaces de destacar en el 	ambito laboral. Desde hace más de 50 años hemos brindado las herramientras para que nuestros estudiantes logren sobresalir en la industria y sus vidas profesionales. Estamos comprometidos con la sociedad juarense y creemos firmemente en las educación y los valores que hemos impartido en cada uno de nuestros ingresados.
+                </p>
+                <a class="footer__rrss" target="_blank" href="https://www.facebook.com/Casa-de-los-Jaguares-CBTIS-128-101239285643821/">
+                    <i class='bx bxl-facebook footer__iconRRSS'></i>
+                </a>
+                <a class="footer__rrss" target="_blank" href="https://www.youtube.com/channel/UCBuXio9_FP2pdABkHykR67Q/videos">
+                    <i class='bx bxl-youtube footer__iconRRSS'></i>
+                </a>
+            </div>
+            <div class="footer__seccion">
+                <h1 class="footer__titulos">Avisos de Privacidad</h1>
+                <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Integral_Planteles-1.pdf">Aviso de Privacidad Integral Planteles</a>
+                <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Simplificado_Planteles.pdf">Aviso de Privacidad Simplificado Planteles</a>
+                <a class="footer__enlaces" target="_blank" href="assets/document/avisos/LPP.pdf">Política pública para la educación media superior</a>
+            </div>
+            <div class="footer__seccion">
+                <h1 class="footer__titulos">Información de Contacto</h1>
+                <ul>
+                    <li class="footer__contacto">
+                        <span><i class='bx bxs-map contacto__icon' ></i></span>
+                        <a class="footer__enlaces contacto__enlaces" target="_blank" href="https://goo.gl/maps/ATBLjX1t7thyiGRs5">CBTIS 128, Nueva Zelanda, Oasis</a>
+                    </li>
+                    <li class="footer__contacto">
+                        <span><i class='bx bxs-phone contacto__icon'></i></span>
+                        <div class="footer__phones">
+                            <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1934">656-619-1934</a> 
+                            <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1570">656-619-1570</a>
+                        </div>
+                    </li>
+                    <li class="footer__contacto">
+                        <span><i class='bx bxl-gmail contacto__icon' ></i></span>
+                        <a class="footer__enlaces contacto__enlaces" href="mailto: comite-escolar.128@gmail.com">comite-escolar.128@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <div class="seccion__copyright">
             <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
         </div>
-        </footer>
+    </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
-<script src="scripts/scripts.js"></script>
 </html>

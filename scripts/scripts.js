@@ -60,39 +60,36 @@ btn__ocultar.addEventListener("click", hide__video);
 function enableScroll() {
   window.onscroll = function () {
     var windowHeight = $(window).scrollTop();
-    var contenido2 = $("#contenido2").offset();
-    contenido2 = contenido2.top;
-    if (windowHeight >= contenido2) {
-      $("#aviso").fadeIn(100);
+    var main = $("#main").offset();
+    main = main.top;
+    if (windowHeight >= main) {
+      $("#header__menu").fadeIn(500);
     } else {
-      $("#aviso").fadeOut(500);
+      $("#header__menu").fadeOut(500);
     }
   };
 }
-function disableScroll() {
-  window.onscroll = function () {};
-}
+function disableScroll() {window.onscroll = function () {};}
 function menu__scroll() {
   if (screen.width >= 680) {
-    $("#aviso").hide(0);
+    $("#header__menu").hide(0);
     enableScroll();
   } else {
-    $("#aviso").show(0);
+    $("#header__menu").show(0);
     disableScroll();
   }
   window.onresize = function () {
     if (window.innerWidth >= 768) {
-      $("#aviso").hide(0);
+      $("#header__menu").hide(0);
       enableScroll();
     } else {
-      $("#aviso").show(0);
+      $("#header__menu").show(0);
       disableScroll();
     }
   };
 }
 window.onload = menu__scroll();
 /*=====  End of MENU SCROLL  ======*/
-
 /*==============================
 =          MENU MOVIL          =
 ==============================*/
@@ -137,28 +134,20 @@ contenedor__semestres.addEventListener("click", close__semestres);
 /*=====  End of MENU MOVIL  ======*/
 
 /*==============================
-=          DESTACADOS          =
-==============================*/
-var splide = new Splide(".vertical-splide", {
-  direction: "ttb",
-  type: "loop",
-  height: "10rem",
-  wheel: true,
-  arrows: undefined,
-  track: undefined,
-  autoplay: true,
-});
-splide.mount();
-/*=====  End of DESTACADOS  ======*/
-
-/*==============================
 =          NOTICIAS          =
 ==============================*/
 document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#image-slider", {
+  new Splide("#noticias__splide", {
+    classes: {
+      prev  : 'splide__arrow--prev noticias__arrow',
+      next  : 'splide__arrow--next noticias__arrow',
+      pagination: 'splide__pagination noticias__pagination',
+    },
     type: "loop",
     autoplay: "true",
     perPage: 3,
+    perMove: 1,
+    interval: 3000,
     gap: 20,
     breakpoints: {
       900: {
@@ -170,26 +159,58 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   }).mount();
 });
-/*=====  End of NOTICIAS  ======*/
+
+/*==============================
+=          DESTACADOS          =
+==============================*/
+var splide = new Splide(".destacados__splide", {
+  classes: {
+    track  : 'splide__track destacados__track',
+  },
+  direction: "ttb",
+  type: "loop",
+  height: 300,
+  wheel: true,
+  arrows: false,
+  track: false,
+  pagination: false,
+  autoplay: true,
+});
+splide.mount();
+/*=====  End of DESTACADOS  ======*/
+
+/*==================================
+=          NOTAS        =
+==================================*/
+notas__mas = document.getElementById('notas__mas');
+notas__ocultas = document.querySelector('.notas__contenedor-Oculto')
+notas__menos = document.getElementById('notas__menos');
+notas__ocultas = document.querySelector('.notas__contenedor-Oculto')
+boton__oculto = document.querySelector('.boton__oculto');
+function notas__mostrar(){
+  notas__ocultas.style.display = "flex";
+  notas__ocultas.style.transform = "translateY(0)"
+  boton__oculto.style.display = "block";
+  notas__ocultas.style.transform = "translateY(0)"
+  notas__mas.style.display = "none";
+}
+function notas__ocultar(){
+  notas__ocultas.style.display = "none";
+  boton__oculto.style.display = "none";
+  notas__mas.style.display = "block";
+}
+notas__mas.addEventListener("click", notas__mostrar);
+notas__menos.addEventListener("click", notas__ocultar)
+/*=====  End of NOTAS  ======*/
 
 /*==================================
 =          JOVENES EN CASA        =
 ==================================*/
-
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#splide__video", {
-    rewind: true,
-    perPage: 1,
-  }).mount();
-});
-
+new Splide( '#jovenes__splide', {
+  rewind: true,
+  classes: {
+    prev  : 'splide__arrow--prev jovenes__arrow jovenes__splide',
+    next  : 'splide__arrow--next jovenes__arrow',
+  },
+}).mount();
 /*=====  End of JOVENES EN CASA  ======*/
-
-/*==============================
-=          NOTAS          =
-==============================*/
-function abrirNotas() {
-  window.open("../pages/notas.html");
-}
-document.querySelector(".button__cont").addEventListener("click", abrirNotas);
-/*=====  End of NOTAS  ======*/
