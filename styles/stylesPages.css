@@ -54,12 +54,14 @@
 }
 .especialidades__splide{background-color: #00000077;}
 .especialidades__tarjetas{
+    border-radius: 10px;
     height: 500px;
     width: 300px;
     margin: auto;
     background-color: var(--blanco);
 }
 .especialidades__img{
+    border-radius: 10px 10px 0 0;
     width: 100%;
     object-fit: cover;
 }
