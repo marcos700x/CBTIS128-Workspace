@@ -138,7 +138,7 @@
       .card__img{
         width: 100%;
         height: 40%;
-        background-color: blue;
+        background-color: #f1f1f1;
         
       }
       .img__card__oferta{
@@ -240,7 +240,59 @@
         padding-bottom: 50px;
         color: var(--blanco);
       }
-      
+      .texto__titulacion{
+        padding: 0 10%;
+        text-align: justify;
+        font-size: 1.2rem;
+      }
+      .contenedor__titulacion{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+        height: 500px;
+      }
+      .informacion__titulacion{
+        width: 70%;
+        color: var(--blanco);
+        background-color: #00000077;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        height: 100%;
+      }
+      .titulo__informacion__titulacion{
+        margin: 10px 0;
+        font-size: 2rem;
+      }
+      .botones__titulacion{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .btn__titulacion{
+        height: calc(100%/3);
+        background-color: var(--rosa);
+        border: none;
+        color: var(--blanco);
+        padding: 20px;
+        font-size: 1.2rem;
+        transition: all .3s ease;
+        cursor: pointer;
+      }
+      .btn__titulacion:hover{
+        color: var(--blanxo);
+        background-color: #a2224475;
+
+      }
+      .informacion__automatica,.informacion__diseño,.informacion__experiencia{
+        transition: all .5s ease;
+      }
       @media screen and (max-width: 1040px) {
         .contenedor__texto__bachillerato{
           width: 100%;
@@ -253,6 +305,20 @@
           width: 50%;
           aspect-ratio: 1;
           height: unset;
+        }
+      }
+      @media screen and (max-width: 720px) {
+        .contenedor__titulacion{
+          flex-direction: column;
+          width: 100%;
+          height: auto;
+        }
+        .informacion__titulacion{
+          width: 100%;
+          text-align: center;
+        }
+        .botones__titulacion{
+          width: 100%;
         }
       }
       @media screen and (max-width: 650px) {
@@ -268,6 +334,9 @@
         .contenedor__parrafo__bachillerato::after{
           right: 7px;
           top: 15px;
+        }
+        .texto__titulacion{
+          text-align: left;
         }
       }
       @media screen and (max-width: 455px) {
@@ -292,7 +361,7 @@
       }
       @media screen and (max-width: 375px) {
           .card{
-            width: 100%;
+            width: 95%;
           }
           #card-slider .splide__arrows{
             display: none;
@@ -449,8 +518,24 @@
     </div>
     <!-- TITULACION -->
     <div class="titulacion">
-     
-
+      <h1 class="titulo__oferta">Titulaci&oacute;n</h1>
+      <p class="texto__titulacion">Aparte de cursar tus estudios de Bachillerato de Nivel Medio Superior, el Cbtis 128 te ofrece la opción de Titularte cómo Técnico en la especialidad que oferta el plantel, aquí encontrarás las diferentes opciones de Titulación, Requisitos y Documentación, así cómo la información de los títulos que se encuentran en trámite en por medio de la oficina de Servicio Social y Titulación. El alumno podrá optar Titularse por alguna de las siguientes opciones, cumpliendo los Requisitos y Documentación correspondiente:</p>
+      <div class="contenedor__titulacion">
+       <div class="informacion__titulacion">
+         <div style="display: block;"class="informacion__automatica"><h1 class="titulo__informacion__titulacion">Titulacion Automatica</h1><p>Cuando el alumno acredite todas las asignaturas con calificaciones de 6 ó superiores y tenga en los cinco módulos de la carrera con dictamen de competente (éste se logra obteniendo un promedio de 8 en cada módulo)</p></div>
+         <div style="opacity: 0; display: none;" class="informacion__experiencia"><h1 class="titulo__informacion__titulacion">Titulacion por Experiencia Laboral</h1><p>Cuando demuestre como mínimo en un año de Experiencia laboral a través de la memoria correspondiente y la constancia de la empresa donde se desempeñó profesionalmente, siempre y cuando la memoria refiera a las aplicaciones en el trabajo con los conocimientos y competencias adquiridas en la carrera.</p></div>
+         <div style="opacity: 0; display: none;" class="informacion__diseño"><h1 class="titulo__informacion__titulacion">Titulacion por diseño de prototipos y proyectos innovadores</h1><p>El alumno desarrollará un proyecto innovador y a través de la memoria correspondiente siempre y cuando ésta se refiera a las aplicaciones en el trabajo de los conocimientos y competencias adquiridas en la carrera. Para iniciar el prodecimiento de Titulación, el alumno deberá cumplir los siguientes requisitos:
+          <br><br>
+          A) Aprobar todas las asignaturas y módulos.<br>
+          B) Prestar su Servicio social de acuerdo al reglamento vigente.<br>
+          C) No adeudar al plantel libros. material y/o equipo.</p></div>
+       </div>
+       <div class="botones__titulacion">
+         <button class="btn__titulacion btn__titulacion__auto">Titulacion Automatica</button>
+         <button class="btn__titulacion btn__titulacion__exp">Titulacion por experiencia laboral</button>
+         <button class="btn__titulacion btn__titulacion__proto">Titulacion por diseño de prototipos y proyectos innovadores</button>
+       </div>
+      </div>
     </div>
   </body>
 <script>
@@ -505,5 +590,65 @@
 		},
   } ).mount();
 } );
+
+  var btn__titulacion__auto = document.querySelector(".btn__titulacion__auto");
+  var btn__titulacion__exp = document.querySelector(".btn__titulacion__exp");
+  var btn__titulacion__proto = document.querySelector(".btn__titulacion__proto");
+  
+  var informacion__auto= document.querySelector(".informacion__automatica");
+  var informacion__experiencia= document.querySelector(".informacion__experiencia");
+  var informacion__diseño= document.querySelector(".informacion__diseño");
+
+  function showInfoAuto (){
+    informacion__experiencia.style.opacity = "0";
+      informacion__diseño.style.opacity = "0";
+      
+      setTimeout(() => {
+        informacion__experiencia.style.display = "none";
+        informacion__diseño.style.display = "none";
+        informacion__auto.style.display = "block";
+
+      }, 500);
+      setTimeout(() => {
+
+        informacion__auto.style.opacity = "1";
+      }, 650);
+  }
+  function showInfoExp (){
+      informacion__auto.style.opacity = "0";
+      informacion__diseño.style.opacity = "0";
+      
+      setTimeout(() => {
+        informacion__auto.style.display = "none";
+        informacion__diseño.style.display = "none";
+        informacion__experiencia.style.display = "block";
+
+      }, 500);
+      setTimeout(() => {
+
+        informacion__experiencia.style.opacity = "1";
+      }, 650);
+  }
+  function showInfoDiseño (){
+    informacion__auto.style.opacity = "0";
+      informacion__experiencia.style.opacity = "0";
+      
+      setTimeout(() => {
+        informacion__auto.style.display = "none";
+        informacion__experiencia.style.display = "none";
+        informacion__diseño.style.display = "block";
+
+      }, 500);
+      setTimeout(() => {
+
+        informacion__diseño.style.opacity = "1";
+      }, 650);
+  }
+
+  btn__titulacion__auto.addEventListener("click",showInfoAuto);
+  btn__titulacion__exp.addEventListener("click",showInfoExp);
+  btn__titulacion__proto.addEventListener("click",showInfoDiseño);
+
+
 </script>
 </html>
