@@ -9,12 +9,15 @@
   .pagina__oculta {display: none;}
   .menu__oculto{display: inline-block;}
   .destacados__contenedor{width: 70%;}
-  .oferta__contenedor{flex-wrap: wrap; }
-  .oferta__titulo{text-align: center;}
+  .oferta__titulo{text-align: left;}
   .oferta__texto{width: 100%; height: 300px;}
   .oferta__imagen{margin-top: 2rem;}
 }
-
+@media screen and (max-width: 760px){
+  .oferta__texto{
+    width: 100%;
+  }
+}
 @media screen and (max-width: 980px) {
   .nav__enlaces{display: none;}
   .menu__boton{display: block;}
@@ -26,6 +29,15 @@
   .educacion__texto {
     width: 45%;
     padding: 0 2% 2% 2%;
+  }
+  .oferta__contenedor{
+    flex-direction: column;
+  }
+  .oferta__img{
+    margin: 20px 0 50px 0;
+  }
+  .oferta__texto{
+    text-align: left;
   }
   .notas{width: 300px;}
   .footer__contenedor{grid-template-columns: 1fr 1fr; padding: 2rem;}
@@ -52,17 +64,30 @@
     height: 100vw;
   }
   .educacion__elemento::before {
-    left: -0.25rem; margin-top: -0.75rem;
+    left: -0.25rem; margin-top: -0.95rem;
     height: 1.75rem;
     width: 1.75rem;
+  }
+  .noticias__splide .splide__arrow{
+    /* display: none; */
+    bottom: 0!important;
+    top: unset!important;
+  }
+  .noticias__splide .splide__pagination__page{
+    display: none;
+  }
+  .noticias__splide{
+    padding: 3em 0!important;
   }
   .jovenes__contenedor{flex-wrap: wrap; padding: 0;}
   .jovenes__texto{
     width: 100%; padding-bottom: 0;
-    border-radius: 10px 10px 0 0;
   }
-  .jovenes__slider{border-radius: 0 0 10px 10px; height: 300px;}
+  .jovenes__slider{ height: 300px;}
   .jovenes__parrafo-Oculto{display: none;}
+  .oferta__texto::after{
+    display: none;
+  }
 }
 
 /* Móviles en vertical
@@ -73,6 +98,37 @@
   .destacados__seccion {
     width: 42vw;
     height: 42vw;
+  }
+  .header > *{
+    margin: 15px 0;
+  }
+  .contenedor__titulacion{
+    flex-direction: column;
+    height: auto;
+  }
+  .informacion__titulacion{
+    width: 100%;
+  }
+  .botones__titulacion{
+    width: 100%;
+  }
+  .notas__capa::before, .notas__capa::after{
+    height: 15px;
+    width: 15px;
+  }
+  .notas__capa::before{
+    border-bottom: 3px solid var(--blanco);
+    border-left: 3px solid var(--blanco);
+  }
+  .notas__capa::after{
+    border-top: 3px solid var(--blanco);
+    border-right: 3px solid var(--blanco);
+  }
+  .header__titulo{
+    font-size: 4rem;
+  }
+  .header__frase{
+    font-size: 2rem;
   }
   .destacados__track {height: 42vw !important;}
   .destacados__seccion-Movil {
@@ -90,7 +146,10 @@
   .destacado__icon-Movil{
     padding: 10px;
     margin-left: 5%;
-    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .menu__titulo{
+    font-size: 1.5rem;
   }
   .main {padding-top: 0;}
   .notas{width: 150px;}
@@ -98,7 +157,7 @@
   .footer__contenedor{grid-template-columns: 1fr; padding: 2rem;}
   .footer__seccion-Ocultar{display: none;}
   
-  .oferta__contenedor{flex-wrap: wrap; }
+  .oferta__contenedor{flex-wrap: wrap; padding: 10px;}
   .oferta__titulo{text-align: center;}
   .oferta__texto{width: 100%; height: 300px;}
   .oferta__imagen{
@@ -106,7 +165,7 @@
     height: min-content;
   }
   .oferta__img{
-    margin: 20px 0;
+    /* margin: 20px 0; */
     height: 80%;
     width: 80%;
     object-fit: cover;
