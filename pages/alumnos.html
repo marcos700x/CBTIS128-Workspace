@@ -14,6 +14,13 @@
     <title>CBTIS 128 | Alumnos</title>
 </head>
 <body class="body">
+  <!-- PRELOADER -->
+  <div class="loader">
+    <div class="loader__onda">
+        <div class="loader__halo"></div>
+        <div class="loader__halo"></div>
+    </div>
+</div>
     <main>
         <!-- OFERTA ACADEMICA -->
         <article>
@@ -245,6 +252,22 @@
   btn__titulacion__auto.addEventListener("click",showInfoAuto);
   btn__titulacion__exp.addEventListener("click",showInfoExp);
   btn__titulacion__proto.addEventListener("click",showInfoDiseño);
+
+/*==============================
+=          LOAD          =
+==============================*/
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    loader = document.querySelector(".loader");
+    loader.style.opacity = "0";
+    loader.style.transition = "opacity 2s ease";
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 2000);
+  }, 2000);
+});
+/*=====  End of LOAD  ======*/
+
     </script>
 </body>
 </html>
