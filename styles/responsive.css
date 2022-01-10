@@ -15,6 +15,17 @@
   /* .contacto__directorios{padding: 0 10%;} */
     /* .contacto__seccion{padding: 2%;} */
 }
+@media screen and (max-width: 1050px) {
+  .contenedor__departamentos{
+      flex-direction: column;
+  }
+  .contenedor__enlaces__administracion{
+      margin: 0 30px;
+  }
+  .subtitulo__departamentos{
+      text-align: center;
+  }
+}
 @media screen and (max-width: 760px){
   .oferta__texto{
     width: 100%;
@@ -211,5 +222,8 @@
   .especialidades__splide .splide__pagination__page.is-active{background-color: var(--rosa);}
     .contacto__formulario{width: 96%;}
     .formulario__campos{width: 100%;}
+    .enlaces__administracion{
+      margin: 20px 0;
+  }
 }
 /*=====  End of RESPONSIVO  ======*/

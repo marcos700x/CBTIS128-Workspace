@@ -26,7 +26,7 @@
 }
 /*MODIFICACIÓN DE LA BARRA LATERAL DE NAVEGACIÓN*/
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 *::-webkit-scrollbar-thumb {
   background: var(--rosa);
@@ -539,14 +539,6 @@
 }
 .educacion__texto * {
   margin: 10px 0;
-}
-.educacion__texto::-webkit-scrollbar {
-  width: 10px;
-}
-.educacion__texto::-webkit-scrollbar-thumb {
-  width: 10px;
-  background: var(--rosa);
-  border-radius: 10px;
 }
 .educacion__titulo,
 .jovenes__titulo {
