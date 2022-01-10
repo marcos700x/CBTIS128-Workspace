@@ -1,3 +1,4 @@
+/* ESTILOS PAGINA ALUMNOS */
 .oferta__contenedor {
   display: flex;
   background-image: linear-gradient(120deg, var(--rosa) 0%, #a2224475 100%);
@@ -240,4 +241,100 @@ transform: scaleX(1);
 .informacion__diseño,
 .informacion__experiencia {
   transition: all 0.5s ease;
+}
+/* FIN ESTILOS PAGINA ALUMNOS */
+
+/* ESTILOS PAGINA NOTAS */
+
+.body__notas{
+  background-color: #f1f1f1;
+}
+.cerrar__ventana{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 50px 0;
+}
+/* FIN ESTILOS PAGINA NOTAS */
+
+/* ESTILOS PAGINA CONTACTO */
+
+.contacto__informacion{
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contacto__titulos{
+  font-family: var(--font-titulo);
+  color: var(--rosa);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contacto__logo{
+  color: var(--rosa);
+  font-size: 2rem;
+  margin: 0 5px;
+}
+.contacto__enlace{
+  text-decoration: none;
+  color: var(--negro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.contacto__texto{transition: all .5s ease; margin: 5px;}
+.contacto__enlace:hover > .contacto__texto{ 
+  transform: translateX(5px);
+}
+.contacto__seccion{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #a8a8a818;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.contacto__mapa{
+  display: flex;
+  margin: 16px auto;
+  border-radius: 3px;
+  border: 1px solid var(--rosa);
+  width:600px; height: 450px;
+}
+.contacto__formulario{
+  width: 50%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.formulario__campos{
+  width: 48%;
+  outline: 0;
+  border: 2px solid rgb(240, 240, 240);
+  margin: 0.5rem 0;
+  display: inline;
+  border-radius: 3px;
+  padding: 12px 20px;
+  font-family: var(--font-parrafo);
+  font-weight: 400;
+}
+.formulario__campos:focus{
+  border: 2px solid var(--rosa);
+}
+.formulario__comentarios{width: 100%; height: 8rem;}
+.contacto__boton{
+  padding: 10px 30px;
+  margin: 0 auto;
+  border: 2px solid var(--rosa);
+}
+.contacto__boton:hover{
+  background-color: var(--blanco); 
+  color: var(--rosa);
 }

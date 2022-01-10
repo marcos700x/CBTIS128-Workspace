@@ -25,10 +25,10 @@
   background-color: var(--rosa);
 }
 /*MODIFICACIÓN DE LA BARRA LATERAL DE NAVEGACIÓN*/
-.body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 10px;
 }
-.body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: var(--rosa);
   border-radius: 10px;
 }
@@ -417,9 +417,7 @@
 /*==============================
 =          NOTICIAS          =
 ==============================*/
-.noticias {
-  background-color: #ececec7e;
-}
+
 .noticias__img {
   width: 100%;
   aspect-ratio: 2;
@@ -452,7 +450,7 @@
   fill: var(--rosa)!important;
 }
 .noticias__splide {
-  background-color: #f3f3f3;
+  background-color: rgb(247, 247, 247);
 }
 .noticias__splide .splide__pagination__page.is-active {
   background-color: var(--rosa);
@@ -604,6 +602,7 @@
   width: 350px;
   margin: 10px auto;
   border-radius: 3px;
+  box-shadow: 10px 12px 10px rgb(175 175 175);
 }
 .notas__capa {
   top: 0;

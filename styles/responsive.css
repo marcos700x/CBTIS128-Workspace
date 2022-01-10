@@ -12,11 +12,38 @@
   .oferta__titulo{text-align: left;}
   .oferta__texto{width: 100%; height: 300px;}
   .oferta__imagen{margin-top: 2rem;}
+  /* .contacto__directorios{padding: 0 10%;} */
+    /* .contacto__seccion{padding: 2%;} */
 }
 @media screen and (max-width: 760px){
   .oferta__texto{
     width: 100%;
   }
+  .contacto__seccion{
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .contacto__directorios{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto__informacion{
+    justify-content: unset;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto__formulario{
+    flex-direction: column;
+  }
+  .formulario__campos{
+    width: 100%;
+  }
+  .body__contacto{
+    padding: 0 1%;
+  }
+ 
 }
 @media screen and (max-width: 980px) {
   .nav__enlaces{display: none;}
@@ -42,6 +69,10 @@
   .notas{width: 300px;}
   .footer__contenedor{grid-template-columns: 1fr 1fr; padding: 2rem;}
   .footer__seccion-Ocultar{grid-column: 1 / 3;}
+  .contacto__enlace{margin: 1rem 0;}
+    /* .contacto__directorios{padding: 1%;} */
+    .contacto__mapa{width: 98%;}
+    .contacto__formulario{width: 70%;}
 }
 
 /* Móviles en horizontal o tablets en vertical
@@ -165,7 +196,6 @@
     height: min-content;
   }
   .oferta__img{
-    /* margin: 20px 0; */
     height: 80%;
     width: 80%;
     object-fit: cover;
@@ -179,5 +209,7 @@
   .especialidades__splide .splide__pagination__page{display: inline-block; background-color: #ccc;}
   .especialidades__splide .splide__pagination__page:hover{background-color: var(--rosa);}
   .especialidades__splide .splide__pagination__page.is-active{background-color: var(--rosa);}
+    .contacto__formulario{width: 96%;}
+    .formulario__campos{width: 100%;}
 }
 /*=====  End of RESPONSIVO  ======*/

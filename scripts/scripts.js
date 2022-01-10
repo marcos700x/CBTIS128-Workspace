@@ -5,11 +5,11 @@ window.addEventListener("load", function () {
   setTimeout(() => {
     loader = document.querySelector(".loader");
     loader.style.opacity = "0";
-    loader.style.transition = "opacity 2s ease";
+    loader.style.transition = "opacity 1s ease";
     setTimeout(() => {
       loader.style.display = "none";
-    }, 2000);
-  }, 2000);
+    }, 1000);
+  }, 1000);
 });
 /*=====  End of LOAD  ======*/
 
@@ -183,24 +183,12 @@ splide.mount();
 =          NOTAS        =
 ==================================*/
 notas__mas = document.getElementById('notas__mas');
-notas__ocultas = document.querySelector('.notas__contenedor-Oculto')
-notas__menos = document.getElementById('notas__menos');
-notas__ocultas = document.querySelector('.notas__contenedor-Oculto')
-boton__oculto = document.querySelector('.boton__oculto');
-function notas__mostrar(){
-  notas__ocultas.style.display = "flex";
-  notas__ocultas.style.transform = "translateY(0)"
-  boton__oculto.style.display = "block";
-  notas__ocultas.style.transform = "translateY(0)"
-  notas__mas.style.display = "none";
+function abrir__notas(){
+  window.open("../pages/notas.html");
 }
-function notas__ocultar(){
-  notas__ocultas.style.display = "none";
-  boton__oculto.style.display = "none";
-  notas__mas.style.display = "block";
-}
-notas__mas.addEventListener("click", notas__mostrar);
-notas__menos.addEventListener("click", notas__ocultar)
+
+notas__mas.addEventListener("click", abrir__notas);
+// notas__menos.addEventListener("click", notas__ocultar);
 /*=====  End of NOTAS  ======*/
 
 /*==================================
