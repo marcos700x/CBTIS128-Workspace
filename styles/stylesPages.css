@@ -327,7 +327,7 @@ transform: scaleX(1);
 .formulario__campos:focus{
   border: 2px solid var(--rosa);
 }
-.formulario__comentarios{width: 100%; height: 8rem;}
+.formulario__comentarios{width: 100%; height: 8rem; resize: vertical;}
 .contacto__boton{
   padding: 10px 30px;
   margin: 0 auto;
