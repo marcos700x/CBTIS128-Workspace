@@ -12,6 +12,9 @@
   --rosa: #a22245;
   --blanco: #fff;
   --negro: #000;
+  --gris-claro: #ececec7e;
+  --gris: #505050;
+  --gris-oscuro: #303030;
   --color1: #6dbb24;
   --color2: #38bd9b;
   --color3: #b65f2c;
@@ -543,6 +546,7 @@
 }
 .educacion__img {
   width: 80%;
+  height: 100%;
   object-fit: cover;
   float: right;
 }
@@ -681,7 +685,7 @@ bottom: 10px;
   background-color: var(--rosa);
   color: var(--blanco);
   width: 600px;
-  padding: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -736,7 +740,7 @@ bottom: 10px;
 =====================================*/
 .footer__contenedor {
   margin-top: 150px;
-  background-color: var(--rosa);
+  background-color: var(--gris);
   color: var(--blanco);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -755,7 +759,7 @@ bottom: 10px;
   left: 0;
   width: 50px;
   height: 3px;
-  background: var(--blanco);
+  background: var(--rosa);
   z-index: 1;
 }
 .footer__rrss {
@@ -808,7 +812,7 @@ bottom: 10px;
 .seccion__copyright {
   color: var(--blanco);
   font-weight: 600;
-  background-color: #66182d;
+  background-color: var(--gris-oscuro);
   text-align: center;
   padding: 10px;
 }
