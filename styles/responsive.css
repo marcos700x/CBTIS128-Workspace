@@ -54,7 +54,6 @@
   .body__contacto{
     padding: 0 1%;
   }
- 
 }
 @media screen and (max-width: 980px) {
   .nav__enlaces{display: none;}

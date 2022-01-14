@@ -12,6 +12,13 @@
   --rosa: #a22245;
   --blanco: #fff;
   --negro: #000;
+  --color1: #6dbb24;
+  --color2: #38bd9b;
+  --color3: #b65f2c;
+  --color4: #000269;
+  --color5: #8746ff;
+  --color6: #ff2929;
+  --color7: #ff9100;
 }
 * {
   padding: 0;
@@ -804,3 +811,247 @@ bottom: 10px;
   padding: 10px;
 }
 /*=====  End of FOOTER  ======*/
+
+/* Concursos */
+.titulo__concursos{
+  text-align: center;
+  font-family: var(--font-titulo);
+  font-size: 30px;
+  color: var(--rosa);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.concursos__linea {
+  width: 50%;
+  height: 4px;
+  background-color: var(--rosa);
+  border: none;
+  margin-left: 25%;
+}
+.cont__concurso1{
+  height: auto;
+  color: var(--negro);
+  font-family: var(--font-parrafo);
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-color: var(--color1);
+  border-width: 5px;
+  transition: background 1s ease;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+}
+.cont__concurso1:hover{
+  background: var(--color1);
+  color: #fff;
+}
+
+.cont__concurso2{
+  height: auto;
+  color: var(--negro);
+  font-family: var(--font-parrafo);
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-color: var(--color2);
+  border-width: 5px;
+  background: #fff;
+  transition: background 1s ease;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+}
+.cont__concurso2:hover{
+  background: var(--color2);
+  color: #fff;
+}
+.cont__concurso3{
+  height: auto;
+  color: var(--negro);
+  font-family: var(--font-parrafo);
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-color: var(--color3);
+  border-width: 5px;
+  background: #fff;
+  transition: background 1s ease;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+}
+.cont__concurso3:hover{
+  background: var(--color3);
+  color: #fff;
+}
+.cont__concurso4{
+  height: auto;
+  color: var(--negro);
+  font-family: var(--font-parrafo);
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-color: var(--color4);
+  border-width: 5px;
+  background: #fff;
+  transition: background 1s ease;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+}
+.cont__concurso4:hover{
+  background: var(--color4);
+  color: #fff;
+}
+.cont__concurso5{
+  height: auto;
+  color: var(--negro);
+  font-family: var(--font-parrafo);
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-color: var(--color5);
+  border-width: 5px;
+  background: #fff;
+  transition: background 1s ease;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+}
+.cont__concurso5:hover{
+  background: var(--color5);
+  color: #fff;
+}
+.cont__concurso6{
+  height: auto;
+  color: var(--negro);
+  font-family: var(--font-parrafo);
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-color: var(--color6);
+  border-width: 5px;
+  background: #fff;
+  transition: background 1s ease;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+}
+.cont__concurso6:hover{
+  background: var(--color6);
+  color: #fff;
+}
+.cont__concurso7{
+  height: auto;
+  color: var(--negro);
+  font-family: var(--font-parrafo);
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-color: var(--color7);
+  border-width: 5px;
+  background: #fff;
+  transition: background 1s ease;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+}
+.cont__concurso7:hover{
+  background: var(--color7);
+  color: #fff;
+}
+.cont__texto{
+  padding: 30px;
+  width: 100%;
+}
+.subtitulo{
+  margin-bottom: 10px;
+  color: var(--negro);
+  font-family: var(--font-titulo);
+  text-align: center;
+  position: relative;
+}
+.imagenes__1{
+   width: 400px;
+   height: 200px;
+   float: left;
+   margin-right: 10px;
+   border-radius: 10px;
+   margin-top: 10px;
+} 
+.imagenes__2{
+  width: 400px;
+  height: 200px;
+  float: right;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+} 
+.texto__concursos{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.cont__conocer {
+  display: flex;
+  width: 100%;
+  justify-content: center; 
+  margin-bottom: 10px;
+}
+.cont__conocer a{
+  text-decoration: none;
+}
+.conocer__mas{
+  background-color: var(--rosa);
+  color: var(--blanco);
+  font-family: var(--font-parrafo);
+  padding: 12px 24px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: opacity .5s ease;
+}
+.conocer__mas:hover{
+  opacity: .7;
+}
+
+/* End of contests */

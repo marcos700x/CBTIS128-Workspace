@@ -1,0 +1,173 @@
+
+/* Tablets en horizonal y escritorios normales
+------------------------------------------------------------------------- */
+@media (max-width: 1300px){
+    .imagenes__1 ,.imagenes__2{
+        margin: auto;
+        float: left;
+        width: 400px;
+        height: 200px;
+        margin-right: 10px;
+        margin-top: 30PX;
+    }
+    .subtitulo{
+        font-size: 22px;
+    }
+    .texto__concursos{
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 1285px) {
+    .imagenes__1 ,.imagenes__2{
+        margin: auto;
+        float: none;
+        width: 460px;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .subtitulo{
+        font-size: 22px;
+    }
+    .texto__concursos{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .imagenes__1 ,.imagenes__2{
+        margin: auto;
+        margin-bottom: 10px;
+        float: none;
+        width: 300px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+    .subtitulo{
+        font-size: 19px;
+    }
+    .texto__concursos{
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 760px){
+    .imagenes__1 ,.imagenes__2{
+        margin: auto;
+        margin-bottom: 10px;
+        float: none;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .titulo__concursos{
+        font-size: 20px;
+    }
+    .subtitulo{
+        font-size: 17px;
+    }
+    .texto__concursos{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Móviles en horizontal o tablets en vertical
+------------------------------------------------------------------------- */
+@media screen and (max-width: 620px){
+    .imagenes__1 ,.imagenes__2{
+        margin: auto;
+        margin-bottom: 10px;
+        float: none;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 9px;
+    }
+    .titulo__concursos{
+        font-size: 20px;
+    }
+    .subtitulo{
+        font-size: 17px;
+    }
+    .texto__concursos{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .conocer__mas{
+        width: 130px;
+        font-size: .85rem;
+        padding: 10px 20px;
+    }
+}
+/* Móviles en vertical
+------------------------------------------------------------------------- */
+@media (max-width: 480px){
+    .imagenes__1 ,.imagenes__2{
+        margin: auto;
+        margin-bottom: 5px;
+        float: none;
+        height: 90px;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .titulo__concursos{
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+    .subtitulo{
+        font-size: 15px;
+    }
+    .texto__concursos{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .conocer__mas{
+        width: 130px;
+        font-size: .8rem;
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 320px){
+    .imagenes__1 ,.imagenes__2{
+        margin: auto;
+        margin-bottom: 5px;
+        float: none;
+        height: 50px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .titulo__concursos{
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+    .subtitulo{
+        font-size: 15px;
+    }
+    .texto__concursos{
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .conocer__mas{
+        width: 50%;
+        font-size: .7rem;
+        padding: 6px 20px;
+    }
+}
