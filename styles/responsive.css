@@ -2,39 +2,445 @@
 =          RESPONSIVO          =
 ==============================*/
 
-/* Tablets en horizonal y escritorios normales */
-@media (min-width: 768px) and (max-width: 1199px) { 
-    :root {
-        font-size: 14px;
-    }
+/* Tablets en horizonal y escritorios normales
+------------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1300px) {
+  :root {
+    font-size: 15px;
+  }
+
+  .pagina__oculta {
+    display: none;
+  }
+
+  .menu__oculto {
+    display: inline-block;
+  }
+
+  .destacados__contenedor {
+    width: 70%;
+  }
+
+  .oferta__titulo {
+    text-align: left;
+  }
+
+  .oferta__texto {
+    width: 100%;
+    height: 300px;
+  }
+
+  .oferta__imagen {
+    margin-top: 2rem;
+  }
+
+  /* .contacto__directorios{padding: 0 10%;} */
+  /* .contacto__seccion{padding: 2%;} */
+}
+
+@media screen and (max-width: 1050px) {
+  .contenedor__departamentos {
+    flex-direction: column;
+  }
+
+  .contenedor__enlaces__administracion {
+    margin: 0 30px;
+  }
+
+  .subtitulo__departamentos {
+    text-align: center;
+  }
+  .contenedor__concursos{
+    width: 100%;
+  }
+  .wrap__informacion__concurso{
+    flex-direction: column;
+  }
+  .wrap__concurso__texto{
+    width: 100%; 
+    text-align: center;
+    align-items: center;
+  }
+  .imagenes__concursos{
+    height: 200px;
+    width: auto;
+  }
+  .texto__concursos{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .oferta__texto {
+    width: 100%;
+  }
+
+  .contacto__seccion {
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .contacto__directorios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .contacto__informacion {
+    justify-content: unset;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .contacto__formulario {
+    flex-direction: column;
+  }
+
+  .formulario__campos {
+    width: 100%;
+  }
+
+  .body__contacto {
+    padding: 0 1%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .nav__enlaces {
+    display: none;
+  }
+
+  .menu__boton {
+    display: block;
+  }
+
+  .header__lista {
+    display: none;
+  }
+
+  .destacados__contenedor {
+    width: 90%;
+  }
+
+  .educacion__contenedor {
+    height: calc(50vw * 90 / 100);
+  }
+
+  .educacion__imagen {
+    width: 50%;
+  }
+
+  .educacion__img {
+    width: 90%;
+  }
+
+  .educacion__texto {
+    width: 45%;
+    padding: 0 2% 2% 2%;
+  }
+
+  .oferta__contenedor {
+    flex-direction: column;
+  }
+
+  .oferta__img {
+    margin: 20px 0 50px 0;
+  }
+
+  .oferta__texto {
+    text-align: left;
+  }
+
+  .notas {
+    width: 300px;
+  }
+
+  .footer__contenedor {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+
+  .footer__seccion-Ocultar {
+    grid-column: 1 / 3;
+  }
+
+  .contacto__enlace {
+    margin: 1rem 0;
+  }
+
+  /* .contacto__directorios{padding: 1%;} */
+  .contacto__mapa {
+    width: 98%;
+  }
+
+  .contacto__formulario {
+    width: 70%;
+  }
 }
 
 /* Móviles en horizontal o tablets en vertical */
-@media (max-width: 767px) { 
-    :root {
-        font-size: 12px;
-    }
-    .nota__espacio-horizontal {
-        width: 350px;
-    }
-}
+@media (max-width: 767px) {
+  :root {
+    font-size: 12px;
+  }
 
-/* Móviles en vertical */
-@media (max-width: 480px) { 
-    
+  .nota__espacio-horizontal {
+    width: 350px;
+  }
 }
-@media screen and (max-width: 550px) {
-    .header__content{
-        box-shadow: none;
-        border-top: 10px solid var(--blanco);
-        border-bottom: 10px solid var(--blanco);
-        text-align: center;
+  /* Móviles en horizontal o tablets en vertical
+------------------------------------------------------------------------- */
+  @media screen and (max-width: 620px) {
+    :root {
+      font-size: 14px;
     }
-    .header__frase{
-        font-size: 1.5rem;
-        font-style: normal;
+
+    .educacion__contenedor {
+      display: block;
+      height: auto;
     }
-    .video{
-        width: 100%;
+
+    .educacion__imagen,
+    .educacion__img,
+    .educacion__texto {
+      width: 100%;
     }
-}
+
+    .educacion__img {
+      float: none;
+    }
+
+    .educacion__texto {
+      height: 100vw;
+    }
+
+    .educacion__elemento::before {
+      left: -0.25rem;
+      margin-top: -0.95rem;
+      height: 1.75rem;
+      width: 1.75rem;
+    }
+
+    .noticias__splide .splide__arrow {
+      /* display: none; */
+      bottom: 0 !important;
+      top: unset !important;
+    }
+
+    .noticias__splide .splide__pagination__page {
+      display: none;
+    }
+
+    .noticias__splide {
+      padding: 3em 0 !important;
+    }
+
+    .jovenes__contenedor {
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    .jovenes__texto {
+      width: 100%;
+      padding-bottom: 0;
+    }
+
+    .jovenes__slider {
+      height: 300px;
+    }
+
+    .jovenes__parrafo-Oculto {
+      display: none;
+    }
+
+    .oferta__texto::after {
+      display: none;
+    }
+  }
+
+  /* Móviles en vertical
+------------------------------------------------------------------------- */
+  @media (max-width: 480px) {
+    .destacados__contenedor {
+      width: 100%;
+    }
+
+    .destacados__seccion-Desaparace {
+      display: none;
+    }
+
+    .destacados__seccion {
+      width: 42vw;
+      height: 42vw;
+    }
+
+    .header>* {
+      margin: 15px 0;
+    }
+
+    .contenedor__titulacion {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .informacion__titulacion {
+      width: 100%;
+    }
+
+    .botones__titulacion {
+      width: 100%;
+    }
+
+    .notas__capa::before,
+    .notas__capa::after {
+      height: 15px;
+      width: 15px;
+    }
+
+    .notas__capa::before {
+      border-bottom: 3px solid var(--blanco);
+      border-left: 3px solid var(--blanco);
+    }
+
+    .notas__capa::after {
+      border-top: 3px solid var(--blanco);
+      border-right: 3px solid var(--blanco);
+    }
+
+    .header__titulo {
+      font-size: 4rem;
+    }
+
+    .header__frase {
+      font-size: 2rem;
+    }
+
+    .destacados__track {
+      height: 42vw !important;
+    }
+
+    .destacados__seccion-Movil {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 42vw;
+      height: 42vw;
+      margin: 10px;
+    }
+
+    .destacado__division-Movil {
+      flex-direction: row;
+      height: 20vw;
+      margin: 0;
+    }
+
+    .destacados__titulo {
+      font-size: 1rem;
+    }
+
+    .destacado__icon-Movil {
+      padding: 10px;
+      margin-left: 5%;
+      font-size: 1rem;
+    }
+
+    .menu__titulo {
+      font-size: 1.5rem;
+    }
+
+    .main {
+      padding-top: 0;
+    }
+
+    .notas {
+      width: 150px;
+    }
+
+    .notas__enlace {
+      padding: 10px;
+    }
+
+    .footer__contenedor {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+    }
+
+    .footer__seccion-Ocultar {
+      display: none;
+    }
+
+    .oferta__contenedor {
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .oferta__titulo {
+      text-align: center;
+    }
+
+    .oferta__texto {
+      width: 100%;
+      height: 300px;
+    }
+
+    .oferta__imagen {
+      display: flex;
+      justify-content: center;
+      height: min-content;
+    }
+
+    .oferta__img {
+      height: 80%;
+      width: 80%;
+      object-fit: cover;
+      text-align: center;
+    }
+
+    .apartados__titulo {
+      font-size: 2rem;
+    }
+
+    .especialidades__splide .splide__arrow {
+      display: none;
+    }
+
+    .especialidades__splide {
+      padding: 3rem 1% !important;
+    }
+
+    .especialidades__splide .splide__pagination__page {
+      display: inline-block;
+      background-color: #ccc;
+    }
+
+    .especialidades__splide .splide__pagination__page:hover {
+      background-color: var(--rosa);
+    }
+
+    .especialidades__splide .splide__pagination__page.is-active {
+      background-color: var(--rosa);
+    }
+
+    .contacto__formulario {
+      width: 96%;
+    }
+
+    .formulario__campos {
+      width: 100%;
+    }
+
+    .enlaces__administracion {
+      margin: 20px 0;
+    }
+    .imagenes__concursos{
+      width: 100%;
+      height: 200px;
+    }
+    .wrap__informacion__concurso{
+      padding: 40px 10px;
+    }
+  }
+
+
+  /* =====  End of RESPONSIVO  ====== */
