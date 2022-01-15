@@ -65,12 +65,8 @@
   .texto__concursos{
     text-align: center;
   }
-  .titulacion__tarjeta{
-    width: 90%;
-  }
-  .img__titulacion__tarjeta{
-    height: auto;
-  }
+  
+  
 }
 
 @media screen and (max-width: 760px) {
@@ -105,21 +101,8 @@
   .body__contacto {
     padding: 0 1%;
   }
-  .titulacion__tarjeta{
-    flex-direction: column;
-    width: 80%;
-    border-radius: 3px;
-    overflow: hidden;
-  }
-  .img__titulacion__tarjeta{
-    width: 100%;
-    border-radius: 0;
-
-  }
   .contenedor__texto__titulacion__tarjeta{
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
+    height: auto;
   }
 }
 
@@ -444,6 +427,9 @@
     }
     .wrap__informacion__concurso{
       padding: 40px 10px;
+    }
+    .titulacion__tarjeta{
+      width: 90%;
     }
   }
 

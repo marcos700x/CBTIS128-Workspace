@@ -100,30 +100,35 @@
 .contenedor__titulacion {
   width: 100%;
   display: flex;
+  /* justify-content: space-evenly; */
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin: 50px auto;
+  flex-wrap: wrap;
+
 }
 .titulacion__tarjeta{
   display: flex;
   align-items: center;
+  flex-direction: column;
   margin: 10px;
-  width: 70%;
+  width: 350px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px var(--gris);
+  flex-shrink: 0;
 }
 .img__titulacion__tarjeta{
-  width: 30%;
-  height: 250px;
+  width: 100%;
+  height: 200px;
 }
 .contenedor__texto__titulacion__tarjeta{
   padding: 20px;
-  width: 70%;
-  box-shadow: 0px 0px 10px var(--gris);
+  width: 100%;
   background-color: var(--blanco);
   color: var(--blanco);
-  margin-left: 20px;
   background-color: var(--rosa);
-  border-radius: 3px;
+  height: 500px;
 }
 .etiqueta__texto__titulacion{
   color: var(--gris-claro);
@@ -134,7 +139,10 @@
     text-transform: uppercase;
     margin: 5px 0;
 }
+.texto__titulacion__tarjeta{
+  /* font-size: 1.2rem; */
 
+}
 /* FIN ESTILOS PAGINA ALUMNOS */
 
 /* ESTILOS PAGINA NOTAS */
