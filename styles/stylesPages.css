@@ -369,8 +369,8 @@ transform: scaleX(1);
   align-items: center;
   margin: 10px 0;
 }
-.enlaces__pdf__img {
-  width: 50px;
+.icono__pdf{
+  font-size: 2rem;
 }
 .enlace__admin {
   text-decoration: none;
