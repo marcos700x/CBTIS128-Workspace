@@ -23,7 +23,7 @@
 </div>
     <main>
         <!-- OFERTA ACADEMICA -->
-        <article>
+        <!-- <article>
             <h1 class="apartados__titulo">Oferta Académica</h1>
             <section class="oferta__contenedor">
                 <section class="oferta__texto">
@@ -36,10 +36,47 @@
                     <p class="oferta__parrafo">Cuando se concluyen los 3 años de estudio, se puede ingresar a la educación superior en instituciones universitarias, politeacute;cnicas o tecnológicas. Al concluir los estudios obtienes el certificado de bachillerato y una carta de pasante; Una vez cubiertos los requisitos correspondientes, el regresado obtiene el título y la cédula profesional de la carrera cursada, registrados ante la Dirección General de Profesiones de la Secretaría de Educación Pública.</p>
                 </section>
                 <section class="oferta__imagen">
-                    <img class="oferta__img" src="../assets/images/educacion.jpg" alt="">
+                    <img class="oferta__img" src="../assets/images/alumnos.jpg" alt="Estudiante CBTIS128" title="Cesar Eduardo Talamantes Tovar gen: 2019-2022">
                 </section>
             </section>
-        </article>
+        </article> -->
+        <section>
+            <h1 class="apartados__titulo">Oferta Académica</h1>
+            <div id="oferta__splide" class="splide oferta__splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="oferta__imagen">
+                                <img class="oferta__img" src="../assets/images/oferta-objetivo.jpg" alt="">
+                            </div>
+                            <div class="oferta__texto">
+                                <h1 class="oferta__titulo">| OBJETIVO</h1>
+                                <p class="oferta__parrafo">El Bachillerato Tecnológico tiene como objetivo fomentar una educación integral, contribuyendo a la articulación y flexibilidad del sistema educativo, acorde con los intereses de los estudiantes y las necesidades de desarrollo del país, la Secretaría de Educación Pública a través de la Subsecretaría de Educación e Investigación Tecnológicas, con pleno respeto al federalismo educativo. Esta modalidad es bivalente, ya que se puede estudiar el bachillerato al mismo tiempo que una carrera de técnico, las materias propedéuticas que se cursan son prácticamente las mismas que en el bachillerato general, por lo que se prepara para estudiar una carrera profesional del nivel superior, adicionalmente, el plan de estudios incluye materias tecnológicas que se cursan junto con las antes mencionadas y que preparan como técnico del nivel medio superior al estudiante en las diversas carreras que ofrece ésta modalidad de bachillerato.</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="oferta__imagen">
+                                <img class="oferta__img" src="../assets/images/oferta-estructura.png" alt="">
+                            </div>
+                            <div class="oferta__texto">
+                                <h1 class="oferta__titulo">| ESTRUCTURA CURRICULAR</h1>
+                                <p class="oferta__parrafo">La nueva estructura curricular, que propone un modelo centrado en el aprendizaje sustentado en el constructivos, incluye tres componentes básicos: Formación Básica, Formación Profesional y Formación Propedéutica, y se imparte en la modalidad escolarizada. Su estructura curricular presenta las horas-semana mínimas requeridas y está organizada en seis semestres, integrados por módulos y asignaturas.
+                                El Componente de Formación Profesional se articula con la educación superior y asimismo permite la incorporación al sector productivo. Se organiza en carreras estructuradas en módulos para desarrollar las competencias profesiónales correspondientes. Los módulos de la formación profesional son autocontenidos y están enfocados en el desarrollo de habilidades específicas para el trabajo, con una orientación predominantemente práctica.</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="oferta__imagen">
+                                <img class="oferta__img" src="../assets/images/oferta-formacion.jpg" alt="">
+                            </div>
+                            <div class="oferta__texto">
+                                <h1 class="oferta__titulo">| FORMACIÓN PROFESIONAL</h1>
+                                <p class="oferta__parrafo">Al concluir cada módulo los estudiantes reciben un certificado. Estos certificados se plantean como "salidas laterales", que permiten que los estudiantes tengan reconocimiento por sus estudios incluso si no cursan tres años completos de EMS. Cuando se concluyen los 3 años de estudio, se puede ingresar a la educación superior en instituciones universitarias, politeacute;cnicas o tecnológicas. Al concluir los estudios obtienes el certificado de bachillerato y una carta de pasante; Una vez cubiertos los requisitos correspondientes, el regresado obtiene el título y la cédula profesional de la carrera cursada, registrados ante la Dirección General de Profesiones de la Secretaría de Educación Pública.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <!-- ESPECIALIDADES -->
         <article>
             <h1 class="apartados__titulo">ESPECIALIDADES</h1>
@@ -165,6 +202,31 @@
         </article>
     </main>
     <script>
+
+const splide = new Splide( '#oferta__splide',{
+            classes: {
+                arrows: 'splide__arrows oferta__arrows',
+                pagination: 'splide__pagination oferta__pagination',
+                page      : 'splide__pagination__page oferta__pagination__page ',
+            },
+            type: "loop",
+            autoplay: "true",
+            arrowPath: false,
+            perPage: 1,
+            // interval: 3000,
+            // gap: 20,
+        } );
+        splide.on( 'pagination:mounted', function ( data ) {
+            let i = 0;
+            data.items.forEach( function ( item ) {
+                i = i + 1;
+                if (i == 1) {item.button.textContent = String("OBJETIVO" );}
+                if (i == 2) {item.button.textContent = String("ESTRUCTURA" );}
+                if (i == 3) {item.button.textContent = String("FORMACIÓN PROFESIONAL");}
+                console.log(item);
+            } );
+        } );
+        splide.mount();
         /*==================================
         =          ESPECIALIDADES       =
         ==================================*/

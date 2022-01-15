@@ -26,8 +26,7 @@
   }
 
   .oferta__texto {
-    width: 100%;
-    height: 300px;
+    top: 10%;
   }
 
   .oferta__imagen {
@@ -140,17 +139,16 @@
     padding: 0 2% 2% 2%;
   }
 
-  .oferta__contenedor {
-    flex-direction: column;
+  
+  .oferta__imagen{width: 100%; height: 300px;}
+  .oferta__img{margin-left: 0;}
+  .oferta__texto{
+    position: relative;
+    top: 0%;    right: 0;
+    padding: 10px 0;
+    width: 100%;
   }
 
-  .oferta__img {
-    margin: 20px 0 50px 0;
-  }
-
-  .oferta__texto {
-    text-align: left;
-  }
 
   .notas {
     width: 300px;
@@ -253,10 +251,18 @@
     .jovenes__parrafo-Oculto {
       display: none;
     }
-
-    .oferta__texto::after {
-      display: none;
+    .oferta__splide{
+      display: flex;
+      flex-direction: column-reverse ;
+      padding: 0 1rem;
     }
+    .oferta__pagination{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .oferta__pagination__page {margin: 15px 0; }
+  
   }
 
   /* Móviles en vertical
@@ -370,33 +376,16 @@
       display: none;
     }
 
-    .oferta__contenedor {
-      flex-wrap: wrap;
-      padding: 10px;
-    }
-
-    .oferta__titulo {
-      text-align: center;
-    }
-
-    .oferta__texto {
-      width: 100%;
-      height: 300px;
-    }
-
-    .oferta__imagen {
-      display: flex;
-      justify-content: center;
-      height: min-content;
-    }
-
-    .oferta__img {
-      height: 80%;
-      width: 80%;
-      object-fit: cover;
-      text-align: center;
-    }
-
+    .oferta__splide{padding: 3em 0 0 0 !important;}
+  .oferta__pagination{display: flex !important;}
+  .oferta__texto{padding: 10px; box-shadow: none;}
+  .oferta__imagen{
+    height: 200px;
+  }
+ 
+  .oferta__splide{
+    margin-top: 50px;
+  }
     .apartados__titulo {
       font-size: 2rem;
     }
