@@ -33,8 +33,6 @@
     margin-top: 2rem;
   }
 
-  /* .contacto__directorios{padding: 0 10%;} */
-  /* .contacto__seccion{padding: 2%;} */
 }
 
 @media screen and (max-width: 1050px) {
@@ -67,6 +65,12 @@
   .texto__concursos{
     text-align: center;
   }
+  .titulacion__tarjeta{
+    width: 90%;
+  }
+  .img__titulacion__tarjeta{
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -83,13 +87,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* align-items: center; */
   }
 
   .contacto__informacion {
     justify-content: unset;
     flex-direction: column;
-    /* align-items: center; */
   }
 
   .contacto__formulario {
@@ -102,6 +104,22 @@
 
   .body__contacto {
     padding: 0 1%;
+  }
+  .titulacion__tarjeta{
+    flex-direction: column;
+    width: 80%;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .img__titulacion__tarjeta{
+    width: 100%;
+    border-radius: 0;
+
+  }
+  .contenedor__texto__titulacion__tarjeta{
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
   }
 }
 
@@ -167,7 +185,6 @@
     margin: 1rem 0;
   }
 
-  /* .contacto__directorios{padding: 1%;} */
   .contacto__mapa {
     width: 98%;
   }
@@ -221,7 +238,6 @@
     }
 
     .noticias__splide .splide__arrow {
-      /* display: none; */
       bottom: 0 !important;
       top: unset !important;
     }
