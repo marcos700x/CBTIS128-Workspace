@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="../styles/styles.css"/>
   <link rel="stylesheet" href="../styles/responsive.css">
   <link rel="stylesheet" href="../styles/stylesPages.css">
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"
+  type="text/javascript"
+></script>
   <title>CBTIS 128 | Notas</title>
 </head>
 <body class="body__notas">
@@ -17,7 +21,83 @@
           <div class="loader__halo"></div>
       </div>
   </div>
-  <!-- <div class="notas"> -->
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="header__titulo">CBTIS 128</h1>
+    <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
+    <nav>
+        <ul class="header__lista">
+            <li class="header__elemento"><a class="header__enlace" href="../index.html">Inicio</a></li>
+            <li class="header__elemento"><a class="header__enlace" href="nosotros.html">Nosotros</a></li>
+            <li class="header__elemento"><a class="header__enlace" href="departamentos.html">Departamentos</a></li>
+            <li class="header__elemento"><a class="header__enlace" href="alumnos.html">Alumnos</a></li>
+            <li class="header__elemento"><a class="header__enlace" href="transparencia.html">Transparencia</a></li>
+            <li class="header__elemento"><a class="header__enlace" href="concursos.html">Concursos</a></li>
+            <li class="header__elemento"><a class="header__enlace" href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <a href="#main" class="boton boton__header">VER NOTAS</a>
+  
+    <!-- NAV -->
+    <nav id="header__menu" class="header__menu">
+        <div class="menu__logo">
+            <a href="index.html">   <img class="menu__img" src="../assets/images/logo.svg" alt="Logo CBTIS128"></a>
+            <h1 class="menu__titulo">CBTIS 128</h1>
+        </div>  
+        <div class="nav__enlaces">
+            <a href="../index.html" class="menu__pagina">Inicio</a>
+            <a href ="alumnos.html" class="menu__pagina ">Alumnos</a>
+            <a href="nosotros.html" class="menu__pagina">Nosotros</a>
+            <a href="contacto.html" class="menu__pagina">Contacto</a>
+            <a href="departamentos.html" class="menu__pagina pagina__oculta">Departamentos</a>
+            <a href="concursos.html" class="menu__pagina pagina__oculta">Concursos</a>
+            <a href="transparencia" class="menu__pagina pagina__oculta">Transparencia</a>
+            <!-- start menu desplegable -->
+            <div class="dropdown">
+                <button class="boton menu__semestres menu__oculto">Ver más</button>
+                <div class="dropmenu">
+                    <a class="menu__pagina " href="pages/transparencia.html">Transparencia</a>
+                    <a class="menu__pagina " href="pages/concursos.html">Concursos</a>
+                    <a class="menu__pagina " href="pages/departamentos.html">Departamentos</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="boton menu__semestres">Semestres</button>
+                <div class="dropmenu">
+                    <a href="#" class="menu__pagina menu__pagina-dropdown">2do Semestre</a>
+                    <a href="#" class="menu__pagina menu__pagina-dropdown">4to Semestre</a>
+                    <a href="#" class="menu__pagina menu__pagina-dropdown">6to Semestre</a>
+                </div>
+            </div>
+            <!-- end menu desplegable -->
+        </div>
+        <button class="menu__boton">
+            <i class="bx bx-menu bx-lg menu__icono"></i>
+        </button>
+    </nav>
+</header>
+<!-- MENU MOVIL -->
+<div class="contenedor__menu__movil">
+    <nav class="menu__movil">   
+        <button id="toggle__semestres" class="movil__enlace" href="#">Semestres<i class='bx bxs-chevron-right chevron__icon'></i></button>
+        <a class="movil__enlace" href="../index.html">Inicio</a>
+        <a class="movil__enlace" href="alumnos.html">Alumnos</a>
+        <a class="movil__enlace" href="nosotros.html">Nosotros</a>
+        <a class="movil__enlace" href="concursos.html">Concursos</a>
+        <a class="movil__enlace" href="departamentos.html">Departamentos</a>
+        <a class="movil__enlace" href="transparencia.html">Transparencia</a>
+        <a class="movil__enlace" href="contacto.html">Contacto</a>
+    </nav>
+    
+</div>
+<div class="contenedor__menu__movil__semestres">
+    <div class="movil__enlaces__semestres">
+        <a href="#" class="movil__enlace enlace__semestres">2do Semestre</a>
+        <a href="#" class="movil__enlace enlace__semestres">4to Semestre</a>
+        <a href="#" class="movil__enlace enlace__semestres">6to Semestre</a>
+    </div>
+</div>
+  <main class="main" id="main">
     <h1 class="apartados__titulo">Notas</h1>
     <div class="notas__contenedor">
       <div class="notas">
@@ -115,28 +195,57 @@
     <div class="cerrar__ventana">
       <a class="boton notas-_boton">Cerrar</a>
     </div>
-  <!-- </div> -->
+    <footer>
+      <section class="footer__contenedor">
+          <div class="footer__seccion footer__seccion-Ocultar">
+              <h1 class="footer__titulos">Sobre nosotros</h1>
+              <p class="footer__parrafo">
+                  Nuestro compromiso es seguir trabajando con el apoyo de toda la comunidad que integra el CBTIS 128 para lograr formar técnicos profesionales capaces de destacar en el 	ambito laboral. Desde hace más de 50 años hemos brindado las herramientras para que nuestros estudiantes logren sobresalir en la industria y sus vidas profesionales. Estamos comprometidos con la sociedad juarense y creemos firmemente en las educación y los valores que hemos impartido en cada uno de nuestros ingresados.
+              </p>
+              <a class="footer__rrss" target="_blank" href="https://www.facebook.com/Casa-de-los-Jaguares-CBTIS-128-101239285643821/">
+                  <i class='bx bxl-facebook footer__iconRRSS'></i>
+              </a>
+              <a class="footer__rrss" target="_blank" href="https://www.youtube.com/channel/UCBuXio9_FP2pdABkHykR67Q/videos">
+                  <i class='bx bxl-youtube footer__iconRRSS'></i>
+              </a>
+          </div>
+          <div class="footer__seccion">
+              <h1 class="footer__titulos">Avisos de Privacidad</h1>
+              <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Integral_Planteles-1.pdf">Aviso de Privacidad Integral Planteles</a>
+              <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Simplificado_Planteles.pdf">Aviso de Privacidad Simplificado Planteles</a>
+              <a class="footer__enlaces" target="_blank" href="assets/document/avisos/LPP.pdf">Política pública para la educación media superior</a>
+          </div>
+          <div class="footer__seccion">
+              <h1 class="footer__titulos">Información de Contacto</h1>
+              <ul>
+                  <li class="footer__contacto">
+                      <span><i class='bx bxs-map contacto__icon' ></i></span>
+                      <a class="footer__enlaces contacto__enlaces" target="_blank" href="https://goo.gl/maps/ATBLjX1t7thyiGRs5">CBTIS 128, Nueva Zelanda, Oasis</a>
+                  </li>
+                  <li class="footer__contacto">
+                      <span><i class='bx bxs-phone contacto__icon'></i></span>
+                      <div class="footer__phones">
+                          <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1934">656-619-1934</a> 
+                          <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1570">656-619-1570</a>
+                      </div>
+                  </li>
+                  <li class="footer__contacto">
+                      <span><i class='bx bxl-gmail contacto__icon' ></i></span>
+                      <a class="footer__enlaces contacto__enlaces" href="mailto: comite-escolar.128@gmail.com">comite-escolar.128@gmail.com</a>
+                  </li>
+              </ul>
+          </div>
+      </section>
+      <div class="seccion__copyright">
+          <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
+      </div>
+  </footer>
+  </main>
 </body>
+<script src="../scripts/scriptPages.js"></script>
 <script>
   function cerrarNotas(){window.close();}
   var cerrar__ventana = document.querySelector(".cerrar__ventana");
   cerrar__ventana.addEventListener("click",cerrarNotas);
-
-/*==============================
-=          LOAD          =
-==============================*/
-window.addEventListener("load", function () {
-  setTimeout(() => {
-    loader = document.querySelector(".loader");
-    loader.style.opacity = "0";
-    loader.style.transition = "opacity 1s ease";
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 1000);
-  }, 1000);
-});
-/*=====  End of LOAD  ======*/
-
-
 </script>
 </html>

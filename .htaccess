@@ -1,2 +1,2 @@
 ErrorDocument 404
-http://localhost/CBTIS128-WORKSPACE/404/404Page.html
+http://127.0.0.1:5501/404/404Page.html

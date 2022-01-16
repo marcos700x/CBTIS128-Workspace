@@ -675,7 +675,6 @@ transform: scaleX(1);
 .mensaje__contenedor{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   padding: 40px 10%;
   background-color: var(--gris-claro);
   height: 630px;
@@ -694,7 +693,7 @@ transform: scaleX(1);
 	background   : var(--gris);
 	border-radius: 10px;
 }
-.mensaje__texto p{
+.mensaje__texto__parrafo{
   margin: 10px;
 }
 .mensaje__texto__titulo{
