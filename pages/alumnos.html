@@ -56,9 +56,9 @@
             <div class="dropdown">
                 <button class="boton menu__semestres menu__oculto">Ver más</button>
                 <div class="dropmenu">
-                    <a class="menu__pagina " href="pages/transparencia.html">Transparencia</a>
-                    <a class="menu__pagina " href="pages/concursos.html">Concursos</a>
-                    <a class="menu__pagina " href="pages/departamentos.html">Departamentos</a>
+                    <a class="menu__pagina " href="transparencia.html">Transparencia</a>
+                    <a class="menu__pagina " href="concursos.html">Concursos</a>
+                    <a class="menu__pagina " href="departamentos.html">Departamentos</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -115,7 +115,7 @@
                         </li>
                         <li class="splide__slide">
                             <div class="oferta__imagen">
-                                <img class="oferta__img" src="../assets/images/oferta-estructura.png" alt="">
+                                <img class="oferta__img" src="../assets/images/oferta-estructura.jpg" alt="">
                             </div>
                             <div class="oferta__texto">
                                 <h1 class="oferta__titulo">| ESTRUCTURA CURRICULAR</h1>
@@ -252,7 +252,7 @@
                     </div>
                 </div>
                 <div class="titulacion__tarjeta">
-                    <img src="../assets/images/titulacion-explaboral.jpeg" alt="" class="img__titulacion__tarjeta">
+                    <img src="../assets/images/titulacion-explaboral.jpg" alt="" class="img__titulacion__tarjeta">
                     <div class="contenedor__texto__titulacion__tarjeta">
                         <p class="etiqueta__texto__titulacion">Titulaci&oacute;n por</p>
                         <h1 class="titulo__titulacion__tarjeta">Experiencia Laboral</h1>
@@ -334,8 +334,6 @@ const splide = new Splide( '#oferta__splide',{
             autoplay: "true",
             arrowPath: false,
             perPage: 1,
-            // interval: 3000,
-            // gap: 20,
         } );
         splide.on( 'pagination:mounted', function ( data ) {
             let i = 0;
@@ -344,7 +342,7 @@ const splide = new Splide( '#oferta__splide',{
                 if (i == 1) {item.button.textContent = String("OBJETIVO" );}
                 if (i == 2) {item.button.textContent = String("ESTRUCTURA" );}
                 if (i == 3) {item.button.textContent = String("FORMACIÓN PROFESIONAL");}
-                console.log(item);
+                
             } );
         } );
         splide.mount();

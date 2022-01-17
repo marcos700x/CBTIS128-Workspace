@@ -64,9 +64,7 @@ align-items: center;
 height: 200px;
 width: auto;
 }
-.texto__concursos{
-text-align: center;
-}
+
 .mensaje__contenedor{
   flex-direction: column;
   height: auto;
@@ -161,6 +159,7 @@ position: relative;
 top: 0%;    right: 0;
 padding: 10px 0;
 width: 100%;
+box-shadow: none;
 }
 
 
@@ -409,7 +408,7 @@ display: none;
 
 .oferta__splide{padding: 3em 0 0 0 !important;}
 .oferta__pagination{display: flex !important;}
-.oferta__texto{padding: 10px; box-shadow: none;}
+.oferta__texto{padding: 10px;}
 .oferta__imagen{
 height: 200px;
 }
