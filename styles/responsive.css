@@ -212,7 +212,7 @@ font-size: 14px;
 }
 
 .educacion__contenedor {
-display: block;
+flex-direction: column-reverse;
 height: auto;
 }
 
