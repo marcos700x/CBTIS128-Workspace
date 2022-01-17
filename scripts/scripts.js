@@ -180,18 +180,6 @@ splide.mount();
 /*=====  End of DESTACADOS  ======*/
 
 /*==================================
-=          NOTAS        =
-==================================*/
-notas__mas = document.getElementById('notas__mas');
-function abrir__notas(){
-  window.open("../pages/notas.html");
-}
-
-notas__mas.addEventListener("click", abrir__notas);
-// notas__menos.addEventListener("click", notas__ocultar);
-/*=====  End of NOTAS  ======*/
-
-/*==================================
 =          JOVENES EN CASA        =
 ==================================*/
 new Splide( '#jovenes__splide', {
