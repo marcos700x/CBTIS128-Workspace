@@ -191,6 +191,7 @@
   top: 0;
   display: none;
   z-index: 900;
+  margin: 0!important;
 }
 .video {
   width: 70%;
