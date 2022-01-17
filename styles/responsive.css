@@ -258,11 +258,6 @@ padding: 0;
 width: 100%;
 padding-bottom: 0;
 }
-
-.jovenes__slider {
-height: 300px;
-}
-
 .jovenes__parrafo-Oculto {
 display: none;
 }
@@ -467,6 +462,15 @@ width: 90%;
 }
 .mensaje__texto__parrafo{
   margin: 0;
+}
+.jovenes__slider{
+  padding: 3em 0!important;
+}
+.descripcion__video__jovenes{
+  padding: 5%;
+}
+.titulo__jovenes__slider{
+  display: block;
 }
 }
 

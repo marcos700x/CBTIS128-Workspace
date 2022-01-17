@@ -194,12 +194,15 @@
 .oferta__texto {
   position: absolute;
   border-radius: 3px;
-  top: 20%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: fit-content;
   right: 5%;
   padding: 10px;
   width: 45%;
   background-color: var(--blanco);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: var(--gris) 0px 0px 15px;
 }
 .oferta__titulo {
   font-size: 1.5rem;

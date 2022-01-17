@@ -200,5 +200,10 @@ new Splide( '#jovenes__splide', {
     prev  : 'splide__arrow--prev jovenes__arrow jovenes__splide',
     next  : 'splide__arrow--next jovenes__arrow',
   },
+  breakpoints: {
+    480:{
+      arrows: false,
+    }
+  },
 }).mount();
 /*=====  End of JOVENES EN CASA  ======*/
