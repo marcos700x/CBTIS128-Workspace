@@ -742,9 +742,9 @@
 
 
 /* TRANSPARENCIA */
-.pdf__transparencia {
-  width: 80%;
-  height: 800px;
+.img__transparencia {
+  width: 100%;
+  max-width: 900px;
   margin: auto;
 }
 
