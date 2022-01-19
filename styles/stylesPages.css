@@ -405,14 +405,20 @@
   flex-direction: column;
   align-items: center;
 }
-
+.contenedor__tarjetas__docentes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .tarjeta__departamentos {
   position: relative;
   width: 200px;
   height: 300px;
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
+  margin: 10px;
   border-radius: 3px;
   border: 3px solid var(--rosa);
 }
@@ -658,12 +664,6 @@
   text-transform: uppercase;
 }
 
-.contacto__logo {
-  color: var(--rosa);
-  font-size: 2rem;
-  margin: 0 5px;
-}
-
 .contacto__enlace {
   text-decoration: none;
   color: var(--negro);
@@ -737,6 +737,17 @@
 }
 
 /*=====  End of  CONTACTO  ======*/
+
+
+/* TRANSPARENCIA */
+.pdf__transparencia{
+  width: 80%;
+  height: 800px;
+  margin: auto;
+}
+
+/* FINAL TRANSPARENCIA */
+
 
 /*==============================
 =        NOSOTROS         =
