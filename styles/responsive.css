@@ -291,6 +291,8 @@ height: auto;
 }
 .splide__historia{padding: 3rem 0;}
 .historia__img{width: 100%; height: auto;}
+.footer__logos{flex-direction: column; gap: 10px;}
+.footer__logo{height: 70px;}
 }
 
 /* Móviles en vertical

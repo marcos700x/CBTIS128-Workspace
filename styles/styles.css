@@ -997,5 +997,14 @@
   text-align: center;
   padding: 10px;
 }
-
+.footer__logos{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+.footer__logo{
+  height: 100px;
+  object-fit: contain;
+}
 /*=====  End of FOOTER  ======*/
