@@ -12,144 +12,133 @@
     <meta property="og:description" content="Nuestro compromiso es seguir trabajando con el apoyo de toda la comunidad que integra el CBTIS 128 para lograr formar técnicos profesionales capaces de destacar en el ambito laboral." />
     <meta property="og:title" content="CBTIS 128" />
     <title>CBTIS 128</title>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script src="scripts/splide.min.js"></script>
+    <script src="scripts/scrollreveal.js"></script>
     <!-- CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/splide-sea-green.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive.css">
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
 </head>
 <body class="body">
-    <!-- PRELOADER -->
-    <div class="loader">
-        <div class="loader__onda">
-            <div class="loader__halo"></div>
-            <div class="loader__halo"></div>
-        </div>
-    </div>
     <!-- HEADER -->
-    <header class="header">
-        <h1 class="header__titulo">CBTIS 128</h1>
-        <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
-        <nav class="header__nav">
-            <ul class="header__lista">
-                <li class="header__elemento"><a class="header__enlace" href="pages/nosotros.html">Nosotros</a></li>
-                <li class="header__elemento"><a class="header__enlace" href="pages/departamentos.html">Departamentos</a>
-                </li>
-                <li class="header__elemento"><a class="header__enlace" href="pages/alumnos.html">Alumnos</a></li>
-                <li class="header__elemento"><a class="header__enlace" href="pages/transparencia.html">Transparencia</a>
-                </li>
-                <li class="header__elemento"><a class="header__enlace" href="pages/concursos.html">Concursos</a></li>
-                <li class="header__elemento"><a class="header__enlace" href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <button class="boton video__mostrar boton__header">¡CONOCENOS!</button>
+    <header>
+        <!-- PRELOADER -->
+        <div class="loader">
+            <div class="loader__onda">
+                <div class="loader__halo"></div>
+                <div class="loader__halo"></div>
+            </div>
+        </div>
+        <!-- PORTADA PRINCIPAL -->
+        <section class="header">
+            <h1 class="header__titulo">CBTIS 128</h1>
+            <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
+            <nav class="header__menu">
+                <ul class="header__lista">
+                    <li><a class="header__enlace elemento__enlace" href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="pages/departamentos.html">Departamentos</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="pages/alumnos.html">Alumnos</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="pages/transparencia.html">Transparencia</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="pages/concursos.html">Concursos</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="boton video__mostrar">¡CONOCENOS!</button>
+        </section>
         <!-- VIDEO -->
         <div class="video__contenedor">
-            <video class="video" controls="">
-                <source src="assets/video/CBTis 128 2021.mp4" type="video/mp4" codecs="avc1,mp4a" />
-            </video>
+            <video class="video" src="assets/video/CBTis-128-2021.mp4"></video>
             <button class="video__ocultar">
                 <i class="bx bx-x video__cerrar"></i>
             </button>
         </div>
-        <!-- NAV -->
-        <nav id="header__menu" class="header__menu">
-            <div class="menu__logo">
-                <a href="index.html"> <img class="menu__img" src="assets/images/logo.svg" alt="Logo CBTIS128"></a>
-                <h1 class="menu__titulo">CBTIS 128</h1>
-            </div>
-            <div class="nav__enlaces">
-                <a href="pages/nosotros.html" class="menu__pagina">Nosotros</a>
-                <a href="pages/departamentos.html" class="menu__pagina">Departamentos</a>
-                <a href="pages/alumnos.html" class="menu__pagina ">Alumnos</a>
-                <a href="pages/transparencia.html" class="menu__pagina pagina__oculta">Transparencia</a>
-                <a href="pages/concursos.html" class="menu__pagina pagina__oculta">Concursos</a>
-                <a href="pages/contacto.html" class="menu__pagina pagina__oculta">Contacto</a>
+        <!-- MENU PRINCIPAL -->
+        <nav id="menu" class="menu">
+            <section class="menu__logo">
+                <a href="index.html"><img class="menu__img" src="assets/images/logo.svg" alt=""></a>
+                <h2 class="menu__titulo">CBTIS 128 </h2>
+            </section>
+            <ul class="header__lista">
+                <li><a class="menu__enlace elemento__enlace" href="pages/nosotros.html">Nosotros</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="pages/departamentos.html">Departamentos</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="pages/alumnos.html">Alumnos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="pages/transparencia.html">Transparencia</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="pages/concursos.html">Concursos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="pages/contacto.html">Contacto</a></li>
                 <!-- start menu desplegable -->
-                <div class="dropdown">
-                    <button class="boton menu__semestres menu__oculto">Ver más</button>
+                <li class="dropdown menu__oculto">
+                    <button class="boton menu__boton">Ver más</button>
                     <div class="dropmenu">
-                        <a class="menu__pagina " href="pages/transparencia.html">Transparencia</a>
-                        <a class="menu__pagina " href="pages/concursos.html">Concursos</a>
-                        <a class="menu__pagina " href="pages/departamentos.html">Departamentos</a>
+                        <a class="menu__enlace elemento__enlace" href="pages/transparencia.html">Transparencia</a>
+                        <a class="menu__enlace elemento__enlace" href="pages/concursos.html">Concursos</a>
+                        <a class="menu__enlace elemento__enlace" href="pages/departamentos.html">Departamentos</a>
                     </div>
-                </div>
-                <div class="dropdown">
-                    <button class="boton menu__semestres">Horarios</button>
+                </li>
+                <li class="dropdown">
+                    <button class="boton menu__boton ">Horarios</button>
                     <div class="dropmenu">
-                        <a href="pages/horarios1-2.html" class="menu__pagina menu__pagina-dropdown">2do Semestre</a>
-                        <a href="pages/horarios3-4.html" class="menu__pagina menu__pagina-dropdown">4to Semestre</a>
-                        <a href="pages/horarios5-6.html" class="menu__pagina menu__pagina-dropdown">6to Semestre</a>
+                        <a href="pages/horarios1-2.html" class="menu__enlace elemento__enlace">2do Semestre</a>
+                        <a href="pages/horarios3-4.html" class="menu__enlace elemento__enlace">4to Semestre</a>
+                        <a href="pages/horarios5-6.html" class="menu__enlace elemento__enlace">6to Semestre</a>
                     </div>
-                </div>
+                </li>
                 <!-- end menu desplegable -->
-            </div>
-            <button class="menu__boton">
+            </ul>
+            <button class="boton__movil">
                 <i class="bx bx-menu bx-lg menu__icono"></i>
             </button>
         </nav>
-    </header>
-    <!-- MENU MOVIL -->
-    <div class="contenedor__menu__movil">
+        <!-- MENU MOVIL -->
         <nav class="menu__movil">
-            <button id="toggle__semestres" class="movil__enlace" href="#">Semestres<i
-                    class='bx bxs-chevron-right chevron__icon'></i></button>
-            <a class="movil__enlace" href="index.html">Inicio</a>
-            <a class="movil__enlace" href="pages/alumnos.html">Alumnos</a>
-            <a class="movil__enlace" href="pages/nosotros.html">Nosotros</a>
-            <a class="movil__enlace" href="pages/concursos.html">Concursos</a>
-            <a class="movil__enlace" href="pages/departamentos.html">Departamentos</a>
-            <a class="movil__enlace" href="pages/transparencia.html">Transparencia</a>
-            <a class="movil__enlace" href="pages/contacto.html">Contacto</a>
+            <ul class="movil__lista">
+                <li><a id="toggle__semestres" class="movil__enlace movil__horarios">Horarios<i class='bx bxs-chevron-right chevron__icon'></i></a></li>
+                <li><a class="movil__enlace" href="pages/index.html">Inicio</a></li>
+                <li><a class="movil__enlace" href="pages/nosotros.html">Nosotros</a></li>
+                <li><a class="movil__enlace" href="pages/departamentos.html">Departamentos</a></li>
+                <li><a class="movil__enlace" href="pages/alumnos.html">Alumnos</a></li>
+                <li><a class="movil__enlace" href="pages/transparencia.html">Transparencia</a></li>
+                <li><a class="movil__enlace" href="pages/concursos.html">Concursos</a></li>
+                <li><a class="movil__enlace" href="pages/contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-
-    </div>
-    <!-- MENU MOVIL SEMESTRES -->
-    <div class="contenedor__menu__movil__semestres">
-        <div class="movil__enlaces__semestres">
-            <a href="pages/horarios1-2.html" class="movil__enlace enlace__semestres">2do Semestre</a>
-            <a href="pages/horarios3-4.html" class="movil__enlace enlace__semestres">4to Semestre</a>
-            <a href="pages/horarios5-6.html" class="movil__enlace enlace__semestres">6to Semestre</a>
-        </div>
-    </div>
+        <!-- MENU MOVIL DE SEMESTRES -->
+        <nav class="menu__semestres">
+            <ul class="semestres__lista">
+                <li><a class="movil__enlace horarios__enlaces" href="pages/horarios1-2.html">2do Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="pages/horarios3-4.html">4to Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="pages/horarios5-6.html">6to Semestre</a></li>
+            </ul>
+        </nav>
+    </header>
     <!-- MAIN -->
-    <main id="main" class="main">
+    <main id="main">
         <!-- NOTICIAS -->
-        <article>
-            <h1 class="apartados__titulo">NOTICIAS</h1>
-            <section id="noticias__splide" class="splide noticias__splide">
+        <section id="noticias">
+            <h1 class="apartados__titulo">Noticias</h1>
+            <div id="noticias__splide" class="splide noticias__splide">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_1.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_1.png" alt="La impartición de clases pasará a modalidad virtual 27 de noviembre al 3 de diciembre de 2021">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Comunicado del plantel</h2>
                                 <p class="noticias__parrafo">Comunicado a toda nuestra comunidad escolar</p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="assets/document/noticias/COMUNICADO.pdf">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/COMUNICADO.pdf">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_2.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_2.png" alt="Inforgrafia sobre cómo evitar el covid">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Evitemos contagios de Covid-19</h2>
                                 <p class="noticias__parrafo">Si algun joven presenta sintomas, debe quedarse en casa</p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="assets/document/noticias/infografia_padres.pdf">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/infografia_padres.pdf">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_3.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_3.png" alt="Imagen informativa sobre filtros que debemos tomar en cuenta en casa">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Comunicado del plantel</h2>
                                 <p class="noticias__parrafo">Filtro en casa antes de acudir a la escuela</p>
@@ -158,152 +147,125 @@
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_4.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_4.png" alt="Imagen de invitación a revisar la convocatoria de 'DA EL BRINCO, TODOS A LA PREPA">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Inscripciones</h2>
                                 <p class="noticias__parrafo">Revisa la convocatoria dando click en el enlace</p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="http://mediasuperior.chihuahuaedu.gob.mx/">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="http://mediasuperior.chihuahuaedu.gob.mx/">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_5.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_5.png" alt="Invitacion a conocer: Módulos El Mundo de los Materiales - 2021">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Comunicado del plantel</h2>
                                 <p class="noticias__parrafo">Te invitamos a conocer el Programa MWM-2021.</p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="http://mwm.cimav.edu.mx/mwm-2021/">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="http://mwm.cimav.edu.mx/mwm-2021/">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_6.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_6.png" alt="Previsualización del Informe de actividades y rendicion de cuentas">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Comunicado del plantel</h2>
                                 <p class="noticias__parrafo">Informe de actividades y rendicion de cuentas</p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="assets/document/noticias/convocatoria_Rendicion_2019-2020.pdf">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/convocatoria_Rendicion_2019-2020.pdf">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_7.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_7.png" alt="Chida Mente">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Comunicado del plantel</h2>
-                                <p class="noticias__parrafo">¿Por qu&eacute; es importante acudir al psic&oacute;logo?
+                                <p class="noticias__parrafo">¿Por qué es importante acudir al psicólogo?
                                 </p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="assets/document/noticias/chidamente.pdf">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/chidamente.pdf">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_8.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_8.png" alt="Boletín de CONAPRED">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Comunicado del plantel</h2>
                                 <p class="noticias__parrafo">Covid 19 desde un enfoque de inclusion</p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="assets/document/noticias/2do_boletin_covid_19_inclusion.pdf">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/2do_boletin_covid_19_inclusion.pdf">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_9.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_9.png" alt="Previsualización del documento">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Comunicado del plantel</h2>
                                 <p class="noticias__parrafo">Se detecto informacion falsa, con fines malignos.</p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="assets/document/noticias/boletinbecas.pdf">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/boletinbecas.pdf">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_10.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_10.png"  alt="Previsualización del documento">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Comunicado del plantel</h2>
                                 <p class="noticias__parrafo">Suspension de clases para preescolar hasta superior</p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="assets/document/noticias/2020_04_01_VES_sep.pdf">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/2020_04_01_VES_sep.pdf">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_11.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_11.png"  alt="Previsualización de la página del DGETI">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">La DGETI hoy</h2>
                                 <p class="noticias__parrafo">Conoce y enterate de todas las novedades</p>
-                                <a class="boton noticias__enlace" target="_blank" href="http://uemstis.sep.gob.mx/">Ver
-                                    más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="http://uemstis.sep.gob.mx/">Ver más</a>
                             </section>
                         </li>
                         <li class="splide__slide">
-                            <div class="splide__slide__conteiner">
-                                <img class="noticias__img" src="assets/images/noticia_12.png">
-                            </div>
+                            <img class="noticias__img" src="assets/images/noticia_12.png"  alt="Previsualización de la convocatoria">
                             <section class="noticias__contenido">
                                 <h2 class="noticias__titulo">Convocatoria</h2>
                                 <p class="noticias__parrafo">Se invita a la comunidad escolar a participar.</p>
-                                <a class="boton noticias__enlace" target="_blank"
-                                    href="assets/document/noticias/Convocatoria-Opticart-2021.pdf">Ver más</a>
+                                <a class="boton noticias__enlace" target="_blank" href="assets/document/noticias/Convocatoria-Opticart-2021.pdf">Ver más</a>
                             </section>
                         </li>
                     </ul>
                 </div>
-            </section>
-        </article>
-        <!--DESTACADOS-->
-        <article>
+            </div>
+        </section>
+        <!-- DESTACADOS -->
+        <section id="destacados">
             <h1 class="apartados__titulo">DESTACADOS</h1>
             <div class="destacados__contenedor">
                 <div class="destacados__seccion">
                     <div class="destacados__splide">
-                        <div class="destacados__track splide__track">
+                        <div class="splide__track">
                             <ul class="splide__list destacados__pagination">
                                 <li class="splide__slide">
                                     <a target="_blank" href="http://registro.desarrolloprofesionaldocente.sems.gob.mx/">
-                                        <img class="destacados__img" src="assets/images/novedades1.jpg" href="" />
+                                        <img class="destacados__img" src="assets/images/novedades1.jpg" alt="Previsualización de la pagina 'Desarrollo Profesional Docente'"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank"
                                         href="https://formacionycapacitaciondigitales.televisioneducativa.gob.mx/">
-                                        <img class="destacados__img" src="assets/images/novedades2.jpg" />
+                                        <img class="destacados__img" src="assets/images/novedades2.jpg" alt="Oferta de capacitación docente de @prende.mx"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
-                                    <a target="_blank" href="https://www.decidetusestudios.sep.gob.mx/">
-                                        <img class="destacados__img" src="assets/images/novedades3.jpg" />
+                                    <a target="_blank" href="http://www.decidetusestudios.sep.gob.mx/">
+                                        <img class="destacados__img" src="assets/images/novedades3.jpg" alt="¿Terminaste la secundaria y no sabes que bachillerato es más compatible contigo?"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank"
-                                        href="https://bnj92cbtfulffq7-academydb1.adb.us-ashburn-1.oraclecloudapps.com/ords/f?p=1000:">
-                                        <img class="destacados__img" src="assets/images/novedades4.jpg" />
+                                        href="https://academy.oracle.com/es/about-events-billboard.html">
+                                        <img class="destacados__img" src="assets/images/novedades4.jpg" alt="Cartelera Oracle Academy"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank" href="https://www.webex.com/es/index.html">
-                                        <img class="destacados__img" src="assets/images/novedades5.jpg" />
+                                        <img class="destacados__img" src="assets/images/novedades5.jpg" alt="Webex está presente cuando el mundo necesita conectarse, comunicarse y colaborar"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank" href="https://prepaenlinea.sep.gob.mx/">
-                                        <img class="destacados__img" src="assets/images/novedades6.jpg" />
+                                        <img class="destacados__img" src="assets/images/novedades6.jpg" alt="Prepa en línea, SEP"/>
                                     </a>
                                 </li>
                                 <li class="splide__slide">
                                     <a target="_blank" href="https://www.tuprepaenvideos.sep.gob.mx/">
-                                        <img class="destacados__img" src="assets/images/novedades7.jpg" />
+                                        <img class="destacados__img" src="assets/images/novedades7.jpg" alt="Tu prepa en videos"/>
                                     </a>
                                 </li>
                             </ul>
@@ -340,15 +302,15 @@
                     </a>
                 </div>
             </div>
-        </article>
+        </section>
         <!-- EDUCACION -->
-        <article>
+        <section id="educacion">
             <h1 class="apartados__titulo">EDUCACIÓN</h1>
             <div class="educacion__contenedor">
-                <section class="educacion__imagen">
+                <div class="educacion__imagen">
                     <img class="educacion__img" src="assets/images/alumnos.jpg" alt="Estudiante del CBTIS 128"
                         title="Cesar Eduardo Talamantes Tovar 2019-2022">
-                </section>
+                </div>
                 <section class="educacion__texto">
                     <h2 class="educacion__titulo">Conoce el CBTIS 128 y todo lo que te puede ofrecer</h2>
                     <p class="educacion__parrafo">En CBTIS 128 tenemos como principal objetivo formar técnicos
@@ -357,24 +319,23 @@
                     <section>
                         <h3 class="educacion__subtitulo">Oferta académica</h3>
                         <ul class="educacion__lista">
-                            <li class="educacion__elemento">Administración de Recursos Humanos</li>
-                            <li class="educacion__elemento">Gericultura</li>
-                            <li class="educacion__elemento">Electrónica</li>
-                            <li class="educacion__elemento">Programación</li>
-                            <li class="educacion__elemento">Soporte de equipo de c&oacute;mputo</li>
-                            <li class="educacion__elemento">Refrigeración y climatización</li>
-                            </u>
-                            <p class="educacion__parrafo">También contamos con programas de educación integral, para
-                                abastecer de experiencia laboral a nuestros jóvenes.</p>
+                            <li class="lista__elemento">Administración de Recursos Humanos</li>
+                            <li class="lista__elemento">Gericultura</li>
+                            <li class="lista__elemento">Electrónica</li>
+                            <li class="lista__elemento">Programación</li>
+                            <li class="lista__elemento">Soporte de equipo de c&oacute;mputo</li>
+                            <li class="lista__elemento">Refrigeración y climatización</li>
+                        </ul>
+                        <p class="educacion__parrafo">También contamos con programas de educación integral, para abastecer de experiencia laboral a nuestros jóvenes.</p>
                     </section>
                     <section>
                         <h3 class="educacion__subtitulo">Programas de educacion integral</h3>
                         <ul class="educacion__lista">
-                            <li class="educacion__elemento">Educación Dual</li>
-                            <li class="educacion__elemento">Fomento a la salud</li>
-                            <li class="educacion__elemento">Servicio Social</li>
-                            <li class="educacion__elemento">Prácticas Profesionales</li>
-                            <li class="educacion__elemento">Bolsa de trabajo</li>
+                            <li class="lista__elemento">Educación Dual</li>
+                            <li class="lista__elemento">Fomento a la salud</li>
+                            <li class="lista__elemento">Servicio Social</li>
+                            <li class="lista__elemento">Prácticas Profesionales</li>
+                            <li class="lista__elemento">Bolsa de trabajo</li>
                         </ul>
                         <p class="educacion__parrafo">Desde hace más de 40 años hemos brindado las herramientas para que
                             nuestros estudiantes logren sobresalir en la industria, pero también nuestros alumnos de las
@@ -386,26 +347,26 @@
                     <section>
                         <h3 class="educacion__subtitulo">Grupos Culturales</h3>
                         <ul class="educacion__lista">
-                            <li class="educacion__elemento">Banda de guerra</li>
-                            <li class="educacion__elemento">Escolta de bandera</li>
-                            <li class="educacion__elemento">Danza folclórica</li>
-                            <li class="educacion__elemento">Rondalla</li>
-                            <li class="educacion__elemento">Artes</li>
-                            <li class="educacion__elemento">Teatro</li>
-                            <li class="educacion__elemento">Música</li>
-                            <li class="educacion__elemento">Ajedrez</li>
-                            <li class="educacion__elemento">Declaración y oratoria</li>
-                            <li class="educacion__elemento">Literatura</li>
+                            <li class="lista__elemento">Banda de guerra</li>
+                            <li class="lista__elemento">Escolta de bandera</li>
+                            <li class="lista__elemento">Danza folclórica</li>
+                            <li class="lista__elemento">Rondalla</li>
+                            <li class="lista__elemento">Artes</li>
+                            <li class="lista__elemento">Teatro</li>
+                            <li class="lista__elemento">Música</li>
+                            <li class="lista__elemento">Ajedrez</li>
+                            <li class="lista__elemento">Declaración y oratoria</li>
+                            <li class="lista__elemento">Literatura</li>
                         </ul>
                     </section>
                     <section>
                         <h3 class="educacion__subtitulo">Grupos Deportivos</h3>
                         <ul class="educacion__lista">
-                            <li class="educacion__elemento">Atletismo</li>
-                            <li class="educacion__elemento">Voleibol</li>
-                            <li class="educacion__elemento">Fútbol</li>
-                            <li class="educacion__elemento">Fútbol Americano</li>
-                            <li class="educacion__elemento">Béisbol</li>
+                            <li class="lista__elemento">Atletismo</li>
+                            <li class="lista__elemento">Voleibol</li>
+                            <li class="lista__elemento">Fútbol</li>
+                            <li class="lista__elemento">Fútbol Americano</li>
+                            <li class="lista__elemento">Béisbol</li>
                         </ul>
                         <p class="educacion__parrafo">Estamos compremetidos con la sociedad juarense. Creemos firmemente
                             en la educación y los valores que hemos impartido en cada uno de nuestros egresados y que
@@ -414,50 +375,46 @@
                     </section>
                 </section>
             </div>
-        </article>
+        </section>
         <!-- NOTAS -->
-        <article>
+        <section id="notas">
             <h1 class="apartados__titulo">NOTAS</h1>
             <div class="notas__contenedor">
                 <div class="notas">
                     <img class="notas__img" src="assets/images/img1.jpg" alt="">
-                    <div class="notas__capa">
-                        <a class="boton notas__enlace" href="assets/images/img1.jpg" target="_blank">Ver m&aacute;s</a>
+                    <div class="capa">
+                        <a class="boton notas__enlace" href="assets/images/img1.jpg" target="_blank">Ver más</a>
                     </div>
                 </div>
                 <div class="notas">
                     <img class="notas__img" src="assets/images/img2.jpg" alt="">
-                    <div class="notas__capa">
-                        <a class="boton notas__enlace" href="assets/document/notas/Conferencia_sept21.pdf"
-                            target="_blank">Ver m&aacute;s</a>
+                    <div class="capa">
+                        <a class="boton notas__enlace" href="assets/document/notas/Conferencia_sept21.pdf" target="_blank">Ver más</a>
                     </div>
                 </div>
                 <div class="notas">
                     <img class="notas__img" src="assets/images/img3.jpg" alt="">
-                    <div class="notas__capa">
-                        <a class="boton notas__enlace"
-                            href="assets/document/notas/Convocatoria Opticart 11 mayo 2021.pdf" target="_blank">Ver
-                            m&aacute;s</a>
+                    <div class="capa">
+                        <a class="boton notas__enlace" href="assets/document/notas/Convocatoria-Opticart-11-mayo-2021.pdf" target="_blank">Ver más</a>
                     </div>
                 </div>
                 <div class="notas">
                     <img class="notas__img" src="assets/images/img5.jpg" alt="">
-                    <div class="notas__capa">
-                        <a class="boton notas__enlace" href="assets/document/notas/Convocatoria_PUBLICA-T.pdf"
-                            target="_blank">Ver m&aacute;s</a>
+                    <div class="capa">
+                        <a class="boton notas__enlace" href="assets/document/notas/Convocatoria_PUBLICA-T.pdf" target="_blank">Ver más</a>
                     </div>
                 </div>
             </div>
-            <a class="boton notas__boton" href="pages/notas.html" target="_blank">
+            <a class="boton notas__mas" href="pages/notas.html" target="_blank">
                 <p>Ver más</p>
             </a>
-        </article>
+        </section>
         <!-- JOVENES EN CASA -->
-        <article>
+        <section id="jovenes__en__casa">
             <h1 class="apartados__titulo">JOVENES EN CASA</h1>
             <div class="jovenes__contenedor">
                 <section class="jovenes__texto">
-                    <h1 class="jovenes__titulo">¡Bienvenidos Jovenes!</h1>
+                    <h2 class="jovenes__titulo">¡Bienvenidos Jovenes!</h2>
                     <p class="jovenes__parrafo">Juntas/os aprovecharemos esta temporada para construir nuevas
                         experiencias: lectura, arte, deporte, cine, webinars, convocatorias y apoyo socioemocional que
                         ayudarán a que cuidemos mejor de nosotros mismos, de quienes nos rodean y de la naturaleza. </p>
@@ -472,57 +429,57 @@
                         amigos, redes sociales, o bien puedes hacerlo tú solo/a, y puedes llevarla a cabo cuantas veces
                         consideres necesario durante este periodo en casa, recuerda seguirte cuidando y llevar a cabo
                         las medidas de seguridad ante la contingencia.</p>
-                    </p>
                 </section>
-                <div id="jovenes__splide" class="splide jovenes__slider">
-                    <h1 class="titulo__jovenes__slider">Desliza para ver mas videos</h1>
-                    <div class="splide__track jovenes__track">
-                        <ul class="splide__list">
+                <section id="jovenes__splide" class="splide jovenes__slider">
+                    <h2 class="jovenes__desliza">Desliza para ver mas videos</h2>
+                    <div class="splide__track">
+                        <ul class="splide__list jovenes__list">
                             <li class="splide__slide">
-                                <div class="jovenes__video__contenedor">
-                                    <img class="thumbnail__jovenes__video" src="assets/images/jovenes-slider-1.jpg" alt="">
-                                    <div class="overlay__jovenes__video">
-                                        <a  class="enlace__video__jovenes" href="https://youtu.be/zweYcO0hdgs" target="_blank"><i class='bx bxl-youtube icono__video__jovenes'></i></a>
-                                        <p class="descripcion__video__jovenes">CBTis 128 ante la pandemia del SARS CoV2</p>
+                                <div class="jovenes__contenedor">
+                                    <img class="jovenes__img" src="assets/images/jovenes-slider-1.jpg" alt="">
+                                    <div class="jovenes__overlay">
+                                        <a  class="jovenes__enlaces" href="https://youtu.be/zweYcO0hdgs" target="_blank"><i class='bx bxl-youtube jovenes__icono'></i></a>
+                                        <p class="jovenes__descripcion">CBTis 128 ante la pandemia del SARS CoV2</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="jovenes__video__contenedor">
-                                    <img class="thumbnail__jovenes__video" src="assets/images/jovenes-slider-2.jpg" alt="">
-                                    <div class="overlay__jovenes__video">
-                                        <a  class="enlace__video__jovenes" href="https://youtu.be/UjrGDu81FR0" target="_blank"><i class='bx bxl-youtube icono__video__jovenes'></i></a>
-                                        <p class="descripcion__video__jovenes">Concurso Quédate en Casa #QuédateEnCasa</p>
+                                <div class="jovenes__contenedor">
+                                    <img class="jovenes__img" src="assets/images/jovenes-slider-2.jpg" alt="">
+                                    <div class="jovenes__overlay">
+                                        <a  class="jovenes__enlaces" href="https://youtu.be/UjrGDu81FR0" target="_blank"><i class='bx bxl-youtube jovenes__icono'></i></a>
+                                        <p class="jovenes__descripcion">Concurso Quédate en Casa #QuédateEnCasa</p>
                                     </div>
                                 </div>
                             </li> 
                             <li class="splide__slide">
-                                <div class="jovenes__video__contenedor">
-                                    <img class="thumbnail__jovenes__video" src="assets/images/jovenes-slider-3.jpg" alt="">
-                                    <div class="overlay__jovenes__video">
-                                        <a  class="enlace__video__jovenes" href="https://youtu.be/I852_FPv8uA" target="_blank"><i class='bx bxl-youtube icono__video__jovenes'></i></a>
-                                        <p class="descripcion__video__jovenes">¡Quédate en casa!</p>
+                                <div class="jovenes__contenedor">
+                                    <img class="jovenes__img" src="assets/images/jovenes-slider-3.jpg" alt="">
+                                    <div class="jovenes__overlay">
+                                        <a  class="jovenes__enlaces" href="https://youtu.be/I852_FPv8uA" target="_blank"><i class='bx bxl-youtube jovenes__icono'></i></a>
+                                        <p class="jovenes__descripcion">¡Quédate en casa!</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
-                                <div class="jovenes__video__contenedor">
-                                    <img class="thumbnail__jovenes__video" src="assets/images/jovenes-slider-4.jpg" alt="">
-                                    <div class="overlay__jovenes__video">
-                                        <a  class="enlace__video__jovenes" href="https://youtu.be/blglp0YHc6A" target="_blank"><i class='bx bxl-youtube icono__video__jovenes'></i></a>
-                                        <p class="descripcion__video__jovenes">Jóvenes en casa #quedateencasa</p>
+                                <div class="jovenes__contenedor">
+                                    <img class="jovenes__img" src="assets/images/jovenes-slider-4.jpg" alt="">
+                                    <div class="jovenes__overlay">
+                                        <a  class="jovenes__enlaces" href="https://youtu.be/blglp0YHc6A" target="_blank"><i class='bx bxl-youtube jovenes__icono'></i></a>
+                                        <p class="jovenes__descripcion">Jóvenes en casa #quedateencasa</p>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                </div>
-        </article>
+                </section>
+            </div>
+        </section>
     </main>
     <!-- FOOTER -->
     <footer>
-        <section class="footer__contenedor">
-            <div class="footer__seccion footer__seccion-Ocultar">
+        <div class="footer__contenedor">
+            <section class="footer__seccion footer__seccion-Ocultar">
                 <h1 class="footer__titulos">Sobre nosotros</h1>
                 <p class="footer__parrafo">
                     Nuestro compromiso es seguir trabajando con el apoyo de toda la comunidad que integra el CBTIS 128
@@ -531,29 +488,24 @@
                     industria y sus vidas profesionales. Estamos comprometidos con la sociedad juarense y creemos
                     firmemente en las educación y los valores que hemos impartido en cada uno de nuestros ingresados.
                 </p>
-                <a class="footer__rrss" target="_blank"
-                    href="https://www.facebook.com/Casa-de-los-Jaguares-CBTIS-128-101239285643821/">
-                    <i class='bx bxl-facebook footer__iconRRSS'></i>
-                </a>
-                <a class="footer__rrss" target="_blank"
-                    href="https://www.youtube.com/channel/UCBuXio9_FP2pdABkHykR67Q/videos">
-                    <i class='bx bxl-youtube footer__iconRRSS'></i>
-                </a>
-            </div>
-            <div class="footer__seccion">
+                <div>
+                    <a class="footer__rrss" target="_blank"  href="https://www.facebook.com/Casa-de-los-Jaguares-CBTIS-128-101239285643821/">
+                        <i class='bx bxl-facebook footer__iconRRSS'></i>
+                    </a>
+                    <a class="footer__rrss" target="_blank" href="https://www.youtube.com/channel/UCBuXio9_FP2pdABkHykR67Q/videos">
+                        <i class='bx bxl-youtube footer__iconRRSS'></i>
+                    </a>
+                </div>
+            </section>
+            <section class="footer__seccion">
                 <h1 class="footer__titulos">Avisos de Privacidad</h1>
-                <a class="footer__enlaces" target="_blank"
-                    href="assets/document/avisos/Aviso_de_Privacidad_Integral_Planteles-1.pdf">Aviso de Privacidad
-                    Integral Planteles</a>
-                <a class="footer__enlaces" target="_blank"
-                    href="assets/document/avisos/Aviso_de_Privacidad_Simplificado_Planteles.pdf">Aviso de Privacidad
-                    Simplificado Planteles</a>
-                <a class="footer__enlaces" target="_blank" href="assets/document/avisos/LPP.pdf">Política pública para
-                    la educación media superior</a>
-            </div>
-            <div class="footer__seccion">
+                <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Integral_Planteles-1.pdf">Aviso de Privacidad Integral Planteles</a>
+                <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Simplificado_Planteles.pdf">Aviso de Privacidad Simplificado Planteles</a>
+                <a class="footer__enlaces" target="_blank" href="assets/document/avisos/LPP.pdf">Política pública para la educación media superior</a>
+            </section>
+            <section class="footer__seccion">
                 <h1 class="footer__titulos">Información de Contacto</h1>
-                <ul>
+                <ul class="footer__lista">
                     <li class="footer__contacto">
                         <span><i class='bx bxs-map contacto__icon'></i></span>
                         <a class="footer__enlaces contacto__enlaces" target="_blank"
@@ -562,27 +514,26 @@
                     <li class="footer__contacto">
                         <span><i class='bx bxs-phone contacto__icon'></i></span>
                         <div class="footer__phones">
-                            <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1934">656-619-1934</a>
-                            <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1570">656-619-1570</a>
+                            <a class="footer__enlaces contacto__enlaces" href="tel:656-619-1934">656-619-1934</a>
+                            <a class="footer__enlaces contacto__enlaces" href="tel:656-619-1570">656-619-1570</a>
                         </div>
                     </li>
                     <li class="footer__contacto">
                         <span><i class='bx bxl-gmail contacto__icon'></i></span>
-                        <a class="footer__enlaces contacto__enlaces"
-                            href="mailto: comite-escolar.128@gmail.com">comite-escolar.128@gmail.com</a>
+                        <a class="footer__enlaces contacto__enlaces" href="mailto:comite-escolar.128@gmail.com">comite-escolar.128@gmail.com</a>
                     </li>
                 </ul>
-            </div>
-        </section>
+            </section>
+        </div>
         <div class="footer__logos">
-            <img class="footer__logo" src="./assets/images/logo-dgeti.png" alt="">
-            <img class="footer__logo" src="./assets/images/logo-sems.png" alt="">
+            <img class="footer__logo" src="assets/images/logo-dgeti.png" alt="">
+            <img class="footer__logo" src="assets/images/logo-sems.png" alt="">
         </div>
         <div class="seccion__copyright">
             <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
         </div>
     </footer>
 </body>
-<!-- JS -->
 <script src="scripts/scripts.js"></script>
+
 </html>

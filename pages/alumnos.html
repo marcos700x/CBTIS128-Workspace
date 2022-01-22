@@ -5,103 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBTIS 128 | Alumnos</title>
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
+    <script src="../scripts/splide.min.js"></script>
     <!-- CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/splide-sea-green.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/stylesPages.css">
     <link rel="stylesheet" href="../styles/responsive.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/themes/splide-sea-green.min.css">
-    <!-- JS -->
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
-    <title>CBTIS 128 | Alumnos</title>
 </head>
 <body class="body">
-  <!-- PRELOADER -->
-  <div class="loader">
-    <div class="loader__onda">
-        <div class="loader__halo"></div>
-        <div class="loader__halo"></div>
-    </div>
-</div>
-<!-- HEADER -->
-<header class="header">
-    <h1 class="header__titulo">CBTIS 128</h1>
-    <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
-    <nav class="header__nav">
-        <ul class="header__lista">
-            <li class="header__elemento"><a class="header__enlace" href="../index.html">Inicio</a></li>
-            <li class="header__elemento"><a class="header__enlace" href="nosotros.html">Nosotros</a></li>
-            <li class="header__elemento"><a class="header__enlace" href="departamentos.html">Departamentos</a></li>
-            <li class="header__elemento"><a class="header__enlace" href="alumnos.html">Alumnos</a></li>
-            <li class="header__elemento"><a class="header__enlace" href="transparencia">Transparencia</a></li>
-            <li class="header__elemento"><a class="header__enlace" href="concursos.html">Concursos</a></li>
-            <li class="header__elemento"><a class="header__enlace" href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <a href="#main" class="boton boton__header">ALUMNOS</a>
-  
-    <!-- NAV -->
-    <nav id="header__menu" class="header__menu">
-        <div class="menu__logo">
-            <a href="../index.html">   <img class="menu__img" src="../assets/images/logo.svg" alt="Logo CBTIS128"></a>
-            <h1 class="menu__titulo">CBTIS 128</h1>
-        </div>  
-        <div class="nav__enlaces">
-            <a href="../index.html" class="menu__pagina">Inicio</a>
-            <a href ="alumnos.html" class="menu__pagina ">Alumnos</a>
-            <a href="nosotros.html" class="menu__pagina">Nosotros</a>
-            <a href="contacto.html" class="menu__pagina">Contacto</a>
-            <a href="departamentos.html" class="menu__pagina pagina__oculta">Departamentos</a>
-            <a href="concursos.html" class="menu__pagina pagina__oculta">Concursos</a>
-            <a href="transparencia.html" class="menu__pagina pagina__oculta">Transparencia</a>
-            <!-- start menu desplegable -->
-            <div class="dropdown">
-                <button class="boton menu__semestres menu__oculto">Ver más</button>
-                <div class="dropmenu">
-                    <a class="menu__pagina " href="transparencia">Transparencia</a>
-                    <a class="menu__pagina " href="concursos.html">Concursos</a>
-                    <a class="menu__pagina " href="departamentos.html">Departamentos</a>
-                </div>
+    <!-- HEADER -->
+    <header>
+        <!-- PRELOADER -->
+        <div class="loader">
+            <div class="loader__onda">
+                <div class="loader__halo"></div>
+                <div class="loader__halo"></div>
             </div>
-            <div class="dropdown">
-                <button class="boton menu__semestres">Horarios</button>
-                <div class="dropmenu">
-                    <a href="horarios1-2.html" class="menu__pagina menu__pagina-dropdown">2do Semestre</a>
-                    <a href="horarios3-4.html" class="menu__pagina menu__pagina-dropdown">4to Semestre</a>
-                    <a href="horarios5-6.html" class="menu__pagina menu__pagina-dropdown">6to Semestre</a>
-                </div>
-            </div>
-            <!-- end menu desplegable -->
         </div>
-        <button class="menu__boton">
-            <i class="bx bx-menu bx-lg menu__icono"></i>
-        </button>
-    </nav>
-</header>
-<!-- MENU MOVIL -->
-<div class="contenedor__menu__movil">
-    <nav class="menu__movil">   
-        <button id="toggle__semestres" class="movil__enlace" href="#">Semestres<i class='bx bxs-chevron-right chevron__icon'></i></button>
-        <a class="movil__enlace" href="../index.html">Inicio</a>
-        <a class="movil__enlace" href="alumnos.html">Alumnos</a>
-        <a class="movil__enlace" href="nosotros.html">Nosotros</a>
-        <a class="movil__enlace" href="concursos.html">Concursos</a>
-        <a class="movil__enlace" href="departamentos.html">Departamentos</a>
-        <a class="movil__enlace" href="transparencia.html">Transparencia</a>
-        <a class="movil__enlace" href="contacto.html">Contacto</a>
-    </nav>
-    
-</div>
-<!-- MENU MOVIL SEMESTRES -->
-<div class="contenedor__menu__movil__semestres">
-    <div class="movil__enlaces__semestres">
-        <a href="horarios1-2.html" class="movil__enlace enlace__semestres">2do Semestre</a>
-        <a href="horarios3-4.html" class="movil__enlace enlace__semestres">4to Semestre</a>
-        <a href="horarios5-6.html" class="movil__enlace enlace__semestres">6to Semestre</a>
-    </div>
-</div>
-    <main class="main" id="main">
+        <!-- PORTADA PRINCIPAL -->
+        <section class="header">
+            <h1 class="header__titulo">CBTIS 128</h1>
+            <p class="header__frase">"Alcancemos el mañana con nuestra propia tecnología"</p>
+            <nav class="header__menu">
+                <ul class="header__lista">
+                    <li><a class="header__enlace elemento__enlace" href="../index.html">Inicio</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/departamentos.html">Departamentos</a></li>
+                    <li><a class="header__enlace elemento__enlace pagina__seleccionada" href="../pages/alumnos.html">Alumnos</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/transparencia.html">Transparencia</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/concursos.html">Concursos</a></li>
+                    <li><a class="header__enlace elemento__enlace" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#main" class="boton ">Alumnos</a>
+        </section>
+        <!-- MENU PRINCIPAL -->
+        <nav id="menu" class="menu">
+            <section class="menu__logo">
+                <a href="../index.html"><img class="menu__img" src="../assets/images/logo.svg" alt=""></a>
+                <h2 class="menu__titulo">CBTIS 128 </h2>
+            </section>
+            <ul class="header__lista">
+                <li><a class="menu__enlace elemento__enlace" href="../index.html">Inicio</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="nosotros.html">Nosotros</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="departamentos.html">Departamentos</a></li>
+                <li><a class="menu__enlace elemento__enlace" href="alumnos.html">Alumnos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="transparencia.html">Transparencia</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="concursos.html">Concursos</a></li>
+                <li class="menu__enlace-oculto"><a class="menu__enlace elemento__enlace" href="contacto.html">Contacto</a></li>
+                <!-- start menu desplegable -->
+                <li class="dropdown menu__oculto">
+                    <button class="boton menu__boton">Ver más</button>
+                    <div class="dropmenu">
+                        <a class="menu__enlace elemento__enlace" href="transparencia.html">Transparencia</a>
+                        <a class="menu__enlace elemento__enlace" href="concursos.html">Concursos</a>
+                        <a class="menu__enlace elemento__enlace" href="contacto.html">Contacto</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="boton menu__boton ">Horarios</button>
+                    <div class="dropmenu">
+                        <a href="horarios1-2.html" class="menu__enlace elemento__enlace">2do Semestre</a>
+                        <a href="horarios3-4.html" class="menu__enlace elemento__enlace">4to Semestre</a>
+                        <a href="horarios5-6.html" class="menu__enlace elemento__enlace">6to Semestre</a>
+                    </div>
+                </li>
+                <!-- end menu desplegable -->
+            </ul>
+            <button class="boton__movil">
+                <i class="bx bx-menu bx-lg menu__icono"></i>
+            </button>
+        </nav>
+        <!-- MENU MOVIL -->
+        <nav class="menu__movil">
+            <ul class="movil__lista">
+                <li><a id="toggle__semestres" class="movil__enlace movil__horarios">Horarios<i class='bx bxs-chevron-right chevron__icon'></i></a></li>
+                <li><a class="movil__enlace" href="../index.html">Inicio</a></li>
+                <li><a class="movil__enlace" href="nosotros.html">Nosotros</a></li>
+                <li><a class="movil__enlace" href="departamentos.html">Departamentos</a></li>
+                <li><a class="movil__enlace" href="alumnos.html">Alumnos</a></li>
+                <li><a class="movil__enlace" href="transparencia.html">Transparencia</a></li>
+                <li><a class="movil__enlace" href="concursos.html">Concursos</a></li>
+                <li><a class="movil__enlace" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- MENU MOVIL DE SEMESTRES -->
+        <nav class="menu__semestres">
+            <ul class="semestres__lista">
+                <li><a class="movil__enlace horarios__enlaces" href="horarios1-2.html">2do Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="horarios3-4.html">4to Semestre</a></li>
+                <li><a class="movil__enlace horarios__enlaces" href="horarios5-6.html">6to Semestre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main id="main" class="main">
         <!-- OFERTA ACADEMICA -->
         <section>
             <h1 class="apartados__titulo">Oferta Académica</h1>
@@ -141,7 +143,7 @@
             </div>
         </section>
         <!-- ESPECIALIDADES -->
-        <article>
+        <section>
             <h1 class="apartados__titulo">ESPECIALIDADES</h1>
             <section id="especialidades__splide" class="splide especialidades__splide">
                 <h2 class="especialidades__subtitulo">Desliza y toca las tarjetas para conocer más información</h2>
@@ -154,10 +156,12 @@
                                 </div>
                                 <div class="especialidades__texto">
                                     <p class="especialidades__tecnico">Técnico en</p>
-                                    <h1 class="especialidades__titulo">Electronica</h1>
+                                    <h2 class="especialidades__titulo">Electronica</h2>
                                     <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante aplicar dispositivos y sistemas electrónicos compactos y eficientes, que están presentes en todos los ámbitos del ser humano.</p>
                                 </div>
-                                <div class="especialidades__tarjetas__overlay"><a target="_blank" href="../assets/document/oferta-academica/electronica.pdf" class="ver__mas__especialidades">Ver m&aacute;s</a></div>
+                                <div class="capa">
+                                    <a target="_blank" href="../assets/document/oferta-academica/electronica.pdf" class="boton especialidades__enlace">Ver más</a>
+                                </div>
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -167,10 +171,12 @@
                                 </div>
                                 <div class="especialidades__texto">
                                     <p class="especialidades__tecnico">Técnico en</p>
-                                    <h1 class="especialidades__titulo">Programación</h1>
+                                    <h2 class="especialidades__titulo">Programación</h2>
                                     <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante realizar actividades cómo: analizar, diseñar, desarrollar, instalar y mantener software de aplicación tomando como base los requerimientos del usuario.</p>
                                 </div>
-                                <div class="especialidades__tarjetas__overlay"><a target="_blank" href="../assets/document/oferta-academica/programacion.pdf" class="ver__mas__especialidades">Ver m&aacute;s</a></div>
+                                <div class="capa">
+                                    <a target="_blank" href="../assets/document/oferta-academica/programacion.pdf" class="boton especialidades__enlace">Ver más</a>
+                                </div>
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -180,10 +186,12 @@
                                 </div>
                                 <div class="especialidades__texto">
                                     <p class="especialidades__tecnico">Técnico en</p>
-                                    <h1 class="especialidades__titulo">Soporte de equipo de cómputo</h1>
+                                    <h2 class="especialidades__titulo">Soporte de equipo de cómputo</h2>
                                     <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante realizar operaciones de soporte y mantenimiento a equipos de cómputo de manera presencial y a distancia, e instalar redes LAN de acuerdo a las necesidades.</p>
                                 </div>
-                                <div class="especialidades__tarjetas__overlay"><a target="_blank" href="../assets/document/oferta-academica/soporte-computo.pdf" class="ver__mas__especialidades">Ver m&aacute;s</a></div>
+                                <div class="capa">
+                                    <a target="_blank" href="../assets/document/oferta-academica/soporte-computo.pdf" class="boton especialidades__enlace">Ver más</a>
+                                </div>
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -193,10 +201,12 @@
                                 </div>
                                 <div class="especialidades__texto">
                                     <p class="especialidades__tecnico">Técnico en</p>
-                                    <h1 class="especialidades__titulo">Administracion de Recursos Humanos</h1>
+                                    <h2 class="especialidades__titulo">Administracion de Recursos Humanos</h2>
                                     <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante elaborar y gestionar documentación administrativa, integrar al personal, asistir en actividades de capacitación, y evaluación del personal</p>
                                 </div>
-                                <div class="especialidades__tarjetas__overlay"><a target="_blank" href="../assets/document/oferta-academica/admin-rrhh.pdf" class="ver__mas__especialidades">Ver m&aacute;s</a></div>
+                                <div class="capa">
+                                    <a target="_blank" href="../assets/document/oferta-academica/admin-rrhh.pdf" class="boton especialidades__enlace">Ver más</a>
+                                </div>
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -206,10 +216,12 @@
                                 </div>
                                 <div class="especialidades__texto">
                                     <p class="especialidades__tecnico">Técnico en</p>
-                                    <h1 class="especialidades__titulo">Laboratorista Químico</h1>
+                                    <h2 class="especialidades__titulo">Laboratorista Químico</h2>
                                     <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante asistir en las operaciones básicas de laboratorio ejecutando métodos de análisis cualitativos, cuantitativos, físico-químicos, y microbiológicos.</p>
                                 </div>
-                                <div class="especialidades__tarjetas__overlay"><a target="_blank" href="../assets/document/oferta-academica/laboratorista-quimico.pdf" class="ver__mas__especialidades">Ver m&aacute;s</a></div>
+                                <div class="capa">
+                                    <a target="_blank" href="../assets/document/oferta-academica/laboratorista-quimico.pdf" class="boton especialidades__enlace">Ver más</a>
+                                </div>
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -219,10 +231,12 @@
                                 </div>
                                 <div class="especialidades__texto">
                                     <p class="especialidades__tecnico">Técnico en</p>
-                                    <h1 class="especialidades__titulo">Gericultura</h1>
+                                    <h2 class="especialidades__titulo">Gericultura</h2>
                                     <p class="especialidades__parrafo">Proporcionamos las herramientas para que el alumno adquiera conocimientos, habilidades y destrezas; asuma un actitud responsable para ejercer profesionalmente en el ámbito de la Geriatria</p>
                                 </div>
-                                <div class="especialidades__tarjetas__overlay"><a target="_blank" href="../assets/document/oferta-academica/gericultura.pdf" class="ver__mas__especialidades">Ver m&aacute;s</a></div>
+                                <div class="capa">
+                                    <a target="_blank" href="../assets/document/oferta-academica/gericultura.pdf" class="boton especialidades__enlace">Ver más</a>
+                                </div>
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -232,109 +246,119 @@
                                 </div>
                                 <div class="especialidades__texto">
                                     <p class="especialidades__tecnico">Técnico en</p>
-                                    <h1 class="especialidades__titulo">Refrigeración y Climatización</h1>
+                                    <h2 class="especialidades__titulo">Refrigeración y Climatización</h2>
                                     <p class="especialidades__parrafo">Ofrecemos las competencias profesionales que permiten al estudiante realizar tareas de instalación, reconversión, actualización y de mantenimiento a sistemas de refrigeración y aire acondicionado, sistemas de enfriamiento de aire y agua, etc.</p>
                                 </div>
-                                <div class="especialidades__tarjetas__overlay"><a target="_blank" href="../assets/document/oferta-academica/refrigeracion.pdf" class="ver__mas__especialidades">Ver m&aacute;s</a></div>
+                                <div class="capa">
+                                    <a target="_blank" href="../assets/document/oferta-academica/refrigeracion.pdf" class="boton especialidades__enlace">Ver más</a>
+                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
-        </article>
+        </section>
         <!-- TITULACION -->
-        <article>
-          <h1 class="apartados__titulo">Titulaci&oacute;n</h1>
-          <p class="texto__titulacion">Aparte de cursar tus estudios de Bachillerato de Nivel Medio Superior, el Cbtis 128 te ofrece la opción de Titularte cómo Técnico en la especialidad que oferta el plantel, aquí encontrarás las diferentes opciones de Titulación, Requisitos y Documentación, así cómo la información de los títulos que se encuentran en trámite en por medio de la oficina de Servicio Social y Titulación. El alumno podrá optar Titularse por alguna de las siguientes opciones, cumpliendo los Requisitos y Documentación correspondiente:</p>
-            <div class="contenedor__titulacion">
+        <section>
+            <h1 class="apartados__titulo">Titulación</h1>
+            <p class="titulacion__descripcion">Aparte de cursar tus estudios de Bachillerato de Nivel Medio Superior, el Cbtis 128 te ofrece la opción de Titularte cómo Técnico en la especialidad que oferta el plantel, aquí encontrarás las diferentes opciones de Titulación, Requisitos y Documentación, así cómo la información de los títulos que se encuentran en trámite en por medio de la oficina de Servicio Social y Titulación. El alumno podrá optar Titularse por alguna de las siguientes opciones, cumpliendo los Requisitos y Documentación correspondiente:</p>
+            <div class="titulacion___contenedor">
                 <div class="titulacion__tarjeta">
-                    <img src="../assets/images/titulacion-automatica.jpg" alt="" class="img__titulacion__tarjeta">
-                    <div class="contenedor__texto__titulacion__tarjeta">
-                        <p class="etiqueta__texto__titulacion">Titulaci&oacute;n</p>
-                        <h1 class="titulo__titulacion__tarjeta">Automatica</h1>
-                        <p class="texto__titulacion__tarjeta">Cuando el alumno acredite todas las asignaturas con calificaciones de 6 ó superiores y tenga en los cinco módulos de la carrera con dictamen de competente (éste se logra obteniendo un promedio de 8 en cada módulo)</p>
-                    </div>
+                    <img src="../assets/images/titulacion-automatica.jpg" alt="" class="titulacion__img">
+                    <section class="titulacion__texto">
+                        <p class="titulacion__subtitulo">Titulación</p>
+                        <h2 class="titulacion__titulo">Automatica</h2>
+                        <p class="titulacion__parrafo">Cuando el alumno acredite todas las asignaturas con calificaciones de 6 ó superiores y tenga en los cinco módulos de la carrera con dictamen de competente (éste se logra obteniendo un promedio de 8 en cada módulo)</p>
+                    </section>
                 </div>
                 <div class="titulacion__tarjeta">
-                    <img src="../assets/images/titulacion-explaboral.jpg" alt="" class="img__titulacion__tarjeta">
-                    <div class="contenedor__texto__titulacion__tarjeta">
-                        <p class="etiqueta__texto__titulacion">Titulaci&oacute;n por</p>
-                        <h1 class="titulo__titulacion__tarjeta">Experiencia Laboral</h1>
-                        <p class="texto__titulacion__tarjeta">Cuando demuestre como mínimo en un año de Experiencia laboral a través de la memoria correspondiente y la constancia de la empresa donde se desempeñó profesionalmente, siempre y cuando la memoria refiera a las aplicaciones en el trabajo con los conocimientos y competencias adquiridas en la carrera.</p>
-                    </div>
+                    <img src="../assets/images/titulacion-explaboral.jpg" alt="" class="titulacion__img">
+                    <section class="titulacion__texto">
+                        <p class="titulacion__subtitulo">Titulación por</p>
+                        <h2 class="titulacion__titulo">Experiencia Laboral</h2>
+                        <p class="titulacion__parrafo">Cuando demuestre como mínimo en un año de Experiencia laboral a través de la memoria correspondiente y la constancia de la empresa donde se desempeñó profesionalmente, siempre y cuando la memoria refiera a las aplicaciones en el trabajo con los conocimientos y competencias adquiridas en la carrera.</p>
+                    </section>
                 </div>
                 <div class="titulacion__tarjeta">
-                    <img src="../assets/images/titulacion-prototipos.jpg" alt="" class="img__titulacion__tarjeta">
-                    <div class="contenedor__texto__titulacion__tarjeta">
-                        <p class="etiqueta__texto__titulacion">Titulaci&oacute;n por</p>
-                        <h1 class="titulo__titulacion__tarjeta">Diseño de Prototipos y Proyectos innovadores de Desarrollo Tecnológico
-                        </h1>
-                        <p class="texto__titulacion__tarjeta">El alumno desarrollará un proyecto innovador y a través de la memoria correspondiente siempre y cuando ésta se refiera a las aplicaciones en el trabajo de los conocimientos y competencias adquiridas en la carrera. Para iniciar el prodecimiento de Titulación, el alumno deberá cumplir los siguientes requisitos:
+                    <img src="../assets/images/titulacion-prototipos.jpg" alt="" class="titulacion__img">
+                    <section class="titulacion__texto">
+                        <p class="titulacion__subtitulo">Titulación por</p>
+                        <h2 class="titulacion__titulo">Diseño de Prototipos y Proyectos innovadores de Desarrollo Tecnológico</h2>
+                        <p class="titulacion__parrafo">El alumno desarrollará un proyecto innovador y a través de la memoria correspondiente siempre y cuando ésta se refiera a las aplicaciones en el trabajo de los conocimientos y competencias adquiridas en la carrera. Para iniciar el prodecimiento de Titulación, el alumno deberá cumplir los siguientes requisitos:
                             <br>
                             A) Aprobar todas las asignaturas y módulos.<br>
                             B) Prestar su Servicio social de acuerdo al reglamento vigente.<br>
                             C) No adeudar al plantel libros. material y/o equipo.</p>
-                    </div>
+                    </section>
                 </div>
             </div>
-        </article>
-        <!-- FOOTER -->
-        <footer>
-            <section class="footer__contenedor">
-                <div class="footer__seccion footer__seccion-Ocultar">
-                    <h1 class="footer__titulos">Sobre nosotros</h1>
-                    <p class="footer__parrafo">
-                        Nuestro compromiso es seguir trabajando con el apoyo de toda la comunidad que integra el CBTIS 128 para lograr formar técnicos profesionales capaces de destacar en el 	ambito laboral. Desde hace más de 50 años hemos brindado las herramientras para que nuestros estudiantes logren sobresalir en la industria y sus vidas profesionales. Estamos comprometidos con la sociedad juarense y creemos firmemente en las educación y los valores que hemos impartido en cada uno de nuestros ingresados.
-                    </p>
-                    <a class="footer__rrss" target="_blank" href="https://www.facebook.com/Casa-de-los-Jaguares-CBTIS-128-101239285643821/">
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__contenedor">
+            <section class="footer__seccion footer__seccion-Ocultar">
+                <h1 class="footer__titulos">Sobre nosotros</h1>
+                <p class="footer__parrafo">
+                    Nuestro compromiso es seguir trabajando con el apoyo de toda la comunidad que integra el CBTIS 128
+                    para lograr formar técnicos profesionales capaces de destacar en el ambito laboral. Desde hace más
+                    de 50 años hemos brindado las herramientras para que nuestros estudiantes logren sobresalir en la
+                    industria y sus vidas profesionales. Estamos comprometidos con la sociedad juarense y creemos
+                    firmemente en las educación y los valores que hemos impartido en cada uno de nuestros ingresados.
+                </p>
+                <div>
+                    <a class="footer__rrss" target="_blank"  href="https://www.facebook.com/Casa-de-los-Jaguares-CBTIS-128-101239285643821/">
                         <i class='bx bxl-facebook footer__iconRRSS'></i>
                     </a>
                     <a class="footer__rrss" target="_blank" href="https://www.youtube.com/channel/UCBuXio9_FP2pdABkHykR67Q/videos">
                         <i class='bx bxl-youtube footer__iconRRSS'></i>
                     </a>
                 </div>
-                <div class="footer__seccion">
-                    <h1 class="footer__titulos">Avisos de Privacidad</h1>
-                    <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Integral_Planteles-1.pdf">Aviso de Privacidad Integral Planteles</a>
-                    <a class="footer__enlaces" target="_blank" href="assets/document/avisos/Aviso_de_Privacidad_Simplificado_Planteles.pdf">Aviso de Privacidad Simplificado Planteles</a>
-                    <a class="footer__enlaces" target="_blank" href="assets/document/avisos/LPP.pdf">Política pública para la educación media superior</a>
-                </div>
-                <div class="footer__seccion">
-                    <h1 class="footer__titulos">Información de Contacto</h1>
-                    <ul>
-                        <li class="footer__contacto">
-                            <span><i class='bx bxs-map contacto__icon' ></i></span>
-                            <a class="footer__enlaces contacto__enlaces" target="_blank" href="https://goo.gl/maps/ATBLjX1t7thyiGRs5">CBTIS 128, Nueva Zelanda, Oasis</a>
-                        </li>
-                        <li class="footer__contacto">
-                            <span><i class='bx bxs-phone contacto__icon'></i></span>
-                            <div class="footer__phones">
-                                <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1934">656-619-1934</a> 
-                                <a class="footer__enlaces contacto__enlaces" href="tel: 656-619-1570">656-619-1570</a>
-                            </div>
-                        </li>
-                        <li class="footer__contacto">
-                            <span><i class='bx bxl-gmail contacto__icon' ></i></span>
-                            <a class="footer__enlaces contacto__enlaces" href="mailto: comite-escolar.128@gmail.com">comite-escolar.128@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
             </section>
-            <div class="footer__logos">
-                <img class="footer__logo" src="../assets/images/logo-dgeti.png" alt="">
-                <img class="footer__logo" src="../assets/images/logo-sems.png" alt="">
-            </div>
-            <div class="seccion__copyright">
-                <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
-            </div>
-        </footer>
-    </main>
-</body>
-<!-- JS -->
-<script src="../scripts/scriptPages.js"></script>
+            <section class="footer__seccion">
+                <h1 class="footer__titulos">Avisos de Privacidad</h1>
+                <a class="footer__enlaces" target="_blank" href="../assets/document/avisos/Aviso_de_Privacidad_Integral_Planteles-1.pdf">Aviso de Privacidad Integral Planteles</a>
+                <a class="footer__enlaces" target="_blank" href="../assets/document/avisos/Aviso_de_Privacidad_Simplificado_Planteles.pdf">Aviso de Privacidad Simplificado Planteles</a>
+                <a class="footer__enlaces" target="_blank" href="../assets/document/avisos/LPP.pdf">Política pública para la educación media superior</a>
+            </section>
+            <section class="footer__seccion">
+                <h1 class="footer__titulos">Información de Contacto</h1>
+                <ul class="footer__lista">
+                    <li class="footer__contacto">
+                        <span><i class='bx bxs-map contacto__icon'></i></span>
+                        <a class="footer__enlaces contacto__enlaces" target="_blank"
+                            href="https://goo.gl/maps/ATBLjX1t7thyiGRs5">CBTIS 128, Nueva Zelanda, Oasis</a>
+                    </li>
+                    <li class="footer__contacto">
+                        <span><i class='bx bxs-phone contacto__icon'></i></span>
+                        <div class="footer__phones">
+                            <a class="footer__enlaces contacto__enlaces" href="tel:656-619-1934">656-619-1934</a>
+                            <a class="footer__enlaces contacto__enlaces" href="tel:656-619-1570">656-619-1570</a>
+                        </div>
+                    </li>
+                    <li class="footer__contacto">
+                        <span><i class='bx bxl-gmail contacto__icon'></i></span>
+                        <a class="footer__enlaces contacto__enlaces" href="mailto:comite-escolar.128@gmail.com">comite-escolar.128@gmail.com</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer__logos">
+            <img class="footer__logo" src="../assets/images/logo-dgeti.png" alt="">
+            <img class="footer__logo" src="../assets/images/logo-sems.png" alt="">
+        </div>
+        <div class="seccion__copyright">
+            <p>Copyright © 2021 CBTIS 128. All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="../scripts/scripts.js"></script>
     <script>
+        /*==============================
+        =           ALUMNOS           =
+        ==============================*/
 
-const splide = new Splide( '#oferta__splide',{
+        /* OFERTA ACADEMICA */
+        const oferta__splide = new Splide( '#oferta__splide',{
             classes: {
                 arrows: 'splide__arrows oferta__arrows',
                 pagination: 'splide__pagination oferta__pagination',
@@ -345,44 +369,44 @@ const splide = new Splide( '#oferta__splide',{
             arrowPath: false,
             perPage: 1,
         } );
-        splide.on( 'pagination:mounted', function ( data ) {
+        oferta__splide.on( 'pagination:mounted', function ( data ) {
             let i = 0;
             data.items.forEach( function ( item ) {
                 i = i + 1;
                 if (i == 1) {item.button.textContent = String("OBJETIVO" );}
                 if (i == 2) {item.button.textContent = String("ESTRUCTURA" );}
                 if (i == 3) {item.button.textContent = String("FORMACIÓN PROFESIONAL");}
-                
             } );
         } );
-        splide.mount();
-        /*==================================
-        =          ESPECIALIDADES       =
-        ==================================*/
-            new Splide( '#especialidades__splide', {
+        oferta__splide.mount();
+
+        /* ESPECIALIDADES */
+        const especialidades__splide = new Splide( '#especialidades__splide', {
                 perPage    : 5,
                 perMove: 1,
                 type: 'loop',
                 autoplay: true,
                 interval: 3000,
                 breakpoints: {
-                  1750:{
-                    perPage: 4,
-                  },
-                1360:{
-                    perPage: 3,
-                },
-                1040:{
-                perPage: 2,
-                },
-                735: { 
+                    1750:{
+                        perPage: 4,
+                    },
+                    1360:{
+                        perPage: 3,
+                    },
+                    1040:{
+                    perPage: 2,
+                    },
+                    735: { 
+                        perPage: 1,
+                    },
+                    375:{
                     perPage: 1,
-                },
-                375:{
-                perPage: 1,
-                },
-                },
-            } ).mount();
-        /*=====  End of ESPECIALIDADES ======*/
+                    },
+                    },
+            } );
+            especialidades__splide.mount();
+        /*=====  End of ALUMNOS  ======*/
     </script>
+</body>
 </html>

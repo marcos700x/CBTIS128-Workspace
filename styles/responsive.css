@@ -5,479 +5,181 @@
 /* Tablets en horizonal y escritorios normales
 ------------------------------------------------------------------------- */
 @media (min-width: 768px) and (max-width: 1300px) {
-:root {
-font-size: 15px;
-}
-
-.pagina__oculta {
-display: none;
-}
-
-.menu__oculto {
-display: inline-block;
-}
-
-.destacados__contenedor {
-width: 70%;
-}
-
-.oferta__titulo {
-text-align: left;
-}
-
-.oferta__texto {
-top: 10%;
-}
-
-.oferta__imagen {
-margin-top: 2rem;
-}
-.conocenos__contenedor{gap: 65px 1%;}
-.conocenos{width: 49%;}
-.conocenos-Tablet{order: 1;}
+  :root { font-size: 15px; }
+  .menu__enlace-oculto {display: none;}
+  .menu__oculto{display: inline-block;}
+  .destacados__contenedor {width: 70%;}
+  .conocenos__contenedor{gap: 65px 2%;}
+  .conocenos{width: 49%;}
+  .conocenos-Tablet{order: 1;}
 }
 
 @media screen and (max-width: 1050px) {
-.contenedor__departamentos {
-flex-direction: column;
-}
-
-.contenedor__enlaces__administracion {
-margin: 0 30px;
-}
-
-.subtitulo__departamentos {
-text-align: center;
-}
-.contenedor__concursos{
-width: 100%;
-}
-.wrap__informacion__concurso{
-flex-direction: column;
-}
-.wrap__concurso__texto{
-width: 100%; 
-text-align: center;
-align-items: center;
-}
-.imagenes__concursos{
-height: 200px;
-width: auto;
-}
-
-.mensaje__contenedor{
-  flex-direction: column;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-}
-.mensaje__texto{
-  width: 100%;
-  height: 400px;
-}
-.mensaje__imagen{
-  width: 100%;
-  height: auto;
-  transform: translateX(-5px);
-}
-
-}
-
-@media screen and (max-width: 760px) {
-.oferta__texto {
-width: 100%;
-}
-
-.contacto__seccion {
-flex-direction: column;
-background-color: transparent;
-}
-
-.contacto__directorios {
-display: flex;
-justify-content: center;
-flex-direction: column;
-}
-
-.contacto__informacion {
-justify-content: unset;
-flex-direction: column;
-}
-
-.contacto__formulario {
-flex-direction: column;
-}
-
-.formulario__campos {
-width: 100%;
-}
-
-.contenedor__texto__titulacion__tarjeta{
-height: auto;
-}
+  .mensaje__contenedor{
+      flex-direction: column;
+      height: auto;
+  }
+  .mensaje__texto{
+      width: 100%;
+      height: 400px;
+  }
+  .mensaje__imagen{
+      width: 100%;
+      height: auto;
+      transform: translateX(-5px);
+  }
+  .departamentos__titulos{text-align: center;}
 }
 
 @media screen and (max-width: 980px) {
-.nav__enlaces {
-display: none;
-}
-
-.menu__boton {
-display: block;
-}
-
-.header__nav {
-display: none;
-}
-
-.destacados__contenedor {
-width: 90%;
-}
-
-.educacion__contenedor {
-height: calc(50vw * 90 / 100);
-}
-
-.educacion__imagen {
-width: 50%;
-}
-
-.educacion__img {
-width: 90%;
-}
-
-.educacion__texto {
-width: 45%;
-padding: 0 2% 2% 2%;
+  .header__menu, .header__lista{display: none;}
+  .boton__movil{display: inline-block;}
+  .destacados__contenedor {width: 90%;}
+  .educacion__img {width: 90%;}
+  .educacion__texto {width: 80%; margin: 10px;}
+  .footer__contenedor {
+      grid-template-columns: 1fr 1fr;
+      padding: 2rem;
+  }
+  .footer__seccion-Ocultar {grid-column: 1 / 3;}
+  .oferta__imagen{width: 100%; height: 300px;}
+  .oferta__img{margin-left: 0;}
+  .oferta__texto{
+      position: relative;
+      top: 0%;    right: 0;
+      padding: 10px 0;
+      width: 100%;
+      box-shadow: none;
+  }
+  .concursos__contenedor{padding: 0;}
 }
 
 
-.oferta__imagen{width: 100%; height: 300px;}
-.oferta__img{margin-left: 0;}
-.oferta__texto{
-position: relative;
-top: 0%;    right: 0;
-padding: 10px 0;
-width: 100%;
-box-shadow: none;
-}
-
-
-.notas {
-width: 300px;
-}
-
-.footer__contenedor {
-grid-template-columns: 1fr 1fr;
-padding: 2rem;
-}
-
-.footer__seccion-Ocultar {
-grid-column: 1 / 3;
-}
-
-.contacto__enlace {
-margin: 1rem 0;
-}
-
-.contacto__mapa {
-width: 98%;
-}
-
-.contacto__formulario {
-width: 70%;
-}
-
-.conocenos__contenedor{gap: 65px 1%;}
-.conocenos{width: 49%;}
-.conocenos-Tablet{order: 1;}
-}
 
 /* Móviles en horizontal o tablets en vertical */
 @media (max-width: 767px) {
-:root {
-font-size: 12px;
+  :root { font-size: 14px; }
+  .video{width: 100%;}
+  .notas__contenedor{gap: 20px;}
+  .notas {width: 45vw;}
+  .conocenos__contenedor{gap: 65px 1%;}
+  .conocenos{width: 49%;}
+  .conocenos-Tablet{order: 1;}
 }
 
-.nota__espacio-horizontal {
-width: 350px;
+@media screen and (max-width: 760px) {
+  .destacados__contenedor {width: 100%;}
+  .destacados__seccion-Desaparace {display: none;}
+  .destacados__seccion {width: 42vw; height: 42vw;}
+  .destacados__seccion-Movil{display: flex;}
+  .destacados__titulo {font-size: 1rem;}
+  .titulacion__tarjeta{height: min-content;}
+  .titulacion__texto{height: auto;}
+  .contacto__informacion{flex-direction: column;}
+  .contacto__movil, .contacto__formulario, .contacto__seccion {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+      width: 100%;
+  }
+  .contacto__mapa, .formulario__campos {width: 98vw;}
 }
-.video{
-  width: 100%;
-}
-}
-/* Móviles en horizontal o tablets en vertical
-------------------------------------------------------------------------- */
+
 @media screen and (max-width: 620px) {
-:root {
-font-size: 14px;
-}
-
-.educacion__contenedor {
-flex-direction: column-reverse;
-height: auto;
-}
-
-.educacion__imagen,
-.educacion__img,
-.educacion__texto {
-width: 100%;
-}
-
-.educacion__img {
-float: none;
-}
-
-.educacion__texto {
-height: 100vw;
-}
-
-.educacion__elemento::before {
-left: -0.25rem;
-margin-top: -0.95rem;
-height: 1.75rem;
-width: 1.75rem;
-}
-
-.noticias__splide .splide__arrow {
-bottom: 0 !important;
-top: unset !important;
-}
-
-.noticias__splide .splide__pagination__page {
-display: none;
-}
-
-.noticias__splide {
-padding: 3em 0 !important;
-}
-
-.jovenes__contenedor {
-flex-wrap: wrap;
-padding: 0;
-}
-
-.jovenes__texto {
-width: 100%;
-padding-bottom: 0;
-}
-.jovenes__parrafo-Oculto {
-display: none;
-}
-.oferta__splide{
-display: flex;
-flex-direction: column-reverse ;
-padding: 0 1rem;
-}
-.oferta__pagination{
-display: flex;
-flex-direction: column;
-position: relative;
-}
-.oferta__pagination__page {margin: 15px 0; }
-
-.conocenos__contenedor{gap: 65px 0%; padding: 1%;margin-top: 30px}
-.conocenos{width: 100%;}
-.conocenos-Tablet{order: 1;}
-.etica__contenedor{padding: 0 1%;}
-.etica__parrafo{text-align: center;}
-.mensaje__contenedor{padding: 0 1%; gap: 20px;}
-.mensaje__texto{width: 100%; height: 400px; padding: 20px;}
-.mensaje__imagen{width: 100%;}
-.mensaje__img{
-width: 100%;
-max-width: 400px;
-height: auto;
-}
-.splide__historia{padding: 3rem 0;}
-.historia__img{width: 100%; height: auto;}
-.footer__logos{flex-direction: column; gap: 10px;}
-.footer__logo{height: 70px;}
+  .educacion__contenedor {
+      flex-direction: column-reverse;
+      height: auto;
+      max-height: max-content;
+  } 
+  .educacion__imagen,
+  .educacion__img,
+  .educacion__texto {
+      width: 100%;
+  }
+  .educacion__texto {height: 100vw;}
+  .educacion__titulo{font-size: 2rem;}
+  .lista__elemento::before {
+      left: -0.25rem;
+      margin-top: -0.95rem;
+      height: 1.75rem;
+      width: 1.75rem;
+  }
+  .jovenes__texto {padding: 20px;}
+  .jovenes__parrafo-Oculto {display: none;}
+  .footer__logos{flex-direction: column; gap: 10px;}
+  .footer__logo{height: 70px;}
+  .conocenos__contenedor{padding: 0;}
+  .conocenos{width: 100%;}
+  .conocenos-Tablet{order: 0;}
+  .etica__contenedor{padding: 1%;}
+  .etica__parrafo{text-align: center;}
+  .mensaje__contenedor{padding: 20px; gap: 20px;}
+  .splide__historia{padding: 3rem 0;}
+  .historia__img{width: 100%; height: auto;}
+  .oferta__splide{
+      display: flex;
+      flex-direction: column-reverse ;
+      padding: 0 1rem;
+  }
+  .oferta__pagination{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+  }
+  .oferta__pagination__page {margin: 15px 0;}
+  .concursos{
+      flex-wrap: wrap;
+      flex-direction: column-reverse; 
+      padding: 20px 10px;
+  }
+  .concursos__texto{text-align: center;}
+  .concursos__texto, .concursos__imagen {width: 100%;}
 }
 
 /* Móviles en vertical
 ------------------------------------------------------------------------- */
 @media (max-width: 480px) {
-.destacados__contenedor {
-width: 100%;
+  .header__titulo {font-size: 4rem;}
+  .header__frase {font-size: 2rem;}
+  .menu__titulo {font-size: 1.5rem;}
+  .apartados__titulo {font-size: 2rem;}
+  .noticias__splide .splide__arrow {
+      bottom: 0;
+      top: unset;
+  }
+  .noticias__splide {padding: 3em 0;}
+  .capa::before, .capa::after {
+      height: 15px;
+      width: 15px;
+  }
+  .capa::before {
+      border-bottom: 3px solid var(--blanco);
+      border-left: 3px solid var(--blanco);
+  }
+  .capa::after {
+      border-top: 3px solid var(--blanco);
+      border-right: 3px solid var(--blanco);
+  }
+  .notas__enlace, .notas__mas{padding: 10px;}
+  .jovenes__slider{padding: 0 0 2rem 0;}
+  .jovenes__descripcion{padding: 5%;}
+  .jovenes__desliza{display: block;}
+  .footer__contenedor {grid-template-columns: 1fr;}
+  .footer__seccion-Ocultar {display: none;}
+  .oferta__splide{padding: 0;}
+  .oferta__texto{padding: 10px;}
+  .oferta__imagen{
+  height: 200px;
+  }
+  .especialidades__splide .splide__arrow {display: none;}
+  .especialidades__splide { padding: 3rem 1%;}
+  .especialidades__splide .splide__pagination__page {
+      display: inline-block;
+      background-color: #ccc;
+  }
+  .especialidades__splide .splide__pagination__page:hover {background-color: var(--rosa);}
+  .especialidades__splide .splide__pagination__page.is-active {background-color: var(--rosa);}
+  .titulacion__tarjeta{width: 95%; }
 }
-
-.destacados__seccion-Desaparace {
-display: none;
-}
-
-.destacados__seccion {
-width: 42vw;
-height: 42vw;
-}
-
-.header>* {
-margin: 15px;
-}
-
-.contenedor__titulacion {
-flex-direction: column;
-height: auto;
-}
-
-.informacion__titulacion {
-width: 100%;
-}
-
-.botones__titulacion {
-width: 100%;
-}
-
-.notas__capa::before,
-.notas__capa::after {
-height: 15px;
-width: 15px;
-}
-
-.notas__capa::before {
-border-bottom: 3px solid var(--blanco);
-border-left: 3px solid var(--blanco);
-}
-
-.notas__capa::after {
-border-top: 3px solid var(--blanco);
-border-right: 3px solid var(--blanco);
-}
-
-.header__titulo {
-font-size: 4rem;
-}
-
-.header__frase {
-font-size: 2rem;
-}
-
-.destacados__track {
-height: 42vw !important;
-}
-
-.destacados__seccion-Movil {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 42vw;
-height: 42vw;
-margin: 10px;
-}
-
-.destacado__division-Movil {
-flex-direction: row;
-height: 20vw;
-margin: 0;
-}
-
-.destacados__titulo {
-font-size: 1rem;
-}
-
-.destacado__icon-Movil {
-padding: 10px;
-margin-left: 5%;
-font-size: 1rem;
-}
-
-.menu__titulo {
-font-size: 1.5rem;
-}
-
-.main {
-padding-top: 0;
-}
-
-.notas {
-width: 45%;
-}
-
-.notas__enlace {
-padding: 10px;
-}
-
-.footer__contenedor {
-grid-template-columns: 1fr;
-padding: 2rem;
-}
-
-.footer__seccion-Ocultar {
-display: none;
-}
-
-.oferta__splide{padding: 3em 0 0 0 !important;}
-.oferta__pagination{display: flex !important;}
-.oferta__texto{padding: 10px;}
-.oferta__imagen{
-height: 200px;
-}
-
-.oferta__splide{
-margin-top: 50px;
-}
-.apartados__titulo {
-font-size: 2rem;
-}
-
-.especialidades__splide .splide__arrow {
-display: none;
-}
-
-.especialidades__splide {
-padding: 3rem 1% !important;
-}
-
-.especialidades__splide .splide__pagination__page {
-display: inline-block;
-background-color: #ccc;
-}
-
-.especialidades__splide .splide__pagination__page:hover {
-background-color: var(--rosa);
-}
-
-.especialidades__splide .splide__pagination__page.is-active {
-background-color: var(--rosa);
-}
-
-.contacto__formulario {
-width: 96%;
-}
-
-.formulario__campos {
-width: 100%;
-}
-
-.enlaces__administracion {
-margin: 20px 0;
-}
-.imagenes__concursos{
-width: 100%;
-height: 200px;
-}
-.wrap__informacion__concurso{
-padding: 40px 10px;
-}
-.titulacion__tarjeta{
-width: 90%;
-}
-.mensaje__texto{
-  text-align: left;
-}
-.mensaje__texto__parrafo{
-  margin: 0;
-}
-.jovenes__slider{
-  padding: 3em 0!important;
-}
-.descripcion__video__jovenes{
-  padding: 5%;
-}
-.titulo__jovenes__slider{
-  display: block;
-}
-}
-
 
 /* =====  End of RESPONSIVO  ====== */

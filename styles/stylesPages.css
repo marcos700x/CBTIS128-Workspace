@@ -1,229 +1,232 @@
-/* ESTILOS PAGINA ALUMNOS */
+/*==============================
+=           CONOCENOS          =
+==============================*/
 
-
-.especialidades__splide {
+/* CONOCENOS */
+.conocenos__contenedor{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  gap: 1%;
+}
+.conocenos {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
   background-color: var(--gris);
-}
-
-.especialidades__tarjetas {
-  height: 500px;
-  width: 300px;
-  margin: auto;
-  background-color: var(--blanco);
+  color: var(--blanco);
+  text-align: center;
+  padding: 55px 25px 25px 25px;
   position: relative;
-  border-radius: 3px;
-  overflow: hidden;
+}
+.conocenos-Rosa {background-color: var(--rosa);}
+.conocenos-Rosa *::selection {
+  background-color: var(--blanco);
+  color: var(--rosa);
+}
+.conocenos__icon {
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  font-size: 3rem;
+  padding: 25px;
+  color: var(--rosa);
+  position: absolute;
+  box-shadow: 0px 0px 10px var(--gris);
+  top: -50px;
+}
+.conocenos__icon-Gris {color: var(--gris);}
+.conocenos__titulos {font-size: 1.75rem;}
+
+/* CODIGO DE ETICA */
+.etica__contenedor{padding: 0 20%;}
+.etica__lista{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.especialidades__tarjetas__overlay {
-  position: absolute;
-  top: 0;
-  width: 100%;
+/* MENSAJE DEL DIRECTOR */
+.mensaje__contenedor {
+  display: flex;
+  justify-content: center;
+  padding: 40px 10%;
+  background-color: var(--gris-claro);
+  height: 630px;
+}
+.mensaje__texto {
+  width: 50%;
+  line-height: 2;
+  overflow: scroll;
   height: 100%;
-  background-color: #000000d3;
-  backdrop-filter: blur(2px);
+  text-align: justify;
+}
+.mensaje__texto::-webkit-scrollbar {width: 2px;}
+.mensaje__texto::-webkit-scrollbar-thumb {
+  background: var(--gris);
+  border-radius: 10px;
+}
+.mensaje__parrafo {margin: 10px 10px 0 0;}
+.mensaje__titulo {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+.mensaje__centrado {text-align: center;}
+.mensaje__negrita {font-weight: 600;}
+.mensaje__imagen {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transform: scale(0.8);
-  transition: all 0.3s ease-in-out;
+}
+.mensaje__img {
+  width: 100%;
+  height: 100%;
 }
 
-.especialidades__tarjetas__overlay:hover {
+/* HISTORIA */
+.splide__historia {
+  display: flex;
+  justify-content: center;
+}
+.splide__historia .splide__arrows .splide__arrow--prev {top: 0;}
+.splide__historia .splide__arrows .splide__arrow--next {bottom: 0;}
+.splide__historia .splide__arrows svg {fill: var(--rosa);}
+.historia__img {height: 100%;}
+/*=====  End of CONOCENOS  ======*/
+
+/*==============================
+=         DEPARTAMENTOS       =
+==============================*/
+
+/* ADMNISNISTRACION */
+.departamentos__contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  padding: 2rem 3%;
+}
+.departamentos__titulos{
+  text-transform: uppercase;
+  color: var(--rosa);
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.admnistracion__lista{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.icono__pdf{
+  color: var(--rosa);
+  font-size: 2rem;
+}
+.admnistracion__enlace{
+  text-decoration: none;
+  color: var(--negro);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.admnistracion__enlace:hover {
+  transform: translateX(5px);
+  color: var(--rosa);
+}
+
+/* DOCENTE */
+.docentes__contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.departamentos__centrado{text-align: center;}
+.docentes__tarjeta{
+  position: relative;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  
+  border: 3px solid var(--rosa);
+}
+.docentes__imagen{
+  width: 100%;
+  background-color: #fff;
+}
+.docentes__img{
+  width: 100%;
+  padding: 40px 15px;
+}
+.docentes__texto {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--rosa);
+  padding: 15px;
+}
+.docentes__parrafo{
+  text-align: center;
+  color: var(--blanco);
+  font-weight: bold;
+}
+.docentes__tarjeta:hover > .capa {
   opacity: 1;
   transform: scale(1);
 }
-
-.ver__mas__especialidades {
-  text-decoration: none;
-  color: var(--blanco);
-  background-color: var(--rosa);
-  padding: 20px;
-  transition: all 0.3s ease;
-}
-
-.ver__mas__especialidades:hover {
-  color: var(--rosa);
+.docentes__enlace:hover {
   background-color: var(--blanco);
-}
-
-.especialidades__tarjetas__overlay::before,
-.especialidades__tarjetas__overlay::after {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-}
-
-.especialidades__tarjetas__overlay::before {
-  content: "";
-  bottom: 10px;
-  left: 10px;
-  border-bottom: 5px solid var(--blanco);
-  border-left: 5px solid var(--blanco);
-}
-
-.especialidades__tarjetas__overlay::after {
-  content: "";
-  top: 10px;
-  right: 10px;
-  border-top: 5px solid var(--blanco);
-  border-right: 5px solid var(--blanco);
-}
-
-.especialidades__img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.especialidades__texto {
-  padding: 20px;
-}
-
-.especialidades__tecnico {
   color: var(--rosa);
-  font-weight: 700;
 }
+/*=====  End of DEPARTAMENTOS =====*/
 
-.especialidades__subtitulo {
-  color: var(--blanco);
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-}
+/*==============================
+=           ALUMNOS          =
+==============================*/
 
-.especialidades__titulo {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  margin: 4px 0;
-}
-
-.especialidades__splide .splide__arrow svg {
-  fill: var(--blanco);
-}
-
-.especialidades__splide .splide__arrow svg:hover {
-  fill: var(--blanco);
-}
-
-.especialidades__splide .splide__pagination__page {
-  display: none;
-}
-
-.texto__titulacion {
-  padding: 0 10%;
-  font-size: 1.2rem;
-}
-
-.contenedor__titulacion {
-  width: 100%;
-  display: flex;
-  /* justify-content: space-evenly; */
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-  flex-wrap: wrap;
-
-}
-
-.titulacion__tarjeta {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 10px;
-  width: 350px;
-  border-radius: 3px;
-  overflow: hidden;
-  box-shadow: 0px 0px 10px var(--gris);
-  flex-shrink: 0;
-}
-
-.img__titulacion__tarjeta {
-  width: 100%;
-  height: 250px;
-}
-
-.contenedor__texto__titulacion__tarjeta {
-  padding: 20px;
-  width: 100%;
-  background-color: var(--blanco);
-  color: var(--blanco);
-  background-color: var(--rosa);
-  height: 500px;
-}
-
-.etiqueta__texto__titulacion {
-  color: var(--gris-claro);
-  font-weight: 700;
-}
-
-.titulo__titulacion__tarjeta {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  margin: 5px 0;
-}
-
-.texto__titulacion__tarjeta {
-  /* font-size: 1.2rem; */
-
-}
-
-/* FIN ESTILOS PAGINA ALUMNOS */
-
-/* ESTILOS PAGINA NOTAS */
-
-.body__notas {
-  background-color: #f1f1f1;
-}
-
-.cerrar__ventana {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  margin: 50px 0;
-}
-
-.oferta__parrafo {
-  word-spacing: 2px;
-}
-
-.oferta__arrows {
-  display: none;
-}
-
+/* OFERTA ACADEMICA */
+.oferta__parrafo {word-spacing: 2px;}
+.oferta__arrows {display: none;}
 .oferta__pagination {
   position: absolute;
   top: -100%;
 }
-
 .oferta__pagination__page {
-  margin: 5px 20px !important;
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
-  background: none !important;
-  border-radius: 0 !important;
-  border-bottom: 2px solid transparent !important;
-  width: max-content !important;
-  height: min-content !important;
+  margin: 5px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  width: max-content;
+  height: min-content;
+  background: none;
 }
-
+.oferta__pagination__page:hover{background: none;}
 .oferta__pagination__page.is-active {
-  border-bottom: 2px solid var(--rosa) !important;
+  border-bottom: 2px solid var(--rosa);
   color: var(--rosa);
+  background: none;
 }
-
 .oferta__imagen {
   width: 50%;
   height: 500px;
 }
-
 .oferta__img {
   width: 100%;
   height: 100%;
   margin-left: 10%;
+  object-fit: cover;
 }
-
 .oferta__texto {
   position: absolute;
   border-radius: 3px;
@@ -235,429 +238,183 @@
   padding: 10px;
   width: 45%;
   background-color: var(--blanco);
-  box-shadow: var(--gris) 0px 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
 }
-
 .oferta__titulo {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: var(--rosa);
 }
 
-/* FIN ESTILOS PAGINA NOTAS */
-
-/* ESTILOS PAGINA CONTACTO */
-
-.contacto__informacion {
-  margin: 1rem 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.contacto__titulos {
-  font-family: var(--font-titulo);
-  color: var(--rosa);
-  font-size: 1.5rem;
-  font-weight: 800;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.contacto__logo {
-  color: var(--rosa);
-  font-size: 2rem;
-  margin: 0 5px;
-}
-
-.contacto__enlace {
-  text-decoration: none;
-  color: var(--negro);
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  margin: 1rem 0;
-}
-
-.contacto__texto {
-  transition: all .5s ease;
-  margin: 5px;
-}
-
-.contacto__enlace:hover>.contacto__texto {
-  transform: translateX(5px);
-}
-
-.contacto__seccion {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  background-color: var(--gris-claro);
-  padding: 20px 0;
-  margin-bottom: 20px;
-}
-
-.contacto__mapa {
-  display: flex;
-  margin: 16px auto;
-  border-radius: 3px;
-  border: 1px solid var(--rosa);
-  width: 600px;
-  height: 450px;
-}
-
-.contacto__formulario {
-  width: 50%;
-  margin: 2rem auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.formulario__campos {
-  width: 48%;
-  outline: 0;
-  border: 2px solid rgb(240, 240, 240);
-  margin: 0.5rem 0;
-  display: inline;
-  border-radius: 3px;
-  padding: 12px 20px;
-  font-family: var(--font-parrafo);
-  font-weight: 400;
-}
-
-.formulario__campos:focus {
-  border: 2px solid var(--rosa);
-}
-
-.formulario__comentarios {
-  width: 100%;
-  height: 8rem;
-  resize: vertical;
-}
-
-.contacto__boton {
-  padding: 10px 30px;
-  margin: 0 auto;
-  border: 2px solid var(--rosa);
-}
-
-.contacto__boton:hover {
-  background-color: var(--blanco);
-  color: var(--rosa);
-}
-
-/* FIN ESTILOS CONTACTO */
-
-/* ESTILOS DEPARTAMENTOS */
-.contenedor__departamentos {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(243, 243, 243);
-  padding: 20px 0;
-}
-
-.administracion {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-}
-
-.subtitulo__departamentos {
-  text-transform: uppercase;
-  color: var(--rosa);
-  font-weight: 800;
-  margin: 10px 0;
-  font-size: 1.5rem;
-}
-
-.contenedor__enlaces__administracion {
-  margin: 0 30px 0 0;
-}
-
-.enlaces__administracion {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-}
-
-.icono__pdf {
-  font-size: 2rem;
-}
-
-.enlace__admin {
-  text-decoration: none;
-  color: var(--negro);
-  margin-left: 10px;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-}
-
-.enlace__admin:hover {
-  transform: translateX(5px);
-  color: var(--rosa);
-}
-
-.docentes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contenedor__tarjetas__docentes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.tarjeta__departamentos {
-  position: relative;
-  width: 200px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  border-radius: 3px;
-  border: 3px solid var(--rosa);
-}
-
-.contenedor__imagen__docentes {
-  width: 100%;
-  background-color: #fff;
-}
-
-.img__tarjeta__departamentos {
-  width: 100%;
-  padding: 40px 15px;
-}
-
-.texto__tarjeta__departamentos {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--rosa);
-  padding: 15px;
-}
-
-.parrafo__tarjeta__departamentos {
-  text-align: center;
-  color: var(--blanco);
-  font-weight: bold;
-}
-
-.overlay__tarjetas__departamentos {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.8);
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  background-color: #000000d3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(2px);
-}
-
-.overlay__tarjetas__departamentos:after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border-top: 5px solid var(--blanco);
-  border-right: 5px solid var(--blanco);
-}
-
-.overlay__tarjetas__departamentos::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  border-bottom: 5px solid var(--blanco);
-  border-left: 5px solid var(--blanco);
-}
-
-.overlay__tarjetas__departamentos:hover {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.ver__mas__docentes:hover {
-  background-color: var(--blanco);
-  color: var(--rosa);
-}
-
-
-/* ESTILOS CONCURSOS */
-
-.titulo__concursos {
-  text-align: center;
-  font-family: var(--font-titulo);
-  font-size: 30px;
-  color: var(--rosa);
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.contenedor__concursos {
-  height: auto;
-  color: var(--negro);
-  font-family: var(--font-parrafo);
-  width: 70%;
-  position: relative;
+/* ESPECIALIDADES */
+.especialidades__splide {background-color: var(--gris);}
+.especialidades__tarjetas {
+  height: 500px;
+  width: 300px;
   margin: auto;
+  background-color: var(--blanco);
+  position: relative;
   border-radius: 3px;
+  overflow: hidden;
 }
+.especialidades__img {
+  width: 100%;
+  object-fit: cover;
+}
+.especialidades__texto {padding: 20px;}
+.especialidades__tecnico {
+  color: var(--rosa);
+  font-weight: 700;
+}
+.especialidades__subtitulo {
+  color: var(--blanco);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.especialidades__titulo {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 4px 0;
+}
+.especialidades__tarjetas:hover > .capa {
+  opacity: 1;
+  transform: scale(1);
+}
+.especialidades__enlace:hover {
+  background: var(--blanco);
+  color: var(--rosa);
+}
+.especialidades__splide .splide__arrow svg {fill: var(--blanco);}
+.especialidades__splide .splide__arrow svg:hover {fill: var(--blanco);}
+.especialidades__splide .splide__pagination__page {display: none;}
 
-.contenedor__concursos::before {
+/* TITULACION */
+.titulacion__descripcion {
+  padding: 0 10%;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+.titulacion___contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.titulacion__tarjeta {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.titulacion__tarjeta *::selection {
+  background-color: var(--blanco);
+  color: var(--rosa);
+}
+.titulacion__img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.titulacion__texto {
+  padding: 20px;
+  color: var(--blanco);
+  background-color: var(--rosa);
+  height: 420px;
+}
+.titulacion__subtitulo {
+  color: var(--gris-claro);
+  font-weight: 700;
+}
+.titulacion__titulo {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+/*=====  End of ALUMNOS ======*/
+
+/*==============================
+=         TRANSPARENCIA        =
+==============================*/
+.transparencia__img {
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: auto;
+}
+/*=====  End of TRANSPARENCIA ======*/
+
+/*==============================
+=           CONCURSOS          =
+==============================*/
+.concursos__contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+}
+.concursos {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  position: relative;
+}
+.concursos::before{
+  
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 0; left: 0;
   transform: scaleX(.005);
   transform-origin: left;
   transition: all .3s ease;
   z-index: -1;
-  background-color: var(--gris);
 }
-
-.contenedor__concursos:hover::before {
-  transform: scaleX(1);
-
-}
-
-.contenedor__concursos:hover {
-  color: var(--blanco);
-}
-
-.contenedor__concursos:hover .subtitulo__concursos {
-  color: var(--blanco);
-}
-
-.cont__concurso1:hover::before {
-  background-color: var(--color1);
-}
-
-.cont__concurso2:hover::before {
-  background-color: var(--color2);
-}
-
-.cont__concurso3:hover::before {
-  background-color: var(--color3);
-}
-
-.cont__concurso4:hover::before {
-  background-color: var(--color4);
-}
-
-.cont__concurso5:hover::before {
-  background-color: var(--color5);
-}
-
-.cont__concurso6:hover::before {
-  background-color: var(--color6);
-}
-
-.cont__concurso7:hover::before {
-  background-color: var(--color7);
-}
-
-.wrap__informacion__concurso {
-  padding: 30px;
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.wrap__concurso__texto {
-  width: 70%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.wrap__concurso__texto>* {
-  margin: 5px;
-}
-
-.subtitulo__concursos {
-  margin-bottom: 10px;
+.concursos-verde::before{background-color: #6dbb24;}
+.concursos-azul::before{background-color: #38bd9b;}
+.concursos-cafe::before{background-color: #b65f2c;}
+.concursos-azulOscuro::before{background-color: #000269;}
+.concursos-morado::before{background-color: #8746ff;}
+.concursos-rojo::before{background-color: #ff2929;}
+.concursos-naranja::before{background-color: #ff9100;}
+.concursos:hover::before {transform: scaleX(1);}
+.concursos:hover .concursos__texto, .concursos:hover .concursos__titulo{color: var(--blanco);}
+.concursos__texto {width: 70%;}
+.concursos__titulo {
+  font-family: var(--font-titulo);
   color: var(--rosa);
   font-size: 1.5rem;
-  font-family: var(--font-titulo);
   text-transform: uppercase;
 }
-
-.imagenes__concursos {
-  height: 200px;
-  margin: 10px;
-  border-radius: 3px;
-  width: 30%;
-
-}
-
-.texto__concursos {
-  text-align: justify;
-}
-
-.cont__conocer {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.cont__conocer a {
-  text-decoration: none;
-}
-
-.conocer__mas__concursos {
-  background-color: var(--rosa);
-  color: var(--blanco);
-  font-family: var(--font-parrafo);
-  padding: 12px 24px;
-  border-radius: 3px;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  align-items: center;
-  transition: all .3s ease;
-  text-decoration: none;
-}
-
-.conocer__mas__concursos:hover {
+.concursos__parrafo{margin: 15px 0; text-align: justify;}
+.concursos__boton{padding: 10px;}
+.concursos__boton:hover{
   background-color: var(--blanco);
   color: var(--rosa);
 }
-
-/* End of contests */
+.concursos__imagen {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.concursos__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+/*=====  End of CONCURSOS ======*/
 
 /*==============================
-=        CONTACTO         =
+=           CONTACTO          =
 ==============================*/
-.contacto__informacion {
-  margin: 1rem 0;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.contacto__titulos {
+.contacto__titulos{
   font-family: var(--font-titulo);
   color: var(--rosa);
   font-size: 1.5rem;
@@ -665,262 +422,96 @@
   text-align: center;
   text-transform: uppercase;
 }
-
-.contacto__enlace {
-  text-decoration: none;
-  color: var(--negro);
+.contacto__informacion{
   display: flex;
-  align-items: center;
-  font-weight: 600;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 1rem 0;
 }
-
-.contacto__texto {
-  transition: all 0.5s ease;
-  margin: 5px;
+.contacto__enlace{
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--negro);
+  font-weight: 600;
 }
-
-.contacto__enlace:hover>.contacto__texto {
+.contacto__icono{
+  font-size: 2rem;
+  color: var(--rosa);
+}
+.contacto__enlace:hover .contacto__parrafo {
+  transition: all 0.5s ease;
   transform: translateX(5px);
 }
-
-.contacto__seccion {
+.contacto__seccion{
   display: flex;
-  width: 100%;
   justify-content: space-around;
   background-color: var(--gris-claro);
   padding: 20px 0;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
-
-.contacto__mapa {
-  display: flex;
-  margin: 16px auto;
-  border-radius: 3px;
+.contacto__mapa{
+  margin-top: 1rem;
+  
   border: 1px solid var(--rosa);
-  width: 600px;
+  width: 40vw;
   height: 450px;
 }
-
 .contacto__formulario {
-  width: 50%;
+  width: 700px;
   margin: 2rem auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .formulario__campos {
   width: 48%;
   outline: 0;
   border: 2px solid rgb(240, 240, 240);
   margin: 0.5rem 0;
   display: inline;
-  border-radius: 3px;
+  
   padding: 12px 20px;
   font-family: var(--font-parrafo);
   font-weight: 400;
 }
-
-.formulario__campos:focus {
-  border: 2px solid var(--rosa);
-}
-
+.formulario__campos:focus {border: 2px solid var(--rosa);}
 .formulario__comentarios {
   width: 100%;
   height: 8rem;
   resize: vertical;
 }
-
 .contacto__boton {
   padding: 10px 30px;
   margin: 0 auto;
-  border: 2px solid var(--rosa);
 }
-
-/*=====  End of  CONTACTO  ======*/
-
-
-/* TRANSPARENCIA */
-.img__transparencia {
-  width: 100%;
-  max-width: 800px;
-  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
-  display: block;
-  margin: auto;
-}
-
-/* FINAL TRANSPARENCIA */
-
+/*=====  End of CONTACTO ======*/
 
 /*==============================
-=        NOSOTROS         =
+=           CONTACTO          =
 ==============================*/
-
-.conocenos__contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 10%;
-  gap: 1%;
-}
-
-.conocenos {
-  width: 24%;
-  border-radius: 5px;
-  background-color: var(--rosa);
-  color: var(--blanco);
-  text-align: center;
-  padding: 25px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.conocenos__gris {
-  background-color: var(--gris);
-}
-
-.conocenos__icon {
-  background-color: #f1f1f1;
-  border-radius: 50%;
-  font-size: 3rem;
-  padding: 25px;
-  color: var(--rosa);
-  position: absolute;
-  box-shadow: 0px 0px 10px var(--gris);
-  top: -50px;
-}
-
-.conocenos__icon-Gris {
-  color: var(--gris);
-}
-
-.conocenos__titulos {
-  font-size: 1.75rem;
-  margin: 30px 0 20px;
-}
-
-.conocenos__parrafos {
-  margin-bottom: 50px;
-}
-
-.etica__contenedor {
-  padding: 0 20%;
-}
-
-.etica__parrafo {
-  margin-bottom: 25px;
-}
-
-.mensaje__contenedor {
-  display: flex;
-  justify-content: center;
-  padding: 40px 10%;
-  background-color: var(--gris-claro);
-  height: 630px;
-
-
-}
-
-.mensaje__texto {
-  width: 50%;
-  line-height: 2;
-  overflow: scroll;
-  height: 100%;
-  text-align: justify;
-}
-
-.mensaje__texto::-webkit-scrollbar {
-  width: 2px;
-}
-
-.mensaje__texto::-webkit-scrollbar-thumb {
-  background: var(--gris);
-  border-radius: 10px;
-}
-
-.mensaje__texto__parrafo {
-  margin: 10px;
-}
-
-.mensaje__texto__titulo {
-  font-size: 1.2rem;
-  font-weight: 800;
-  margin: 10px 0;
-}
-
-.mensaje__centrado {
-  text-align: center;
-}
-
-.mensaje__negrita {
-  font-weight: 600;
-}
-
-.mensaje__imagen {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mensaje__img {
-  width: 100%;
-  height: 100%;
-}
-
-.splide__historia {
-  display: flex;
-  justify-content: center;
-}
-
-.splide__historia .splide__arrows .splide__arrow--prev {
-  top: 0;
-}
-
-.splide__historia .splide__arrows .splide__arrow--next {
-  bottom: 0;
-}
-
-.splide__historia .splide__arrows svg {
-  fill: var(--rosa) !important;
-}
-
-.historia__img {
-  height: 100%;
-}
-
-/* ESTILOS HORARIOS */
-
-.horarios__contenedor {
-  width: 100%;
+.horarios {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: auto;
   background-color: var(--gris-claro);
   padding: 40px 20px;
   gap: 20px;
 }
-
-.horarios__subtitulo {
-  color: var(--negro);
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.horarios__titulo {
   width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
-
-.flipcard__horarios {
-  background-color: transparent;
+.horarios__flipcard {
   width: 350px;
   aspect-ratio: 1;
   perspective: 1000px;
-  /* margin: auto; */
 }
-
-.flipcard__inner__horarios {
+.horarios__inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -928,34 +519,25 @@
   transition: transform .7s;
   transform-style: preserve-3d;
 }
-
-.flipcard__horarios:hover .flipcard__inner__horarios {
-  transform: rotateY(180deg);
-}
-
-.flipcard__front__horarios,
-.flipcard__back__horarios {
+.horarios__flipcard:hover .horarios__inner {transform: rotateY(180deg);}
+.horarios__enfrente,
+.horarios__trasero {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
   backface-visibility: hidden;
-  border-radius: 3px;
   overflow: hidden;
-
 }
-
-.flipcard__front__horarios {
-  background-color: var(--gris);
-  color: var(--negro);
-  box-shadow: 0px 0px 10px var(--gris);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.horarios__enfrente {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  object-position: center;
+  pointer-events: none;
 }
-
-.overlay__flipcard__img {
+.horarios__img{
+  height: 100%;
+  width: 100%;
+}
+.horarios__subtitulo {
   position: absolute;
   top: 0;
   width: 100%;
@@ -963,113 +545,87 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column-reverse;
   background-color: rgba(0, 0, 0, 0.568);
   color: var(--blanco);
-  pointer-events: none;
-  padding: 20px;
-
-}
-
-.titulo__overlay__flipcard {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-family: var(--font-titulo);
   font-weight: 600;
 }
-
-.icon__overlay__flipcard {
-  color: rgba(255, 255, 255, 0.267);
-  font-size: 2rem;
-}
-
-.flipcard__back__horarios {
+.horarios__trasero {
   background-color: var(--rosa);
-  color: var(--negro);
+  color: var(--blanco);
   transform: rotateY(180deg);
-  box-shadow: 0px 0px 10px var(--gris);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
   position: relative;
-
+  text-align: left;
 }
-
-.dropdown__contenedor__horarios {
-  margin: 10px 0;
+.horarios__especialidad {
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
-
-.boton__tarjeta__horarios {
-  font-size: 1rem;
-  width: 100%;
+.horarios__semestre {
+  margin: 5px 0 10px 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(238, 238, 238);
+}
+.horarios__boton {
+  text-align: left;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
   background-color: var(--blanco);
   border: 2px solid var(--gris-claro);
   cursor: pointer;
-  border-radius: 3px 3px 0 0;
-  text-transform: uppercase;
-  font-size: .9rem;
-  padding: 10px 5px;
+  /* text-transform: uppercase; */
+  padding:  6px 10px;
 }
-
-.boton__tarjeta__horarios:focus+.dropdown__horarios {
-  transform: scaleY(1);
+.horarios__boton__icon{
+  font-size: 1.5rem;
 }
-
-.dropdown__horarios:hover {
-  transform: scaleY(1);
-}
-
-.dropdown__horarios {
+.horarios__dropdown {
   display: flex;
   flex-direction: column;
-  transform: scaleY(0);
   transition: all .3s ease-in-out;
   transform-origin: top;
+  transform: scaleY(0);
   background-color: var(--blanco);
   border: 2px solid var(--gris-claro);
   border-top: none;
-  max-height: 160px;
+  max-height: 150px;
   overflow-y: scroll;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 5px 5px;
 }
-
-.dropdown__horarios::-webkit-scrollbar {
+.horarios__dropdown::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
-
-.dropdown__horarios::-webkit-scrollbar-thumb {
+.horarios__dropdown::-webkit-scrollbar-thumb {
   background-color: var(--gris);
   border-radius: 3px;
 }
-
-.enlaces__horarios {
+.horarios__enlace {
   text-decoration: none;
   color: var(--rosa);
   padding: 10px;
-  font-weight: bold;
+  font-weight: 700;
   transition: all .3s ease;
   text-transform: uppercase;
 }
-
-.enlaces__horarios:hover {
+.horarios__enlace:hover {
   background-color: var(--gris-claro);
   color: var(--negro);
 }
-
-.titulo__flipcard__back {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  color: var(--blanco);
-}
-
-.subtitulo__flipcard__back {
-  font-size: .9rem;
-  color: rgb(238, 238, 238);
-}
-
-.logo__background__flipcard__back {
+.horarios__boton:focus+.horarios__dropdown {transform: scaleY(1);}
+.horarios__dropdown:hover {transform: scaleY(1);}
+.horarios__logo{
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
@@ -1079,6 +635,7 @@
   bottom: 5px;
   left: 0;
   right: 0;
-  margin: auto;
   font-family: var(--font-titulo);
 }
+.horarios__icono{font-size: 2rem;}
+/*=====  End of CONTACTO ======*/
