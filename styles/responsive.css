@@ -36,7 +36,7 @@
   .boton__movil{display: inline-block;}
   .destacados__contenedor {width: 90%;}
   .educacion__img {width: 90%;}
-  .educacion__texto {width: 80%; margin: 10px;}
+  .educacion__texto {width: 80%;}
   .footer__contenedor {
       grid-template-columns: 1fr 1fr;
       padding: 2rem;
