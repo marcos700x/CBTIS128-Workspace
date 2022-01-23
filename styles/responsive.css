@@ -160,7 +160,6 @@
       border-top: 3px solid var(--blanco);
       border-right: 3px solid var(--blanco);
   }
-  .notas__enlace, .notas__mas{padding: 10px;}
   .jovenes__slider{padding: 0 0 2rem 0;}
   .jovenes__descripcion{padding: 5%;}
   .jovenes__desliza{display: block;}

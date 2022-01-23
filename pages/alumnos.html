@@ -9,6 +9,7 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
     <script src="../scripts/splide.min.js"></script>
+    <script src="../scripts/scrollreveal.js"></script>
     <!-- CSS -->
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/splide-sea-green.min.css">
@@ -262,7 +263,7 @@
         <section>
             <h1 class="apartados__titulo">Titulación</h1>
             <p class="titulacion__descripcion">Aparte de cursar tus estudios de Bachillerato de Nivel Medio Superior, el Cbtis 128 te ofrece la opción de Titularte cómo Técnico en la especialidad que oferta el plantel, aquí encontrarás las diferentes opciones de Titulación, Requisitos y Documentación, así cómo la información de los títulos que se encuentran en trámite en por medio de la oficina de Servicio Social y Titulación. El alumno podrá optar Titularse por alguna de las siguientes opciones, cumpliendo los Requisitos y Documentación correspondiente:</p>
-            <div class="titulacion___contenedor">
+            <div class="titulacion__contenedor">
                 <div class="titulacion__tarjeta">
                     <img src="../assets/images/titulacion-automatica.jpg" alt="" class="titulacion__img">
                     <section class="titulacion__texto">
@@ -407,6 +408,24 @@
             } );
             especialidades__splide.mount();
         /*=====  End of ALUMNOS  ======*/
+        ScrollReveal().reveal('.oferta__splide', {
+  origin: 'left',
+  distance: '400px',
+  duration: 1000,
+  reset: true,
+});
+ScrollReveal().reveal('.especialidades__splide', {
+  origin: 'left',
+  distance: '400px',
+  duration: 1000,
+  reset: true,
+});
+ScrollReveal().reveal('.titulacion__tarjeta', {
+  origin: 'left',
+  distance: '400px',
+  duration: 1000,
+  reset: true,
+});
     </script>
 </body>
 </html>

@@ -208,8 +208,10 @@ jovenes__splide.mount();
 /*=====  End of JOVENES EN CASA  ======*/
 
 ScrollReveal().reveal('#noticias__splide', {
-  duration: 1500,
-  reset: true
+  origin: 'left',
+  distance: '400px',
+  duration: 1000,
+  reset: true,
 });
 ScrollReveal().reveal('.destacados__contenedor', {
   origin: 'left',
@@ -218,11 +220,15 @@ ScrollReveal().reveal('.destacados__contenedor', {
   reset: true,
 });
 ScrollReveal().reveal('.educacion__contenedor', {
-  duration: 1500,
-  reset: true
+  origin: 'left',
+  distance: '400px',
+  duration: 1000,
+  reset: true,
 });
 ScrollReveal().reveal('.notas__contenedor', {
-  duration: 1500,
-  reset: true
+  origin: 'left',
+  distance: '400px',
+  duration: 1000,
+  reset: true,
 });
 
