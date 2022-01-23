@@ -106,7 +106,7 @@
         <section>
             <h1 class="apartados__titulo">Departamentos</h1>
             <div class="departamentos__contenedor">
-                <section>
+                <section id="section__departamentos">
                     <h2 class="departamentos__titulos">Administración</h2>
                     <ul>
                         <li class="admnistracion__lista">
@@ -131,7 +131,7 @@
                         </li>
                     </ul>
                 </section>
-                <section>
+                <section id="section__departamentos">
                     <h2 class="departamentos__titulos departamentos__centrado">Docentes</h2>
                     <div class="docentes__contenedor">
                         <div class="docentes__tarjeta">
@@ -221,7 +221,7 @@
     <script src="../scripts/scripts.js"></script>
 </body>
 <script>
-    ScrollReveal().reveal('.departamentos__contenedor', {
+    ScrollReveal().reveal('#section__departamentos', {
   origin: 'left',
   distance: '400px',
   duration: 1000,
