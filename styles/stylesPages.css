@@ -61,7 +61,7 @@
 .mensaje__texto {
   width: 50%;
   line-height: 2;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 100%;
   text-align: justify;
 }

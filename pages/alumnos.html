@@ -149,7 +149,7 @@
             <section id="especialidades__splide" class="splide especialidades__splide">
                 <h2 class="especialidades__subtitulo">Desliza y toca las tarjetas para conocer más información</h2>
                 <div class="splide__track">
-                    <ul class="splide__list">
+                    <ul id="especialidades__splide__list" class="splide__list">
                         <li class="splide__slide">
                             <div class="especialidades__tarjetas">
                                 <div class="especialidades__imagen">
@@ -414,7 +414,7 @@
   duration: 1000,
   reset: true,
 });
-ScrollReveal().reveal('.especialidades__splide', {
+ScrollReveal().reveal('#especialidades__splide__list', {
   origin: 'left',
   distance: '400px',
   duration: 1000,

@@ -207,7 +207,7 @@ var jovenes__splide = new Splide( '#jovenes__splide', {
 jovenes__splide.mount();
 /*=====  End of JOVENES EN CASA  ======*/
 
-ScrollReveal().reveal('#noticias__splide', {
+ScrollReveal().reveal('#splide__list__noticias', {
   origin: 'left',
   distance: '400px',
   duration: 1000,
@@ -219,7 +219,7 @@ ScrollReveal().reveal('.destacados__contenedor', {
   duration: 1000,
   reset: true,
 });
-ScrollReveal().reveal('.educacion__contenedor', {
+ScrollReveal().reveal('.educacion__img', {
   origin: 'left',
   distance: '400px',
   duration: 1000,
