@@ -207,27 +207,22 @@ var jovenes__splide = new Splide( '#jovenes__splide', {
 jovenes__splide.mount();
 /*=====  End of JOVENES EN CASA  ======*/
 
-ScrollReveal().reveal('#splide__list__noticias', {
+
+ScrollReveal().reveal('.destacados__seccion', {
   origin: 'left',
-  distance: '400px',
-  duration: 1000,
-  reset: true,
-});
-ScrollReveal().reveal('.destacados__contenedor', {
-  origin: 'left',
-  distance: '400px',
+  distance: '100px',
   duration: 1000,
   reset: true,
 });
 ScrollReveal().reveal('.educacion__img', {
   origin: 'left',
-  distance: '400px',
+  distance: '100px',
   duration: 1000,
   reset: true,
 });
 ScrollReveal().reveal('.notas__contenedor', {
   origin: 'left',
-  distance: '400px',
+  distance: '100px',
   duration: 1000,
   reset: true,
 });
