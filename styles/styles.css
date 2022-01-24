@@ -240,6 +240,7 @@
 
 .header__frase {
     font-size: 3rem;
+    margin: 0 10px;
 }
 
 .header__lista {

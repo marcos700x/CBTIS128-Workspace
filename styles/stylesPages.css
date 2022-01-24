@@ -564,7 +564,7 @@
 }
 .horarios__especialidad {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .horarios__semestre {
   margin: 5px 0 10px 0;
@@ -598,9 +598,8 @@
   background-color: var(--blanco);
   border: 2px solid var(--gris-claro);
   border-top: none;
-  max-height: 150px;
+  max-height: 160px;
   overflow-y: scroll;
-  border-radius: 0 0 5px 5px;
 }
 .horarios__dropdown::-webkit-scrollbar {
   width: 5px;
