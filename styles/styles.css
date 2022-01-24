@@ -214,9 +214,6 @@
     color: var(--blanco);
     position: relative;
 }
-.pagina__seleccionada {
-   text-decoration: underline;
-}
 
 /* ESTILOS PARA EL VIDEO Y SUS ELEMENTOS */
 .video__contenedor{
