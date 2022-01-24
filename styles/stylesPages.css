@@ -16,11 +16,11 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  
+
   background-color: var(--gris);
   color: var(--blanco);
   text-align: center;
-  padding: 55px 25px 25px 25px;
+  padding: 55px 25px 55px 25px;
   position: relative;
 }
 .conocenos-Rosa {background-color: var(--rosa);}

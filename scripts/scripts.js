@@ -147,24 +147,37 @@ var noticias__splide = new Splide("#noticias__splide", {
     },
     type: "loop",
     autoplay: "true",
+    arrows: true,
+    pagination: false,
     perPage: 3,
     perMove: 1,
     interval: 3000,
     gap: 20,
     breakpoints: {
         900: {
+        arrows: true,
         perPage: 2,
         },
         640: {
+        arrows: false,
         perPage: 1,
         },
         480: {
-            perPage: 1,
-            pagination: false,
+        perPage: 1,
+        arrows: false,
         }
     },
     }); 
+ 
+  
 noticias__splide.mount();
+var bar = noticias__splide.root.querySelector( '.my-slider-progress-bar' );
+  
+// Update the bar width:
+noticias__splide.on( 'mounted move', function () {
+  var end = noticias__splide.Components.Controller.getEnd() + 1;
+  bar.style.width = String( 100 * ( noticias__splide.index + 1 ) / end ) + '%';
+} );
 /*=====  End of NOTICIAS  ======*/
 
 /*==============================

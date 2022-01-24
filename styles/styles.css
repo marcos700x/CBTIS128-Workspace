@@ -30,7 +30,7 @@
     background-color: var(--rosa);
 }
 /*MODIFICACIÓN DE LA BARRA LATERAL DE NAVEGACIÓN*/
-*::-webkit-scrollbar {width: 6px;}
+*::-webkit-scrollbar {width: 5px;}
 *::-webkit-scrollbar-thumb {
     background: var(--rosa);
     border-radius: 10px;
@@ -190,7 +190,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-shadow: 10px 10px 20px #000;
+    /* text-shadow: 10px 10px 20px #000; */
     text-align: center;
     gap: 35px;
     color: var(--blanco);
@@ -362,6 +362,7 @@
 .movil__horarios{
     background-color: var(--blanco);
     color: var(--rosa);
+    cursor: pointer;
     text-align: center;
 }
 .horarios__enlaces{color: var(--rosa);}
@@ -377,6 +378,20 @@
 ==============================*/
 
 /* NOTICIAS */
+
+
+.my-slider-progress {
+    background: #ccc;
+    margin: 3em 10px 0px 10px ;
+  }
+  
+  .my-slider-progress-bar {
+    background: var(--rosa);
+    height: 4px;
+    transition: width 400ms ease;
+    width: 0;
+  }
+
 .noticias__splide{background-color: rgb(247, 247, 247);}
 .noticias__contenido {
     display: flex;
@@ -385,6 +400,14 @@
     align-items: center;
     text-align: center;
     gap: 10px;
+    margin-top: 10px;
+}
+.noticias__subtitulo{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1.5em 0;
+    background-color: var(--gris-claro);
+    display: none;
 }
 .noticias__img {
     width: 100%;
@@ -395,7 +418,7 @@
     font-family: var(--font-titulo);
     font-size: 1.5rem;
 }
-.noticias__enlace {padding: 10px 20px;}
+.noticias__enlace {padding: 20px;}
 .noticias__splide svg {fill: var(--rosa);}
 .noticias__splide:hover svg {fill: var(--rosa);}
 .noticias__pagination__pages.is-active {background-color: var(--rosa);}
@@ -461,7 +484,7 @@
 }
 .destacado__division-Movil {
     flex-direction: row;
-    padding: 0 5px;
+    padding: 0 10px;
 }
 .destacado__icon-Movil {
     padding: 10px;
@@ -475,12 +498,8 @@
     max-height: 650px;
     justify-content: center;
 }
-/* .educacion__imagen {width: 50%;} */
 .educacion__img {
     height: 100%;
-    object-fit: cover;
-    object-position: top;
-    float: right;
 }
 .educacion__texto {
     width: 60%;
@@ -509,14 +528,13 @@
 .notas {
     position: relative;
     width: 350px;
-    
+    border-radius: 3px;
+    overflow: hidden;
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
 }
 .notas__img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    
 }
 .notas:hover > .capa {
     opacity: 1;

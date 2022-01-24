@@ -85,7 +85,9 @@
   .contacto__mapa, .formulario__campos {width: 98vw;}
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 640px) {
+  .noticias__subtitulo{display: block;}
+  .noticias__splide {padding:  0 0 3em 0;}
   .educacion__contenedor {
       flex-direction: column-reverse;
       height: auto;
@@ -135,7 +137,6 @@
   .concursos__texto{text-align: center;}
   .concursos__texto, .concursos__imagen {width: 100%;}
 }
-
 /* Móviles en vertical
 ------------------------------------------------------------------------- */
 @media (max-width: 480px) {
@@ -143,11 +144,7 @@
   .header__frase {font-size: 2rem;}
   .menu__titulo {font-size: 1.5rem;}
   .apartados__titulo {font-size: 2rem;}
-  .noticias__splide .splide__arrow {
-      bottom: 0;
-      top: unset;
-  }
-  .noticias__splide {padding: 3em 0;}
+  .noticias__subtitulo{display: block;}
   .capa::before, .capa::after {
       height: 15px;
       width: 15px;
