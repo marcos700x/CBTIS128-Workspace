@@ -125,7 +125,7 @@
             </section>
             <!-- DIRECTORIO -->
             <div class="contacto__seccion">
-                <section>
+                <section id="directorio">
                     <h2 class="contacto__titulos">Directorio</h2>
                     <a href="mailto:subdireccion@cbtis128.edu.mx" class="contacto__enlace">
                         <i class="contacto__icono bx bxs-school"></i>
@@ -172,19 +172,19 @@
                         <p class="contacto__parrafo">informacion@cbtis128.edu.mx</p>
                     </a>
                 </section>
-                <section>
+                <section id="ubicacion">
                     <h2 class="contacto__titulos">Ubicación</h2>
                     <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27169.908315869037!2d-106.413604!3d31.654693000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd9ce9ee31ec09789!2sCBTIS%20128!5e0!3m2!1ses!2smx!4v1641584106974!5m2!1ses!2smx"  allowfullscreen="" loading="lazy"></iframe>
                 </section>
             </div>
             <!-- FORMULARIO CONTACTO -->
             <h2 class="contacto__titulos">Comentarios</h2>
-            <form class= "contacto__formulario" action="https://formspree.io/f/xqknebqy" autocomplete="off" method="post" >
-                <input class="formulario__campos" type="text" name="Nombre" placeholder="Ingrese su nombre">
-                <input class="formulario__campos" type="email" name="Correo" placeholder="Ingrese su correo">
-                <input class="formulario__campos" type="text" name="Telefono" placeholder="Ingrese su tel&eacute;fono">
-                <input class="formulario__campos" type="text" name="Asunto" placeholder="Ingrese el asunto">
-                <textarea class="formulario__campos formulario__comentarios" name="Comentarios" placeholder="Coloque aqu&iacute; sus comentarios"></textarea>
+            <form class= "contacto__formulario" action=""  method="post" >
+                <input class="formulario__campos" type="text" name="Nombre" placeholder="Ingrese su nombre" required>
+                <input class="formulario__campos" type="email" name="Correo" placeholder="Ingrese su correo" required>
+                <input class="formulario__campos" type="text" name="Telefono" placeholder="Ingrese su tel&eacute;fono" required>
+                <input class="formulario__campos" type="text" name="Asunto" placeholder="Ingrese el asunto" required>
+                <textarea class="formulario__campos formulario__comentarios" name="Comentarios" placeholder="Coloque aqu&iacute; sus comentarios" required></textarea>
                 <input class="boton contacto__boton" type="submit"  value="Enviar">
             </form>
         </section>
@@ -249,11 +249,15 @@
     <script src="../scripts/scripts.js"></script>
 </body>
 <script>
-    ScrollReveal().reveal('.contacto__seccion', {
+    ScrollReveal().reveal('#directorio', {
   origin: 'left',
   distance: '400px',
   duration: 1000,
-  
+});
+ScrollReveal().reveal('#ubicacion', {
+  origin: 'left',
+  distance: '400px',
+  duration: 1000,
 });
 </script>
 </html>
