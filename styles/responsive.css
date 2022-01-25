@@ -363,9 +363,14 @@
     }
 
     .header__frase {
-        font-size: 2rem;
-    }
+        font-size: 1.5rem;
+        margin: 0 20px;
 
+    }
+    .video__mostrar, .boton__blanco{
+        width: 200px;
+        text-align: center;
+    }
     .menu__titulo {
         font-size: 1.5rem;
     }
