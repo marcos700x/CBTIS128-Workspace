@@ -143,6 +143,32 @@
 }
 /* 760PX */
 @media screen and (max-width: 760px) {
+    .header__informacion{
+        display: none;
+    }
+    .header__logos__dgeti-sems{
+        width: 170px;
+    }
+    .header__frase{
+        text-align: center;
+    }
+    .header__contenedor__informacion{
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .header__contenedor__texto{
+        width: 100%;
+    }
+    .contenedor__logos__dgeti-sems{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .header__contenedor__botones{
+        justify-content: center;
+    }
     .destacados__contenedor {
         width: 100%;
     }
@@ -309,13 +335,31 @@
         width: 100%;
     }
 }
-
+@media screen and (max-width: 580px) {
+    .header__titulo {
+        font-size: 4rem;
+    }
+    .header__logo{
+        width: 120px;
+    }
+    .header__contenedor__logo{
+        flex-direction: column;
+    }
+    .contenedor__logos__dgeti-sems{
+        display: none;
+    }
+    .header{
+        justify-content: center;
+    }
+}
 /* Móviles en vertical
 480PX
 ------------------------------------------------------------------------- */
 @media (max-width: 480px) {
-    .header__titulo {
-        font-size: 4rem;
+    .header__contenedor__botones{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .header__frase {
