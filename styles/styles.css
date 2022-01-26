@@ -918,7 +918,16 @@ border: 2px solid var(--blanco);
 .contacto__icon {
     font-size: 1.5rem;
 }
-
+.footer__contenedor__banner{
+    background-color: var(--rosa);
+    width: 100%;
+}
+.footer__banner{
+    height: 200px;
+    width: auto; 
+    display: block;
+    margin: auto;
+}
 .seccion__copyright {
     color: var(--blanco);
     font-weight: 600;

@@ -71,9 +71,6 @@
         width: 90%;
     }
 
-    .educacion__img {
-        width: 90%;
-    }
 
     .educacion__texto {
         width: 80%;
@@ -87,7 +84,10 @@
     .footer__seccion-Ocultar {
         grid-column: 1 / 3;
     }
-
+    .footer__banner{
+        width: 100%;
+        height: auto;
+    }
     .oferta__imagen {
         width: 100%;
         height: 300px;

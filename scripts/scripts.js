@@ -95,7 +95,24 @@ function close__semestres() {
 }
 contenedor__semestres.addEventListener("click", close__semestres);
 /*=====  End of MENU MOVIL  ======*/
-
+ScrollReveal().reveal('.header__contenedor__top', {
+    origin: 'top',
+    distance: '100%',
+    duration: 1000,
+    delay: 2000,
+  });
+  ScrollReveal().reveal('.header__contenedor__texto', {
+    origin: 'left',
+    distance: '100%',
+    duration: 1000,
+    delay: 2000,
+  });
+  ScrollReveal().reveal('.contenedor__logos__dgeti-sems', {
+    origin: 'right',
+    distance: '100%',
+    duration: 1000,
+    delay: 2000,
+  });
 /*==============================
 =          VIDEO          =
 ==============================*/
