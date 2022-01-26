@@ -236,7 +236,6 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    gap: 35px;
     color: var(--blanco);
     font-weight: 700;
     padding: 5rem 0;
@@ -263,10 +262,10 @@
     font-family: var(--font-titulo);
 }
 .header__contenedor__informacion{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 
 }
 .contenedor__logos__dgeti-sems{
