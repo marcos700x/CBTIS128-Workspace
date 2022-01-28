@@ -24,6 +24,10 @@
   position: relative;
 }
 .conocenos-Rosa {background-color: var(--rosa);}
+.conocenos-Rosa *::-moz-selection {
+  background-color: var(--blanco);
+  color: var(--rosa);
+}
 .conocenos-Rosa *::selection {
   background-color: var(--blanco);
   color: var(--rosa);
@@ -207,7 +211,11 @@
   font-weight: 600;
   border-radius: 0;
   border-bottom: 2px solid transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   background: none;
 }
@@ -225,7 +233,8 @@
   width: 100%;
   height: 100%;
   margin-left: 10%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .oferta__texto {
   position: absolute;
@@ -233,6 +242,8 @@
   top: 0;
   bottom: 0;
   margin: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   right: 5%;
   padding: 10px;
@@ -259,7 +270,8 @@
 }
 .especialidades__img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .especialidades__texto {padding: 20px;}
 .especialidades__tecnico {
@@ -310,6 +322,10 @@
   
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+.titulacion__tarjeta *::-moz-selection {
+  background-color: var(--blanco);
+  color: var(--rosa);
+}
 .titulacion__tarjeta *::selection {
   background-color: var(--blanco);
   color: var(--rosa);
@@ -317,7 +333,8 @@
 .titulacion__img {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .titulacion__texto {
   padding: 20px;
@@ -406,7 +423,8 @@
 .concursos__img {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*=====  End of CONCURSOS ======*/
 
@@ -524,12 +542,14 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   overflow: hidden;
 }
 .horarios__enfrente {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  object-position: center;
+  -o-object-position: center;
+     object-position: center;
   pointer-events: none;
 }
 .horarios__img{
@@ -628,7 +648,10 @@
   font-weight: 800;
   text-align: center;
   color: rgba(255, 255, 255, 0.267);
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: absolute;
   bottom: 5px;
   left: 0;

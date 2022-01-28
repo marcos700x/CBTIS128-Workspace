@@ -191,6 +191,8 @@
     }
 
     .titulacion__tarjeta {
+        height: -webkit-min-content;
+        height: -moz-min-content;
         height: min-content;
     }
 
@@ -229,6 +231,8 @@
     .educacion__contenedor {
         flex-direction: column-reverse;
         height: auto;
+        max-height: -webkit-max-content;
+        max-height: -moz-max-content;
         max-height: max-content;
     }
 
