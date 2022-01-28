@@ -806,7 +806,7 @@
   background-color: var(--gris-claro);
   color: var(--negro);
 }
-.horarios__boton:focus+.horarios__dropdown {-webkit-transform: scaleY(1);-ms-transform: scaleY(1);transform: scaleY(1);}
+.horarios__boton:hover +.horarios__dropdown {-webkit-transform: scaleY(1);-ms-transform: scaleY(1);transform: scaleY(1);}
 .horarios__dropdown:hover {-webkit-transform: scaleY(1);-ms-transform: scaleY(1);transform: scaleY(1);}
 .horarios__logo{
   font-size: 2rem;
