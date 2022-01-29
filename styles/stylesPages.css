@@ -365,11 +365,15 @@
 .oferta__imagen {
   width: 50%;
   height: 500px;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .oferta__img {
   width: 100%;
-  height: 100%;
   margin-left: 10%;
   -o-object-fit: cover;
   object-fit: cover;
