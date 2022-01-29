@@ -389,6 +389,9 @@
     }
 }
 @media screen and (max-width: 580px) {
+    .header{
+        gap: 0;
+    }
     .header__titulo {
         font-size: 4rem;
     }
