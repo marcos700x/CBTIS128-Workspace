@@ -120,6 +120,35 @@
     .concursos__contenedor {
         padding: 0;
     }
+    .header__contenedor__informacion{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+    .header__contenedor__texto{
+        width: 100%;
+    }
+    .contenedor__logos__dgeti-sems{
+        width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 20px;
+    }
+    .header__contenedor__botones{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
 }
 /* Móviles en horizontal o tablets en vertical */
 /* 767PX */
@@ -165,52 +194,13 @@
     .header__frase{
         text-align: center;
     }
-    .header__contenedor__informacion{
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        gap: 20px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
-    }
-    .header__contenedor__texto{
-        width: 100%;
-    }
-    .contenedor__logos__dgeti-sems{
-        width: 100%;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        gap: 20px;
-    }
-    .header__contenedor__botones{
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-    }
     .destacados__contenedor {
         width: 100%;
-    }
-
-    .destacados__seccion-Desaparace {
-        display: none;
     }
 
     .destacados__seccion {
         width: 42vw;
         height: 42vw;
-    }
-
-    .destacados__seccion-Movil {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
     }
 
     .destacados__titulo {
