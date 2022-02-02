@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/*DECLARACIÓN DE LAS VARIABLES Y ESTILOS PRINCIPALES*/
+/*DECLARACIÃ“N DE LAS VARIABLES Y ESTILOS PRINCIPALES*/
 :root {
     font-size: 16px;
     --font-titulo: "Poppins", sans-serif;
@@ -27,7 +27,7 @@
     font-family: var(--font-parrafo);
 }
 
-/*MODIFICACIÓN DEl SELECTOR DE CONTENIDO*/
+/*MODIFICACIÃ“N DEl SELECTOR DE CONTENIDO*/
 *::-moz-selection {
     color: var(--blanco);
     background-color: var(--rosa);
@@ -37,7 +37,7 @@
     background-color: var(--rosa);
 }
 
-/*MODIFICACIÓN DE LA BARRA LATERAL DE NAVEGACIÓN*/
+/*MODIFICACIÃ“N DE LA BARRA LATERAL DE NAVEGACIÃ“N*/
 *::-webkit-scrollbar {
     width: 5px;
 }
@@ -166,7 +166,7 @@
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 3px;
+    
     text-transform: uppercase;
 }
 .boton__blanco{
@@ -427,7 +427,7 @@
     position: fixed;
     z-index: 1;
     padding: 10px;
-    bottom: 20px; right: 15px;
+    bottom: 15px; right: 15px;
     border-radius: 50%;
     border: 2px solid transparent;
 }
@@ -827,7 +827,7 @@ border: 2px solid var(--blanco);
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    border-radius: 3px;
+    
     gap: 10px;
 }
 
@@ -853,15 +853,6 @@ border: 2px solid var(--blanco);
             align-items: center;
     gap: 10px;
     height: 50%;
-}
-
-.destacado__icon {
-    color: var(--rosa);
-    background-color: var(--blanco);
-    font-size: 2rem;
-    padding: 20px;
-    border-radius: 3px;
-
 }
 
 .destacados__seccion-Movil {
@@ -950,7 +941,6 @@ border: 2px solid var(--blanco);
 .notas {
     position: relative;
     width: 350px;
-    border-radius: 3px;
     overflow: hidden;
     -webkit-box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
             box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
@@ -1122,7 +1112,7 @@ border: 2px solid var(--blanco);
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 2rem 2rem 0 2rem;
 }
