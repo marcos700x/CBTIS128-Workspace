@@ -381,7 +381,7 @@
 
 .oferta__texto {
   position: absolute;
-  
+  border-radius: 3px;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -413,7 +413,7 @@
   margin: auto;
   background-color: var(--blanco);
   position: relative;
-  
+  border-radius: 3px;
   overflow: hidden;
 }
 
