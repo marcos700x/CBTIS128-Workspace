@@ -124,6 +124,10 @@
 /*==============================
 =     ELEMENTOS GLOBALES      =
 ==============================*/
+html{
+    overflow-x: hidden;
+    width: 100vw;
+}
 .body {
     overflow-x: hidden;
 }
